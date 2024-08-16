@@ -878,7 +878,7 @@ td:last-child {
 }
 
 tbody .colhead_dark {
-  background: rgba(82,85,92, 0.7);
+  background: #014848;
   color: #fff!important;
   vertical-align: middle
 }
