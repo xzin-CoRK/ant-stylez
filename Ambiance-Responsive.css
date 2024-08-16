@@ -275,7 +275,6 @@ ul.thin li {
 }
 #wrapper,.thin {
   margin: 0 auto;
-  background: rgba(24,32,41,0.45);
 }
 
 #content {
@@ -1359,7 +1358,7 @@ div.contenth #quickpost {
 }
 
 .bbcode_bar {
-  width: 100% !important;
+  width: 95% !important;
   background: #373a42;
   border: 1px solid #5b5e64;
   border-bottom: none;
