@@ -2017,8 +2017,8 @@ body.style_color_pink .collage_image:hover {
   #content {
     width: 90%;
   }
-  #wrapper,.thin {
-    width: 950px;
+  #wrapper {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1001px) and (max-width: 1099px) {#header {width: 950px;}  #content {width: 950px;}  #wrapper,.thin { width: 950px;}}
