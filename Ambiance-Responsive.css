@@ -272,6 +272,7 @@ ul.thin li {
   margin: auto;
   max-width: 1600px;
   position: relative;
+  padding-bottom: 8px;
   background: rgba(35, 37, 42, 0.75);
 }
 #wrapper,.thin {
@@ -633,6 +634,10 @@ div.linkbox {
 
 #banner {
   width: 900px
+}
+
+#reply_box {
+  padding: 12px;
 }
 
 #torrents #content .thin h2 a img {
