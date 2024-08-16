@@ -634,11 +634,11 @@ div.linkbox {
 }
 
 #banner {
-  width: 900px
+  width: 900px;
 }
 
 #reply_box {
-  padding 12px;
+  padding: 12px;
 }
 
 #torrents #content .thin h2 a img {
