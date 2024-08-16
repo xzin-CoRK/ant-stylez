@@ -270,7 +270,6 @@ ul.thin li {
 
 #header {
   margin: auto;
-  width: 90%;
   max-width: 1650px;
   position: relative;
 }
@@ -281,7 +280,6 @@ ul.thin li {
 
 #content {
   margin: auto;
-  width: 90%;
   max-width: 1650px;
   overflow: hidden
 }
@@ -289,7 +287,6 @@ ul.thin li {
 #footer {
   margin: auto;
   margin-top: 2px;
-  width: 90%;
   max-width: 1650px;
   padding: 10px;
   text-align: center;
@@ -2034,6 +2031,30 @@ body.style_color_pink .collage_image:hover {
 @media screen and (min-width: 1001px) and (max-width: 1099px) {#header {width: 950px;}  #content {width: 950px;}  #wrapper,.thin { width: 950px;}}
 @media screen and (min-width: 901px) and (max-width: 1000px)  {#header {width: 850px;}  #content {width: 850px;}  #wrapper,.thin { width: 850px;}}
 @media screen and (min-width: 801px) and (max-width: 900px)   {#header {width: 775px;}  #content {width: 775px;}  #wrapper,.thin { width: 775px;}} */
+
+@media screen and (min-width: 913px) {
+  #header {
+    width: 90%;
+  }
+  #content {
+    width: 90%;
+  }
+  #footer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  #header {
+    width: 100%;
+  }
+  #content {
+    width: 100%;
+  }
+  #footer {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 800px) {                         #header {width: 100%;}   #content  {width: 100%;}  #wrapper,.thin { width: 100%;  margin: 0 auto} #content,.sidebar {overflow: hidden} 
   #logo a::before {font-size: 32px;}
