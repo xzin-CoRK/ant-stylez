@@ -269,6 +269,7 @@ ul.thin li {
 }
 
 #header {
+  margin: auto;
   width: 1015px;
   position: relative;
   background: rgba(24, 32, 41, 0.45);
@@ -276,11 +277,13 @@ ul.thin li {
 #wrapper,.thin { width: 1015px;  margin: 0 auto; background: rgba(24,32,41,0.45);}
 
 #content {
+  margin: auto;
   width: 1015px;
   overflow: hidden
 }
 
 #footer {
+  margin: auto;
   margin-top: 2px;
   padding: 10px;
   text-align: center;
