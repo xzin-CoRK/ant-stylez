@@ -354,7 +354,7 @@ p.min_padding {
 }
 
 .nav_dropdown #user_menu {
-  width: inherit;
+  width: 100%;
 }
 
 #menu > ul > .nav_dropdown:hover {
