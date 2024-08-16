@@ -273,6 +273,7 @@ ul.thin li {
   max-width: 1600px;
   position: relative;
   padding-bottom: 5px;
+  background: rgba(35, 37, 42, 0.9);
 }
 #wrapper,.thin {
   margin: 0 auto;
@@ -281,7 +282,8 @@ ul.thin li {
 #content {
   margin: auto;
   max-width: 1600px;
-  overflow: hidden
+  overflow: hidden;
+  background: rgba(35, 37, 42, 0.9);
 }
 
 #footer {
@@ -291,6 +293,7 @@ ul.thin li {
   padding: 10px;
   text-align: center;
   clear: both;
+  background: rgba(35, 37, 42, 0.9);
 }
 
 .center {
