@@ -272,6 +272,7 @@ ul.thin li {
   margin: auto;
   max-width: 1600px;
   position: relative;
+  padding-bottom: 5px;
 }
 #wrapper,.thin {
   margin: 0 auto;
@@ -772,7 +773,7 @@ input[value="Make Default"] {
 }
 
 .head {
-  background: #1a707b;
+  background: #383D44;
   box-sizing: border-box;
 }
 
