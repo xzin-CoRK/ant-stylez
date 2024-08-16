@@ -1362,6 +1362,7 @@ div.contenth #quickpost {
 }
 
 .bbcode_bar {
+  width: 100% !important;
   background: #373a42;
   border: 1px solid #5b5e64;
   border-bottom: none;
