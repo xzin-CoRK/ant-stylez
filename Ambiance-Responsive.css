@@ -270,7 +270,7 @@ ul.thin li {
 
 #header {
   margin: auto;
-  max-width: 1650px;
+  max-width: 1600px;
   position: relative;
 }
 #wrapper,.thin {
@@ -280,14 +280,14 @@ ul.thin li {
 
 #content {
   margin: auto;
-  max-width: 1650px;
+  max-width: 1600px;
   overflow: hidden
 }
 
 #footer {
   margin: auto;
   margin-top: 2px;
-  max-width: 1650px;
+  max-width: 1600px;
   padding: 10px;
   text-align: center;
   clear: both;
