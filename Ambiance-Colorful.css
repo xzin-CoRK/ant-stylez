@@ -764,17 +764,15 @@ input[value="Make Default"] {
 .body, .pad {
   padding: 12px;
 }
-.head {
-  padding: 9px 12px;
-}
 
 .pad + .pad {
   padding-top: 0;
 }
 
 .head {
-  background: #383D44;
+  background: #0C120C;
   box-sizing: border-box;
+  padding: 9px 12px;
 }
 
 #reseed_box {
@@ -875,8 +873,6 @@ td:last-child {
 }
 
 .colhead_dark {
-  background: rgba(82,85,92, 0.7);
-  opacity: 0.7;
   color: #fff;
   vertical-align: middle
 }
