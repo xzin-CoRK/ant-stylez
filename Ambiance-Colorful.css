@@ -1020,7 +1020,7 @@ span.center_poll {
 }
 
 .torrent_table .colhead_dark {
-  background-color: rgba(85,88,95, 0.75);
+  background-color: #014848;
   height: 36px!important;
   vertical-align: middle!important
 }
