@@ -271,11 +271,11 @@ ul.thin li {
 #header {
   margin: auto;
   width: 90%;
+  max-width: 1650px;
   position: relative;
   background: rgba(24, 32, 41, 0.45);
 }
 #wrapper,.thin {
-  max-width: 1650px;
   margin: 0 auto;
   background: rgba(24,32,41,0.45);
 }
@@ -283,6 +283,7 @@ ul.thin li {
 #content {
   margin: auto;
   width: 90%;
+  max-width: 1650px;
   overflow: hidden
 }
 
@@ -290,6 +291,7 @@ ul.thin li {
   margin: auto;
   margin-top: 2px;
   width: 90%;
+  max-width: 1650px;
   padding: 10px;
   text-align: center;
   clear: both;
