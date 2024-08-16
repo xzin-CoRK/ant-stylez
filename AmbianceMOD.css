@@ -274,7 +274,11 @@ ul.thin li {
   position: relative;
   background: rgba(24, 32, 41, 0.45);
 }
-#wrapper,.thin { width: 1015px;  margin: 0 auto; background: rgba(24,32,41,0.45);}
+#wrapper,.thin {
+  max-width: 1650px;
+  margin: 0 auto;
+  background: rgba(24,32,41,0.45);
+}
 
 #content {
   margin: auto;
