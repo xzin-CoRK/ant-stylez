@@ -1783,19 +1783,19 @@ caption {
 /* Background Additions (to be pulled from CSS eventually) */
 body.style_bg_carbon {
   background-color: #53565c;
-  background-image: url('images/carbon.jpg');
+  background-image: url('https://anthelion.me/static/styles/ambiance/images/carbon.jpg');
 }
 body.style_bg_constellation {
   background-color: #53565c;
-  background-image: url('images/constellation.jpg');
+  background-image: url('https://anthelion.me/static/styles/ambiance/images/constellation.jpg');
 }
 body.style_bg_space {
   background-color: #53565c;
-  background-image: url('images/space.jpg');
+  background-image: url('https://anthelion.me/static/styles/ambiance/images/space.jpg');
 }
 body.style_bg_haze {
   background-color: #53565c;
-  background-image: url('images/haze.png');
+  background-image: url('https://anthelion.me/static/styles/ambiance/images/haze.png');
 }
 
 /* Dark Additions */
