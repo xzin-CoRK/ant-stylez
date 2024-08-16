@@ -4,14 +4,14 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(~/fonts/OpenSans.ttf) format('truetype');
+  src: local('Open Sans'), local('OpenSans'), url(https://cdn.jsdelivr.net/gh/xzin-CoRK/ant-stylez@a0780425bdd447957487adb246028d8d4cd91f88/fonts/OpenSans.ttf) format('truetype');
 }
 /* latin */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(~/fonts/OpenSans-Semibold.ttf) format('truetype');
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://cdn.jsdelivr.net/gh/xzin-CoRK/ant-stylez@a0780425bdd447957487adb246028d8d4cd91f88/fonts/OpenSans-Semibold.ttf) format('truetype');
 }
 
 * {
