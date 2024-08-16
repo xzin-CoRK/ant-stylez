@@ -89,10 +89,6 @@ h1,h2 {
   font-size: 23px;
 }
 
-.header {
-  background: rgba(24,32,41,0.45);
-}
-
 .header h2, #content h2 {
   margin-left: 10px;
 }
@@ -272,7 +268,11 @@ ul.thin li {
   display: block
 }
 
-#header {width: 1015px; position: relative;}
+#header {
+  width: 1015px;
+  position: relative;
+  background: rgba(24, 32, 41, 0.45);
+}
 #wrapper,.thin { width: 1015px;  margin: 0 auto; background: rgba(24,32,41,0.45);}
 
 #content {
@@ -2008,6 +2008,19 @@ body.style_color_pink .collage_image:hover {
 }
 
 /* Responsive Changes (TO RECHECK) */
+
+/* Percentage based width for wider monitors */
+@media screen and (min-width: 1100px) {
+  #header {
+    width: 90%;
+  }
+  #content {
+    width: 90%;
+  }
+  #wrapper,.thin {
+    width: 950px;
+  }
+}
 @media screen and (min-width: 1001px) and (max-width: 1099px) {#header {width: 950px;}  #content {width: 950px;}  #wrapper,.thin { width: 950px;}}
 @media screen and (min-width: 901px) and (max-width: 1000px)  {#header {width: 850px;}  #content {width: 850px;}  #wrapper,.thin { width: 850px;}}
 @media screen and (min-width: 801px) and (max-width: 900px)   {#header {width: 775px;}  #content {width: 775px;}  #wrapper,.thin { width: 775px;}}
