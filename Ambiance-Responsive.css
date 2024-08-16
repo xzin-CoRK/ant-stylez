@@ -1177,10 +1177,7 @@ td.avatar {
 table.forum_post td.body {
   width: 646px;
 }
-/* Because Firefox apparently doesn't understand "100%" in tables */
-#forums table.forum_post td.body > div {
-  max-width: 730px
-}
+
 .last_edited {
   opacity: 0.6;
 }
