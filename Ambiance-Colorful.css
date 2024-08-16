@@ -1,4 +1,4 @@
-/* Ambiance-Responsive Stylesheet */
+/* Ambiance-Colorful Stylesheet */
 /* latin-ext */
 @font-face {
   font-family: 'Open Sans';
@@ -609,6 +609,7 @@ p.min_padding {
 }
 
 #settings_sections {
+  background: #1a707b;
   padding-bottom: 10px;
   padding: 0px;
 }
@@ -771,7 +772,7 @@ input[value="Make Default"] {
 }
 
 .head {
-  background: rgba(82,85,92, 0.75);
+  background: #1a707b;
   box-sizing: border-box;
 }
 
