@@ -2067,6 +2067,8 @@ body.style_color_pink .collage_image:hover {
 /* Mobile layout */
 @media screen and (max-width: 575px) {
   #header {
+    display: flex;
+    flex-direction: column;
     --row-height:35px;
     width: 100%;
     position: fixed;
@@ -2080,9 +2082,6 @@ body.style_color_pink .collage_image:hover {
     background-color: #254955;
     overflow: hidden;
   }
-  #header:after{
-    content: "\25B6"
-  }
   #logo {
     width: 64px;
     height: 64px;
@@ -2095,9 +2094,6 @@ body.style_color_pink .collage_image:hover {
     border-bottom: groove #254955;
     box-shadow: 0 50px 70px #00745a, 0 160px 160px #254955
   }
-  #header:hover:after{
-    content: ""
-  }
   #content  {width: 100%;}
   #wrapper,.thin { width: 100%;  margin: 0 auto}
   #content,.sidebar {overflow: hidden} 
@@ -2109,7 +2105,7 @@ body.style_color_pink .collage_image:hover {
   #logo a::before {font-size: 32px;}
   #menu {font-size: 10px;}
   #userinfo > ul { height: 35px;}
-  #userinfo {position: inherit;}
+  #userinfo {position: initial;}
   #stats_required {display: none !important;}
   #noty_bottomRight_layout_container {right: 100px;}
   #userinfo_major {display: none;}
@@ -2117,6 +2113,9 @@ body.style_color_pink .collage_image:hover {
   #menu > ul {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  #menu > ul > li {
+    flex-basis: 33%;
   }
   #menu > ul > li > a {
     height: 35px;
