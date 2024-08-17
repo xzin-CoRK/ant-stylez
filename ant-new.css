@@ -2073,12 +2073,11 @@ body.style_color_pink .collage_image:hover {
     width: 100%;
     position: fixed;
     top:0;
-    height: 64px;
-    max-height: 64px;
+    height: 0;
     left: 0;
     transform: translateY(0);
     transition:.2s;
-    padding-bottom: 32px;
+    padding-bottom: 60px;
     background-color: #254955;
     overflow: hidden;
   }
@@ -2089,8 +2088,8 @@ body.style_color_pink .collage_image:hover {
     font-size: 20px;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 90%;
+    transform: translateY(-50%);
   }
   #logo {
     width: 64px;
@@ -2104,7 +2103,10 @@ body.style_color_pink .collage_image:hover {
     border-bottom: groove #254955;
     box-shadow: 0 50px 70px #00745a, 0 160px 160px #254955
   }
-  #content  {width: 100%;}
+  #content  {
+    margin-top: 64px;
+    width: 100%;
+  }
   #wrapper,.thin { width: 100%;  margin: 0 auto}
   #content,.sidebar {overflow: hidden} 
   #logo a {
@@ -2125,7 +2127,7 @@ body.style_color_pink .collage_image:hover {
     flex-wrap: wrap;
   }
   #menu > ul > li {
-    flex-basis: 33%;
+    flex-basis: 50%;
   }
   #menu > ul > li > a {
     height: 35px;
