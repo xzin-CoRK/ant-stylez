@@ -2152,7 +2152,9 @@ body.style_color_pink .collage_image:hover {
   .nav_dropdown > div { margin-top: 35px; }
   #searchbars {
     margin-top: 200px;
-    display: grid;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    height: inherit;
   }
   #searchbars > .searchform {
     margin: 0;
