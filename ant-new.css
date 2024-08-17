@@ -472,7 +472,7 @@ p.min_padding {
 }
 
 #menu > ul > li {
-  /* position: relative; */
+  position: relative;
   list-style: none;
   display: flex;
   flex: 1 1 75px;
@@ -2092,11 +2092,8 @@ body.style_color_pink .collage_image:hover {
   #menu > ul > li:nth-of-type(11) {
     border-radius: inherit;
   }
-  #menu::after {
-    content: "";
-  display: table;
-  clear: both;
-  }
+  .nav_dropdown > div {margin-top: 35px;}
+  #searchbars {margin-top: 20px;}
 }
 
 /* Slick carousel settings */
