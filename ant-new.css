@@ -782,7 +782,7 @@ input[value="Make Default"] {
 }
 
 .head {
-  background: #373a42;
+  background: #254955;
   box-sizing: border-box;
   padding: 9px 12px;
 }
@@ -874,7 +874,7 @@ td:last-child {
 }
 
 .colhead {
-  background: #014848;
+  background: #254955;
   font-weight: 300;
   color: #fff
 }
