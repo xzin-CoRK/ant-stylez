@@ -2155,13 +2155,13 @@ body.style_color_pink .collage_image:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 8px;
   }
   #searchbars > form {
     flex: 1 1 auto;
     margin: 0;
-    width: 33.3%;
+    width: 50%;
     background: rgba(59,63,71, 0.9);
-    padding: 8px 0;
   }
 }
 
