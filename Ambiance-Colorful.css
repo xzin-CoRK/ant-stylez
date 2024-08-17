@@ -317,6 +317,10 @@ p.min_padding {
   margin-bottom: 8px;
 }
 
+.breadcrumbs {
+  padding-right: 12px;
+}
+
 .box_addartists .body, .box_addtag .body {
   padding: 10px;
 }

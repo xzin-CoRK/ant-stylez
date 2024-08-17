@@ -321,6 +321,10 @@ p.min_padding {
   padding: 10px;
 }
 
+.breadcrumbs {
+  padding-right: 12px;
+}
+
 .pad h3,.pad h4,.padbox h3,.padbox h4 {
   margin-top: 0;
   padding-top: 0
