@@ -2103,7 +2103,7 @@ body.style_color_pink .collage_image:hover {
   }
   #header:hover {
     max-height: initial;
-    height: clamp(200px, calc(var(--row-height)*15), 100%);
+    height: clamp(200px, calc(var(--row-height)*14), 100%);
     transition: all .6s cubic-bezier(1, .01, .3, 1.31);
     border-bottom: 1px groove #427787;
   }
@@ -2131,7 +2131,6 @@ body.style_color_pink .collage_image:hover {
     margin: 4px;
   }
   #userinfo_major > li > a {
-    text-decoration: underline;
     font-weight: bold;
   }
   #userinfo > ul {
