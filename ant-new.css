@@ -2078,6 +2078,10 @@ body.style_color_pink .collage_image:hover {
     transition:.2s;
     padding-bottom: 32px;
     background-color: #254955;
+    overflow: hidden;
+  }
+  #header:after{
+    content: "\25B6"
   }
   #logo {
     width: 64px;
@@ -2090,6 +2094,9 @@ body.style_color_pink .collage_image:hover {
     transition: all .6s cubic-bezier(1, .01, .3, 1.31);
     border-bottom: groove #254955;
     box-shadow: 0 50px 70px #00745a, 0 160px 160px #254955
+  }
+  #header:hover:after{
+    content: ""
   }
   #content  {width: 100%;}
   #wrapper,.thin { width: 100%;  margin: 0 auto}
