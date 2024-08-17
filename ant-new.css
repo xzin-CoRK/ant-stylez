@@ -2074,7 +2074,7 @@ body.style_color_pink .collage_image:hover {
   #menu {font-size: 10px;}
   #userinfo > ul { height: 35px;}
   #userinfo {position: inherit;}
-  #stats_required {display: none;}
+  #stats_required {display: none; !important}
   #noty_bottomRight_layout_container {right: 100px;}
   #userinfo_major {display: none;}
   .autocomplete_suggestions {width: 50%;}
@@ -2091,6 +2091,11 @@ body.style_color_pink .collage_image:hover {
   }
   #menu > ul > li:nth-of-type(11) {
     border-radius: inherit;
+  }
+  #menu::after {
+    content: "";
+  display: table;
+  clear: both;
   }
 }
 
