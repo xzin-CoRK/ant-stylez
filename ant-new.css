@@ -109,9 +109,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-size: 12px;
   line-height: 1.6;
 }
-#userform #settings_sections h2 a, .rule_short {
-  color: #f0f0f0;
-}
 
 li {
   margin: 5px 15px;
