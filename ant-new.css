@@ -2130,6 +2130,10 @@ body.style_color_pink .collage_image:hover {
     text-align: center;
     margin: 4px;
   }
+  #userinfo_major > li > a {
+    text-decoration: underline;
+    font-weight: bold;
+  }
   #userinfo > ul {
     height: 35px;
     display: flex;
