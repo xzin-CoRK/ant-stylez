@@ -2066,6 +2066,9 @@ body.style_color_pink .collage_image:hover {
 
 /* Mobile layout */
 @media screen and (max-width: 575px) {
+  * {
+    scroll-margin-top: 64px
+  }
   #header {
     display: flex;
     flex-direction: column;
@@ -2081,6 +2084,8 @@ body.style_color_pink .collage_image:hover {
     background-color: #254955;
     overflow: hidden;
   }
+
+  /* Show an expand icon on the menu bar */
   #header::after {
     content: "▾";
     display: block;
@@ -2102,6 +2107,11 @@ body.style_color_pink .collage_image:hover {
     transition: all .6s cubic-bezier(1, .01, .3, 1.31);
     border-bottom: groove #254955;
     box-shadow: 0 50px 70px #00745a, 0 160px 160px #254955
+  }
+
+  /* Clear the menu bar expand icon */
+  #header:hover::after {
+    content: "";
   }
   #content  {
     margin-top: 64px;
@@ -2139,6 +2149,7 @@ body.style_color_pink .collage_image:hover {
   #menu > ul > li:nth-of-type(11) {
     border-radius: inherit;
   }
+  #nav_links > #links_menu { margin-left: 0px; }
   .nav_dropdown > div { margin-top: 35px; }
   #searchbars { margin-top: 20px; }
   form[name="wiki"] { display: none; }
