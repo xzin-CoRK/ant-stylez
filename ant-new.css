@@ -472,10 +472,10 @@ p.min_padding {
 }
 
 #menu > ul > li {
-  position: relative;
+  /* position: relative; */
   list-style: none;
   display: flex;
-  flex: 1 1 90px;
+  flex: 1 1 75px;
   margin: 0;
 }
 
@@ -2073,6 +2073,8 @@ body.style_color_pink .collage_image:hover {
   #logo a::before {font-size: 32px;}
   #menu {font-size: 10px;}
   #userinfo > ul { height: 35px;}
+  #userinfo {position: inherit;}
+  #stats_required {display: none;}
   #noty_bottomRight_layout_container {right: 100px;}
   #userinfo_major {display: none;}
   .autocomplete_suggestions {width: 50%;}
@@ -2083,6 +2085,12 @@ body.style_color_pink .collage_image:hover {
   #menu > ul > li > a {
     height: 35px;
     line-height: 35px;
+  }
+  #menu > ul > li:nth-of-type(1) {
+    border-radius: inherit;
+  }
+  #menu > ul > li:nth-of-type(11) {
+    border-radius: inherit;
   }
 }
 
