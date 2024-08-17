@@ -2101,7 +2101,7 @@ body.style_color_pink .collage_image:hover {
     width: 64px;
     height: 64px;
   }
-  #header:focus {
+  #header:hover {
     max-height: initial;
     height: clamp(200px, calc(var(--row-height)*15), 100%);
     transition: all .6s cubic-bezier(1, .01, .3, 1.31);
@@ -2110,7 +2110,7 @@ body.style_color_pink .collage_image:hover {
   }
 
   /* Clear the menu bar expand icon */
-  #header:focus::after {
+  #header:hover::after {
     content: "";
   }
   #content  {
