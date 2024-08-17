@@ -2131,10 +2131,12 @@ body.style_color_pink .collage_image:hover {
   #noty_bottomRight_layout_container {right: 100px;}
   #userinfo_major {display: none;}
   .autocomplete_suggestions {width: 50%;}
-  #header ul:not(#userinfo_major, #userinfo_stats) {
-    display: flex;
+  #menu > ul {
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+  }
+  #menu > ul > li {
+    flex-basis: 50%;
   }
   #menu > ul > li > a {
     height: 40px;
@@ -2148,11 +2150,16 @@ body.style_color_pink .collage_image:hover {
   }
   #nav_links > #links_menu { margin-left: 0px; }
   .nav_dropdown > div { margin-top: 35px; }
-  #searchbars {
+  #searchbars > ul {
     margin-top: 200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  #searchbars > ul > li {
+    flex: 1 1 auto;
+    margin: 0;
+    width: 33.3%;
   }
   #searchbars > form {
     flex-basis: 45%;
