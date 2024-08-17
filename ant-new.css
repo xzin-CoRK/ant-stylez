@@ -2105,8 +2105,7 @@ body.style_color_pink .collage_image:hover {
     max-height: initial;
     height: clamp(200px, calc(var(--row-height)*15), 100%);
     transition: all .6s cubic-bezier(1, .01, .3, 1.31);
-    border-bottom: groove #254955;
-    box-shadow: 0 50px 70px #254955, 0 160px 160px #254955
+    border-bottom: 1px groove #427787;
   }
 
   /* Clear the menu bar expand icon */
@@ -2132,12 +2131,10 @@ body.style_color_pink .collage_image:hover {
   #noty_bottomRight_layout_container {right: 100px;}
   #userinfo_major {display: none;}
   .autocomplete_suggestions {width: 50%;}
-  #menu > ul {
-    flex-direction: row;
+  #header ul:not(#userinfo_major, #userinfo_stats) {
+    display: flex;
     flex-wrap: wrap;
-  }
-  #menu > ul > li {
-    flex-basis: 50%;
+    width: 100%;
   }
   #menu > ul > li > a {
     height: 40px;
