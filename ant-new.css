@@ -2151,8 +2151,15 @@ body.style_color_pink .collage_image:hover {
   }
   #nav_links > #links_menu { margin-left: 0px; }
   .nav_dropdown > div { margin-top: 35px; }
-  #searchbars { margin-top: 20px; }
-  form[name="wiki"] { display: none; }
+  #searchbars {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #searchbars > form {
+    flex-basis: 45%;
+  }
 }
 
 /* Slick carousel settings */
