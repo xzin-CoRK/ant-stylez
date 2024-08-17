@@ -2154,7 +2154,10 @@ body.style_color_pink .collage_image:hover {
     margin-top: 200px;
     display: inline-grid;
     grid-template-columns: auto auto;
-    height: inherit;
+    grid-row-gap: 12px;
+    height: initial;
+    justify-items: stretch;
+    align-items: center;
   }
   #searchbars > .searchform {
     margin: 0;
