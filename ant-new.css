@@ -2081,6 +2081,7 @@ body.style_color_pink .collage_image:hover {
   #logo {
     width: 64px;
     height: 64px;
+    margin: 0;
   }
   #header:hover {
     height: clamp(200px, calc(var(--row-height)*15), 100%);
@@ -2095,6 +2096,7 @@ body.style_color_pink .collage_image:hover {
   #logo a {
     background-image: url(https://anthelion.me/static/common/avatars/default.png);
     width: 64px;
+    background-position: center;
   }
   #logo a::before {font-size: 32px;}
   #menu {font-size: 10px;}
