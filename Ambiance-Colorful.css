@@ -273,7 +273,7 @@ ul.thin li {
   max-width: 1600px;
   position: relative;
   padding-bottom: 8px;
-  background: rgba(35, 37, 42, 0.75);
+  background: rgba(35, 37, 42, 0.25);
 }
 #wrapper,.thin {
   margin: 0 auto;
