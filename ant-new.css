@@ -2182,6 +2182,10 @@ body.style_color_pink .collage_image:hover {
     background: rgba(59,63,71, 0.9);
     padding: 8px;
   }
+  #forums #content .thin > table.forum_post > tbody > tr > td > div {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /* Slick carousel settings */
