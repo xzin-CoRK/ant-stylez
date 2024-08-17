@@ -2067,6 +2067,7 @@ body.style_color_pink .collage_image:hover {
 /* Mobile layout */
 @media screen and (max-width: 575px) {
   #header {
+    --row-height:35px;
     width: 100%;
     position: fixed;
     top:0;
@@ -2078,12 +2079,16 @@ body.style_color_pink .collage_image:hover {
     padding-bottom: 32px;
     opacity: 0;
   }
+  #logo {
+    width: 64px;
+    height: 64px;
+  }
   #header:hover {
     height: clamp(200px, calc(var(--row-height)*15), 100%);
     opacity: 1;
     transition: all .6s cubic-bezier(1, .01, .3, 1.31);
-    border-bottom: groove #008d6d;
-    box-shadow: 0 50px 70px #00745a, 0 160px 160px #080808
+    border-bottom: groove #254955;
+    box-shadow: 0 50px 70px #00745a, 0 160px 160px #254955
   }
   #content  {width: 100%;}
   #wrapper,.thin { width: 100%;  margin: 0 auto}
