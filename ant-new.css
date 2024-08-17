@@ -2136,9 +2136,13 @@ body.style_color_pink .collage_image:hover {
     align-items: center;
   }
   #userinfo > ul > li {
-    flex-grow: 1 1 25px;
+    flex-grow: 1;
   }
   #stats_required {display: none !important;}
+  span.stat.tooltip {
+    font-weight: bold;
+    color: #1D818E;
+  }
   #noty_bottomRight_layout_container {right: 100px;}
   .autocomplete_suggestions {width: 50%;}
   #menu > ul {
