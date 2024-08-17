@@ -2159,6 +2159,8 @@ body.style_color_pink .collage_image:hover {
   }
   #searchbars > form {
     flex-basis: 45%;
+    background: rgba(59,63,71, 0.9);
+    padding: 8px 0;
   }
 }
 
