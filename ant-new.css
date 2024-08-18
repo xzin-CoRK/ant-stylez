@@ -2413,6 +2413,10 @@ body.style_color_pink .collage_image:hover {
   width: calc(71% - 40px);
 }
 
+/* User history page */
+tr.notify_shout {
+    background-color: #292c31;
+}
 
 div.top10title {
     overflow: hidden;
