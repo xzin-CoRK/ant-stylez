@@ -2227,6 +2227,11 @@ body.style_color_pink .collage_image:hover {
     background: rgba(59,63,71, 0.9);
     padding: 8px;
   }
+    #links_menu {
+        display: grid;
+        grid-template-columns: 100px 100px;
+        width: 200px;
+    }
 
   /* shared settings */
   .sidebar {
