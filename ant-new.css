@@ -288,7 +288,7 @@ ul.thin li {
   overflow: hidden;
   background: rgba(35, 37, 42, 0.75);
 }
-#site_debug table.debug_table_head {
+#site_debug {
   max-width: 1280px;
 }
 
@@ -542,7 +542,6 @@ p.min_padding {
 
 .alertbar.modbar > a {
   margin: 0 5px;
-  max-width: 1280px;
 }
 
 .torrent_table .group a, .ui-state-hover, a.ui-state-hover, li.ui-state-hover {
@@ -565,6 +564,11 @@ p.min_padding {
 
 #alerts.countdown_wrapper .alertbar {
   color: #fff;
+}
+
+#alerts {
+  max-width: 1280px;
+  margin: auto;
 }
 
 .alertbar[style="border:1px solid #360;background-color:#120;margin-bottom:3px;"] {
@@ -2037,8 +2041,8 @@ body.style_color_pink .collage_image:hover {
   #header {
     width: 90%;
   }
-  .alertbar.modbar {
-    width: 90;
+  #alerts {
+    width: 90%;
   }
   #content {
     width: 90%;
@@ -2052,8 +2056,8 @@ body.style_color_pink .collage_image:hover {
   #header {
     width: 100%;
   }
-  .alertbar.modbar {
-    width: 100;
+  #alerts {
+    width: 100%;
   }
   #content {
     width: 100%;
