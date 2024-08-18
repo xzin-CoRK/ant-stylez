@@ -2351,12 +2351,31 @@ body.style_color_pink .collage_image:hover {
     table.top10table > tbody > tr.colhead {
         display: none;
     }
-    div.top10title {
-        overflow: hidden;
-    }
     div.top10titlewrapper {
         height: initial !important;
     }
+    /* Torrent page */
+    #torrents > #wrapper > #content > div.torrents_details > div.thin > div.main_column {
+        width: 100% !important;
+    }
+    #torrents > #wrapper > #content > div.torrents_details > div.thin > div.sidebar > div.box_tags > ul{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    div.torrent_ratings > table > tbody > tr {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        align-items: center;
+    }
+    div.torrent_ratings > table > tbody > tr > td {
+        margin: auto;
+    }
+    .providers .links {
+        position: inherit;
+    }
+}
+div.top10title {
+    overflow: hidden;
 }
 
 /* Slick carousel settings */
