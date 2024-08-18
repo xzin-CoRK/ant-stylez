@@ -2248,10 +2248,9 @@ body.style_color_pink .collage_image:hover {
     max-width: 75px;
     text-wrap: wrap;
   }
-  /* Torrent Search Page */
+  /* Torrent Search */
     input.inputtext.fti_basic {
-        max-width: 60%;
-        box-sizing: border-box;
+        max-width: 60vw;
     }
     #tagfilter > td.ft_taglist {
         display: flex;
@@ -2262,8 +2261,7 @@ body.style_color_pink .collage_image:hover {
         margin-top: initial;
     }
     #tags {
-        max-width: 60%;
-        box-sizing: border-box;
+        max-width: 60vw;
     }
     #tags_type0 {
         align-self: start;
@@ -2273,9 +2271,11 @@ body.style_color_pink .collage_image:hover {
     }
     #keywordlist > td:last-of-type > div {
         column-count: 2 !important;
+        max-width: 60vw;
     }
     #taglist > td:last-of-type > div {
         column-count: 2 !important;
+        max-width: 60vw;
     }
     #order > .ft_order {
         display: flex;
@@ -2283,15 +2283,40 @@ body.style_color_pink .collage_image:hover {
         gap: 4px;
     }
     .ft_order > .ft_order_by {
-        max-width: 60%;
+        max-width: 60vw;
     }
     .ft_order > .ft_order_way {
-        max-width: 60%;
+        max-width: 60vw;
     }
     #ft_container > table > tbody > tr:last-of-type > td:last-of-type {
         display: flex;
         flex-direction: column;
         gap: 4px;
+    }
+    .ft_groupname {
+        display: flex;
+        flex-direction: column;
+    }
+    input.fti_advanced {
+        max-width: 30%;
+    }
+    #rip_specifics > td.ft_ripspecifics {
+        display: grid;
+        grid-template-columns: 125px 125px;
+        grid-gap: 4px;
+    }
+    .ftr_advanced:not(#album_torrent_name, #artist_name, #file_list, #torrent_description) > td:last-of-type {
+        display: grid;
+        grid-template-columns: 125px 125px;
+        grid-gap: 4px;
+    }
+    #misc > td:last-of-type > span:last-of-type {
+        margin-left: initial;
+    }
+    #misc > td.ft_misc > span > select[name=agerating],
+    #misc > td.ft_misc > span > select[name=adoptable],
+    #misc > td.ft_misc > span > select[name=seen]{
+        width: 100%;
     }
 }
 
