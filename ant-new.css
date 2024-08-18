@@ -2265,8 +2265,10 @@ body.style_color_pink .collage_image:hover {
     }
     #tagfilter > td.ft_taglist {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 4px;
+        max-width: 60vw;
     }
     #tagfilter > td.ft_taglist > a {
         margin-top: initial;
@@ -2274,12 +2276,7 @@ body.style_color_pink .collage_image:hover {
     #tags {
         max-width: 60vw;
     }
-    #tags_type0 {
-        align-self: start;
-    }
-    #tags_type1 {
-        align-self: start;
-    }
+    
     #keywordlist > td:last-of-type > div {
         column-count: 2 !important;
         max-width: 60vw;
@@ -2341,6 +2338,24 @@ body.style_color_pink .collage_image:hover {
     #requests > #wrapper > #content > div.thin > div.main_column > div.box > div.pad > table > tbody > tr > td:nth-of-type(2) {
         display: inline-block;
         max-width: 60vw;
+    }
+    /* Top 10 Page */
+    table.top10table > tbody {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 400px;
+    }
+    table.top10table > tbody > tr {
+        display: contents;
+    }
+    table.top10table > tbody > tr.colhead {
+        display: none;
+    }
+    div.top10title {
+        overflow: hidden;
+    }
+    div.top10titlewrapper {
+        height: initial !important;
     }
 }
 
