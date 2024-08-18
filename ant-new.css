@@ -2080,6 +2080,8 @@ body.style_color_pink .collage_image:hover {
   * {
     scroll-margin-top: 64px
   }
+
+  /* Header Stuff */
   #header {
     display: flex;
     flex-direction: column;
@@ -2193,11 +2195,27 @@ body.style_color_pink .collage_image:hover {
     background: rgba(59,63,71, 0.9);
     padding: 8px;
   }
+
+  /* shared settings */
+  .sidebar {
+    width: inherit;
+    height: inherit;
+  }
+  .main_column {
+    width: inherit;
+  }
+  /* Limit input sizes so they don't go offscreen */
+  .inputtext {
+    max-width: 60vw;
+  }
+
+  /* Forums */
   #forums #content .thin > table.forum_post > tbody > tr > td > div {
     display: flex;
     flex-wrap: wrap;
   }
-  /* User Settings Page */
+    
+  /* User Settings */
   /* Show the settings sidebar on top, rather than to the side.  Settings will scroll under it. */
   #userform {
     display: flex;
@@ -2209,10 +2227,6 @@ body.style_color_pink .collage_image:hover {
   .settings_sidebar {
     width: 100%;
     min-height: 250px;
-  }
-  .sidebar {
-    width: inherit;
-    height: inherit;
   }
   #settings_sections {
     width: 100%;
@@ -2234,18 +2248,15 @@ body.style_color_pink .collage_image:hover {
   #settings_search {
     flex-grow: 1;
   }
-  #userform div.main_column {
-    width: 100%;
-    overflow: scroll;
+  #timezone {
+    width: 60vw;
   }
-  /* Limit input sizes so they don't go offscreen */
-  .inputtext {
-    max-width: 60vw;
-  }
+  
   #userform > div.main_column > table > tbody > tr > td:nth-of-type(2) {
     display: inline-block;
     max-width: 60vw;
   }
+    
   /* Upload Page */
   /* More compact labels */
   #upload td.label {
@@ -2259,6 +2270,7 @@ body.style_color_pink .collage_image:hover {
   form.create_form > table.layout > tbody > tr > td > input {
     max-width: 60vw;
   }
+    
   /* Torrent Search */
     input.inputtext.fti_basic {
         max-width: 60vw;
@@ -2276,7 +2288,6 @@ body.style_color_pink .collage_image:hover {
     #tags {
         max-width: 60vw;
     }
-    
     #keywordlist > td:last-of-type > div {
         column-count: 2 !important;
         max-width: 60vw;
@@ -2326,10 +2337,8 @@ body.style_color_pink .collage_image:hover {
     #misc > td.ft_misc > span > select[name=seen]{
         width: 100%;
     }
+    
     /* Requests Page */
-    #requests > #wrapper > #content > div.thin > div.main_column {
-        width: 100%;
-    }
     #requests > #wrapper > #content > div.thin > div.sidebar > div.box_artists > ul,
     #requests > #wrapper > #content > div.thin > div.sidebar > div.box_tags > ul{
         display: grid;
@@ -2339,6 +2348,7 @@ body.style_color_pink .collage_image:hover {
         display: inline-block;
         max-width: 60vw;
     }
+    
     /* Top 10 Page */
     table.top10table > tbody {
         display: grid;
@@ -2354,6 +2364,7 @@ body.style_color_pink .collage_image:hover {
     div.top10titlewrapper {
         height: initial !important;
     }
+    
     /* Torrent page */
     #torrents > #wrapper > #content > div.torrents_details > div.thin > div.main_column {
         width: 100% !important;
@@ -2373,7 +2384,36 @@ body.style_color_pink .collage_image:hover {
     .providers .links {
         position: inherit;
     }
+    /* Uploaded page */
+    form.search_form[name=torrents] > table > tbody > tr > td > input {
+        max-width: 60vw;
+    }
+    form.search_form[name=torrents] > table > tbody > tr > td:nth-of-type(2) {
+        max-width: 60vw;
+        display: inline-block;
+    }
+    /* arrange release specifics selects as a grid */
+    form.search_form[name=torrents] > table > tbody > tr:nth-of-type(2) > td:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 120px 120px;
+        grid-gap: 4px;
+    }
+    /* make labels narrower */
+    form.search_form[name=torrents] > table > tbody > tr > td:nth-of-type(1) {
+        width: 75px;
+    }
 }
+
+/* Responsive redesign changes */
+
+/* Slots page */
+
+/* Center the quote above the slot machine */
+#store > #wrapper > #content > div.thin > h3 {
+  width: calc(71% - 40px);
+}
+
+
 div.top10title {
     overflow: hidden;
 }
