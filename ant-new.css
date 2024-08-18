@@ -337,7 +337,7 @@ p.min_padding {
   padding-top: 0
 }
 
-/* Change to grid
+
 .sidebar {
   float: right;
   width: 28%;
@@ -347,7 +347,17 @@ p.min_padding {
   width: 71%;
   float: left
 }
-*/
+
+
+#userform > div.sidebar {
+  float: right;
+  width: 28%;
+  height: 100%
+}
+#userform > div.main_column {
+  width: 71%;
+  float: left
+}
 
 .sidebar .box .pad form {
   padding-bottom: 20px;
@@ -2123,7 +2133,7 @@ body.style_color_pink .collage_image:hover {
   }
   #header:hover {
     max-height: initial;
-    height: clamp(200px, calc(var(--row-height)*14), 100%);
+    height: clamp(200px, calc(var(--row-height)*15), 100%);
     transition: all .6s cubic-bezier(1, .01, .3, 1.31);
     border-bottom: 1px groove #427787;
   }
