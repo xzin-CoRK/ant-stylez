@@ -2211,7 +2211,7 @@ body.style_color_pink .collage_image:hover {
   }
   .settings_sidebar {
     width: 100%;
-    min-height: 315px;
+    min-height: 250px;
   }
   .sidebar {
     width: inherit;
@@ -2230,6 +2230,9 @@ body.style_color_pink .collage_image:hover {
   #settings_sections > ul > li:nth-of-type(9) {
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+  #settings_sections > ul > li > h2 {
+    margin: 0;
   }
   #settings_search {
     flex-grow: 1;
