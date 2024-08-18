@@ -290,6 +290,7 @@ ul.thin li {
 }
 #site_debug {
   max-width: 1280px;
+  margin: auto;
 }
 
 #footer {
