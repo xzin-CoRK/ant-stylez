@@ -337,11 +337,17 @@ p.min_padding {
   padding-top: 0
 }
 
+/* Change to grid
 .sidebar {
   float: right;
   width: 28%;
   height: 100%
 }
+.main_column {
+  width: 71%;
+  float: left
+}
+*/
 
 .sidebar .box .pad form {
   padding-bottom: 20px;
@@ -350,11 +356,6 @@ p.min_padding {
 .body {
   background: rgba(44,47,54, 0.6);
   padding: 5px 10px 10px 10px;
-}
-
-.main_column {
-  width: 71%;
-  float: left
 }
 
 .nav_dropdown > div {
@@ -2047,6 +2048,12 @@ body.style_color_pink .collage_image:hover {
   #footer {
     width: 90%;
   }
+  
+    #index > #wrapper > #content > div.thin {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        gap: 8px;
+    }
 }
 
 @media screen and (max-width: 912px) {
