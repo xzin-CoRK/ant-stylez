@@ -2201,6 +2201,7 @@ body.style_color_pink .collage_image:hover {
     display: flex;
     flex-wrap: wrap;
   }
+  /* Show the settings sidebar on top, rather than to the side.  Settings will scroll under it. */
   #userform {
     display: flex;
     flex-direction: column;
@@ -2220,18 +2221,20 @@ body.style_color_pink .collage_image:hover {
     width: 100%;
     z-index: 999;
   }
-  .settings_sidebar > ul {
+  #settings_sections > ul {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(44,47,54) !important;
   }
-  #settings_sections > ul > li:last-of-type {
-    margin: auto;
-    padding: 8px;
+  /* Make the Access Settings full width so that the search bar and submit button are grouped together */
+  #settings_sections > ul > li:nth-of-type(9) {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
   #settings_search {
     flex-grow: 1;
   }
-
   #userform div.main_column {
     width: 100%;
     overflow: scroll;
