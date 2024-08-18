@@ -1385,7 +1385,7 @@ div.contenth #quickpost {
 }
 
 .bbcode_bar {
-  width: 95% !important;
+  width: 100% !important;
   background: #373a42;
   border: 1px solid #5b5e64;
   border-bottom: none;
@@ -2434,9 +2434,11 @@ body.style_color_pink .collage_image:hover {
 tr.notify_shout {
     background-color: #292c31;
 }
-
 div.top10title {
     overflow: hidden;
+}
+#quickreplytext > div {
+    padding: 8px 25px;
 }
 
 /* Slick carousel settings */
