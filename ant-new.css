@@ -2238,6 +2238,22 @@ body.style_color_pink .collage_image:hover {
     width: 100%;
     overflow: scroll;
   }
+  /* Limit input sizes so they don't go offscreen */
+  #styleurl,
+  #timezone,
+  #avatar,
+  #profile_title,
+  #cur_pass,
+  #irckey,
+  #email,
+  #new_pass_1,
+  #new_pass_2 {
+    max-width: 60vw;
+  }
+    #userform > div.main_column > table > tbody > tr > td:nth-of-type(2) {
+        display: inline-block;
+        max-width: 60vw;
+    }
   /* Upload Page */
   /* More compact labels */
   #upload td.label {
@@ -2247,6 +2263,9 @@ body.style_color_pink .collage_image:hover {
   #release_desc_tr > td > input {
     max-width: 75px;
     text-wrap: wrap;
+  }
+  form.create_form > table.layout > tbody > tr > td > input {
+    max-width: 60vw;
   }
   /* Torrent Search */
     input.inputtext.fti_basic {
