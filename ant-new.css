@@ -2201,6 +2201,36 @@ body.style_color_pink .collage_image:hover {
     display: flex;
     flex-wrap: wrap;
   }
+  #userform {
+    display: flex;
+    flex-direction: column;
+  }
+  #userform div.settings_sidebar {
+    width: 100%;
+  }
+  .settings_sidebar {
+    min-height: 275px;
+  }
+  .sidebar {
+    width: inherit;
+    height: inherit;
+  }
+  #settings_section {
+    width: 100%;
+    z-index: 999;
+  }
+  #settings_section > ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #settings_section > ul > li:last-of-type {
+    margin: auto;
+    padding: 8px;
+  }
+  #userform div.main_column {
+    width: 100%;
+    overflow: scroll;
+  }
 }
 
 /* Slick carousel settings */
