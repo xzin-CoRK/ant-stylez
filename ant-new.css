@@ -345,13 +345,15 @@ p.min_padding {
   width: inherit;
 }
 
-
-#userform > div.sidebar {
+/* Force old percentage-based layout for certain pages (user settings, store) */
+#userform > div.sidebar,
+#store > #wrapper > #content > div.thin > div.sidebar {
   float: right;
   width: 28%;
   height: 100%
 }
-#userform > div.main_column {
+#userform > div.main_column,
+#store > #wrapper > #content > div.thin > div.main_column {
   width: 71%;
   float: left
 }
@@ -380,7 +382,7 @@ p.min_padding {
 }
 
 #menu > ul > .nav_dropdown:hover {
-  background-color: #509599;
+  background-color: #71b0c3;
 }
 
 #menu > ul > .nav_dropdown > div > a:hover {
@@ -2088,14 +2090,14 @@ body.style_color_pink .collage_image:hover {
 
 /* Non-mobile view */
 @media screen and (min-width: 576px) {
-  /* use css grid to control layout of sidebar & main content for homepage, torrent details page */
+  /* use css grid to control layout of sidebar & main content for homepage, torrent details page, store */
   #index > #wrapper > #content > div.thin,
   #torrents > #wrapper > #content > div.torrents_details > div.thin {
     display: grid;
     grid-template-columns: 71% 28%;
     gap: 8px;
   }
-  #torrents > #wrapper > #content > div.torrents_details > div.thin > div.header {
+  #torrents > #wrapper > #content > div.torrents_details > div.thin > div.header{
     grid-column-start: 1;
     grid-column-end: 3;
   }
@@ -2447,6 +2449,12 @@ body.style_color_pink .collage_image:hover {
 /* Responsive redesign changes */
 
 /* Slots page */
+
+/* Slightly wider bet amount input */
+#store > #wrapper > #content > div.thin > div.main_column > div.box.pad:nth-of-type(1) > table > tbody > tr {
+    display: flex;
+    gap: 24px;
+}
 
 /* Center the quote above the slot machine */
 #store > #wrapper > #content > div.thin > h3 {
