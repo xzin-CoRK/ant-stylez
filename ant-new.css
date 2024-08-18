@@ -273,7 +273,7 @@ ul.thin li {
 
 #header {
   margin: auto;
-  max-width: 1600px;
+  max-width: 1280px;
   position: relative;
   padding-bottom: 8px;
   background: rgba(35, 37, 42, 0.25);
@@ -284,7 +284,7 @@ ul.thin li {
 
 #content {
   margin: auto;
-  max-width: 1600px;
+  max-width: 1280px;
   overflow: hidden;
   background: rgba(35, 37, 42, 0.75);
 }
@@ -292,7 +292,7 @@ ul.thin li {
 #footer {
   margin: auto;
   margin-top: 2px;
-  max-width: 1600px;
+  max-width: 1280px;
   padding: 10px;
   text-align: center;
   clear: both;
@@ -539,6 +539,7 @@ p.min_padding {
 
 .alertbar.modbar > a {
   margin: 0 5px;
+  max-width: 1280px;
 }
 
 .torrent_table .group a, .ui-state-hover, a.ui-state-hover, li.ui-state-hover {
@@ -2033,6 +2034,9 @@ body.style_color_pink .collage_image:hover {
   #header {
     width: 90%;
   }
+  .alertbar.modbar {
+    width: 90;
+  }
   #content {
     width: 90%;
   }
@@ -2044,6 +2048,9 @@ body.style_color_pink .collage_image:hover {
 @media screen and (max-width: 912px) {
   #header {
     width: 100%;
+  }
+  .alertbar.modbar {
+    width: 100;
   }
   #content {
     width: 100%;
