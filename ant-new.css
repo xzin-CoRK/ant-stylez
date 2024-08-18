@@ -339,13 +339,10 @@ p.min_padding {
 
 
 .sidebar {
-  float: right;
-  width: 28%;
-  height: 100%
+  width: inherit;
 }
 .main_column {
-  width: 71%;
-  float: left
+  width: inherit;
 }
 
 
@@ -2058,12 +2055,9 @@ body.style_color_pink .collage_image:hover {
   #footer {
     width: 90%;
   }
-  
-    #index > #wrapper > #content > div.thin {
-        display: grid;
-        grid-template-columns: 70% 30%;
-        gap: 8px;
-    }
+  #wrapper,.thin {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 912px) {
@@ -2090,6 +2084,27 @@ body.style_color_pink .collage_image:hover {
   #menu {font-size: 10px;}
   #userinfo > ul { height: 35px;}
   #noty_bottomRight_layout_container {right: 100px;}
+}
+
+/* Non-mobile view */
+@media screen and (min-width: 576px) {
+  /* use css grid to control layout of sidebar & main content for homepage, torrent details page */
+  #index > #wrapper > #content > div.thin,
+  #torrents > #wrapper > #content > div.torrents_details > div.thin {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 8px;
+  }
+  #torrents > #wrapper > #content > div.torrents_details > div.thin > div.header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #torrents > #wrapper > #content > div.torrents_details > div.thin > div.sidebar {
+    order: 2;
+  }
+  #index > #wrapper > #content > div.thin > div.sidebar {
+    order: 2;
+  }
 }
 
 /* Mobile layout */
@@ -2268,6 +2283,9 @@ body.style_color_pink .collage_image:hover {
   #timezone {
     width: 60vw;
   }
+  #userform > div.main_column {
+    width: 100%;
+  }
   
   #userform > div.main_column > table > tbody > tr > td:nth-of-type(2) {
     display: inline-block;
@@ -2440,6 +2458,7 @@ div.top10title {
 #quickreplytext > div {
     padding: 8px 25px;
 }
+
 
 /* Slick carousel settings */
 .slick-dots li button:before {
