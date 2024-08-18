@@ -288,6 +288,9 @@ ul.thin li {
   overflow: hidden;
   background: rgba(35, 37, 42, 0.75);
 }
+#site_debug table.debug_table_head {
+  max-width: 1280px;
+}
 
 #footer {
   margin: auto;
