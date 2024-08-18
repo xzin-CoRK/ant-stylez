@@ -2209,6 +2209,7 @@ body.style_color_pink .collage_image:hover {
     width: 100%;
   }
   .settings_sidebar {
+    width: 100%;
     min-height: 275px;
   }
   .sidebar {
@@ -2219,7 +2220,7 @@ body.style_color_pink .collage_image:hover {
     width: 100%;
     z-index: 999;
   }
-  #settings_section > ul {
+  .settings_sidebar > ul {
     display: flex;
     flex-wrap: wrap;
   }
@@ -2227,6 +2228,10 @@ body.style_color_pink .collage_image:hover {
     margin: auto;
     padding: 8px;
   }
+  #settings_search {
+    flex-grow: 1;
+  }
+
   #userform div.main_column {
     width: 100%;
     overflow: scroll;
