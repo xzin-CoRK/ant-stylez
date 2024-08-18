@@ -613,7 +613,6 @@ p.min_padding {
 }
 
 #searchbars ul li {
-  display: inline;
   float: left;
   margin: 0 7px 0 0;
   position: relative;
@@ -626,20 +625,18 @@ p.min_padding {
 
 #searchbars ul li form {
   display: inline;
-  margin: 0;
 }
 
 #settings_sections {
   background: #1a707b;
-  padding-bottom: 10px;
-  padding: 0px;
+  padding-bottom: 5px;
 }
 
 #cat-selector ul li {
   display: inline;
-  width: 12em;
+  /*width: 12em;
   height: 1em;
-  float: left;
+  float: left;*/
 }
 
 div.linkbox {
@@ -1639,7 +1636,6 @@ form tr {
 #mediadetails_tr span {
   display: inline-block;
   width: 6em;
-  display: none;
 }
 #mediadetails_tr select {
   width: 9em;
@@ -1768,7 +1764,7 @@ caption {
 
 /* Fucking noty */
 .noty_bar {
-	border-left: #3eaca7 2px solid;
+	border-left: #4b7b89 2px solid;
 }
 
 #noty_bottomRight_layout_container li {
@@ -2123,7 +2119,7 @@ body.style_color_pink .collage_image:hover {
     border-bottom: 1px groove #427787;
   }
 
-  /* Clear the menu bar expand icon */
+  /* Clear the menu bar expand icon when active */
   #header:hover::after {
     content: "";
   }
@@ -2201,6 +2197,7 @@ body.style_color_pink .collage_image:hover {
     display: flex;
     flex-wrap: wrap;
   }
+  /* User Settings Page */
   /* Show the settings sidebar on top, rather than to the side.  Settings will scroll under it. */
   #userform {
     display: flex;
@@ -2241,6 +2238,61 @@ body.style_color_pink .collage_image:hover {
     width: 100%;
     overflow: scroll;
   }
+  /* Upload Page */
+  /* More compact labels */
+  #upload td.label {
+    min-width: inherit;
+  }
+  /* More compact BBCode buttons */
+  #release_desc_tr > td > input {
+    max-width: 75px;
+    text-wrap: wrap;
+  }
+  /* Torrent Search Page */
+    input.inputtext.fti_basic {
+        max-width: 60%;
+        box-sizing: border-box;
+    }
+    #tagfilter > td.ft_taglist {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    #tagfilter > td.ft_taglist > a {
+        margin-top: initial;
+    }
+    #tags {
+        max-width: 60%;
+        box-sizing: border-box;
+    }
+    #tags_type0 {
+        align-self: start;
+    }
+    #tags_type1 {
+        align-self: start;
+    }
+    #keywordlist > td:last-of-type > div {
+        column-count: 2 !important;
+    }
+    #taglist > td:last-of-type > div {
+        column-count: 2 !important;
+    }
+    #order > .ft_order {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .ft_order > .ft_order_by {
+        max-width: 60%;
+    }
+    .ft_order > .ft_order_way {
+        max-width: 60%;
+    }
+    #ft_container > table > tbody > tr:last-of-type > td:last-of-type {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
 }
 
 /* Slick carousel settings */
