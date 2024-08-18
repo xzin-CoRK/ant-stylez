@@ -2239,21 +2239,13 @@ body.style_color_pink .collage_image:hover {
     overflow: scroll;
   }
   /* Limit input sizes so they don't go offscreen */
-  #styleurl,
-  #timezone,
-  #avatar,
-  #profile_title,
-  #cur_pass,
-  #irckey,
-  #email,
-  #new_pass_1,
-  #new_pass_2 {
+  .inputtext {
     max-width: 60vw;
   }
-    #userform > div.main_column > table > tbody > tr > td:nth-of-type(2) {
-        display: inline-block;
-        max-width: 60vw;
-    }
+  #userform > div.main_column > table > tbody > tr > td:nth-of-type(2) {
+    display: inline-block;
+    max-width: 60vw;
+  }
   /* Upload Page */
   /* More compact labels */
   #upload td.label {
@@ -2336,6 +2328,19 @@ body.style_color_pink .collage_image:hover {
     #misc > td.ft_misc > span > select[name=adoptable],
     #misc > td.ft_misc > span > select[name=seen]{
         width: 100%;
+    }
+    /* Requests Page */
+    #requests > #wrapper > #content > div.thin > div.main_column {
+        width: 100%;
+    }
+    #requests > #wrapper > #content > div.thin > div.sidebar > div.box_artists > ul,
+    #requests > #wrapper > #content > div.thin > div.sidebar > div.box_tags > ul{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #requests > #wrapper > #content > div.thin > div.main_column > div.box > div.pad > table > tbody > tr > td:nth-of-type(2) {
+        display: inline-block;
+        max-width: 60vw;
     }
 }
 
