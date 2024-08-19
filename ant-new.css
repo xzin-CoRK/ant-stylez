@@ -2588,7 +2588,7 @@ body.style_color_pink .collage_image:hover {
         width: 50px;
     }
     .chip {
-        height: 75px;
+        height: 65px;
     }
     #store > #wrapper > #content > div.thin > div.main_column > div:nth-of-type(2) > table > tbody > tr {
         display: grid !important;
