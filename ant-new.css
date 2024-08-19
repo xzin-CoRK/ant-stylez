@@ -346,15 +346,22 @@ p.min_padding {
 }
 
 /* Force old percentage-based layout for certain pages (user settings, store) */
-#userform > div.sidebar,
 #store > #wrapper > #content > div.thin > div.sidebar {
   float: right;
   width: 28%;
   height: 100%
 }
-#userform > div.main_column,
+
 #store > #wrapper > #content > div.thin > div.main_column {
   width: 71%;
+  float: left
+}
+#userform > div.sidebar {
+  width: 20%;
+  float: right;
+}
+#userform > div.main_column {
+  width: 78%;
   float: left
 }
 
@@ -2108,7 +2115,6 @@ body.style_color_pink .collage_image:hover {
     order: 2;
   }
   
-  /* Force user page to use old 2-column styling on desktop */
   #user > #wrapper > #content > div.thin > div.sidebar {
     float: right;
     width: 28%;
@@ -2117,7 +2123,10 @@ body.style_color_pink .collage_image:hover {
   #user > #wrapper > #content > div.thin > div.main_column {
     width: 71%;
     float: left
-  }  
+  }
+    #settings_sections {
+        max-width: 17vw;
+    }
 }
 
 /* Mobile layout */
