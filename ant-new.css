@@ -2558,6 +2558,7 @@ body.style_color_pink .collage_image:hover {
         grid-template-columns: auto auto;
     }
     
+    /* Slots page */
     #store > #wrapper > #content > div.thin {
         display: flex;
         flex-direction: column;
@@ -2585,6 +2586,9 @@ body.style_color_pink .collage_image:hover {
     #reelsb > img,
     #reelsc > img {
         width: 50px;
+    }
+    .chip {
+        height: 75px;
     }
     #store > #wrapper > #content > div.thin > div.main_column > div:nth-of-type(2) > table > tbody > tr {
         display: grid !important;
