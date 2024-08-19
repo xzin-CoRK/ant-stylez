@@ -2176,6 +2176,7 @@ body.style_color_pink .collage_image:hover {
     #collage .sidebar,
     #requests .sidebar {
         width: 28%;
+        float: right;
     }
     #collage .main_column,
     #requests .main_column {
