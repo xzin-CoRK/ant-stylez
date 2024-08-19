@@ -1,17 +1,17 @@
-/* Ambiance-Colorful Stylesheet */
+/* Ambiance Stylesheet */
 /* latin-ext */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(https://anthelion.me/static/styles/fonts/OpenSans.ttf) format('truetype');
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/OpenSans.ttf) format('truetype');
 }
 /* latin */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://anthelion.me/static/styles/fonts/OpenSans-Semibold.ttf) format('truetype');
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../fonts/OpenSans-Semibold.ttf) format('truetype');
 }
 
 * {
@@ -263,7 +263,7 @@ ul.thin li {
 }
 
 #logo a {
-  background-image: url('https://anthelion.me/static/styles/public/images/logo.png');
+  background-image: url('../public/images/logo.png');
   background-size: contain;
   border: none;
   width: 230px;
@@ -278,7 +278,7 @@ ul.thin li {
   padding-bottom: 8px;
   background: rgba(35, 37, 42, 0.25);
 }
-#wrapper,.thin {
+#wrapper,.thin { 
   margin: 0 auto;
 }
 
@@ -373,7 +373,7 @@ p.min_padding {
   background: rgba(44,47,54, 0.6);
   padding: 5px 10px 10px 10px;
 }
-
+  
 .nav_dropdown > div {
   position: absolute;
   width: 126.10px;
@@ -466,7 +466,7 @@ p.min_padding {
 }
 
 #userinfo_stats {
-  color: white;
+  color: #ffffff;
   width: auto;
   z-index: 1001
 }
@@ -534,7 +534,7 @@ p.min_padding {
 .alertbar {
   background-color: #61929fe0;
   text-align: center;
-  color: #fff;
+  color: #fff;  
   height: 18px;
   margin: 2px 0;
   padding: 9px 0;
@@ -651,9 +651,6 @@ p.min_padding {
 
 #cat-selector ul li {
   display: inline;
-  /*width: 12em;
-  height: 1em;
-  float: left;*/
 }
 
 div.linkbox {
@@ -1785,30 +1782,30 @@ caption {
 }
 
 #noty_bottomRight_layout_container li {
-	background-color: rgba(82,85,92, 0.8) !important;
-	color: #E9E9E9 !important;
-	border: none !important;
+    background-color: rgba(82,85,92, 0.8) !important;
+    color: #E9E9E9 !important;
+    border: none !important;
 }
 
 .noty_buttons {
-	background-color: rgba(44,47,54, 0.8) !important;
-	border-top: none !important;
+    background-color: rgba(44,47,54, 0.8) !important;
+    border-top: none !important;
 }
 
 .tag_parody {
-	color: #e8ab3a !important;
+    color: #e8ab3a !important;
 }
 
 .tag_character {
-	color: #529e63 !important;
+    color: #529e63 !important;
 }
 
 .tag_male {
-	color: #3d77e2 !important;
+    color: #3d77e2 !important;
 }
 
 .tag_female {
-	color: #e896e8 !important;
+    color: #e896e8 !important;
 }
 
 .tex_img {
@@ -1818,20 +1815,64 @@ caption {
 /* Background Additions (to be pulled from CSS eventually) */
 body.style_bg_carbon {
   background-color: #53565c;
-  background-image: url('https://anthelion.me/static/styles/ambiance/images/carbon.jpg');
+  background-image: url('images/carbon.jpg');
 }
 body.style_bg_constellation {
   background-color: #53565c;
-  background-image: url('https://anthelion.me/static/styles/ambiance/images/constellation.jpg');
+  background-image: url('images/constellation.jpg');
 }
 body.style_bg_space {
   background-color: #53565c;
-  background-image: url('https://anthelion.me/static/styles/ambiance/images/space.jpg');
+  background-image: url('images/space.jpg');
 }
 body.style_bg_haze {
   background-color: #53565c;
-  background-image: url('https://anthelion.me/static/styles/ambiance/images/haze.png');
+  background-image: url('images/haze.png');
 }
+
+/* New blue theme */
+body button,
+body input[type=button],
+body input[type=submit] {background-color: #518391;}
+body button:hover,
+body input[type=button]:hover,
+body input[type=submit]:hover {background-color: #80a6af;}
+body button:focus,
+body input[type=button]:focus,
+body input[type=submit]:focus {background-color: #80a6af;}
+
+/* Green Additions (original Ambiance)*/
+body.style_color_green body {color: #c6c9c9;}
+body.style_color_green a:hover, .torrent_table .group a:hover {color: #92d4a0;}
+body.style_color_green h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: #83e4a6;}
+body.style_color_green #userform #settings_sections h2 a:hover {color: #71b0c3;}   /*find something green for mouse over.*/
+body.style_color_green .nav_dropdown > div {background: rgba(80,149,153, 0.8);}
+body.style_color_green #menu > ul > .nav_dropdown:hover {background-color: #509599;}
+body.style_color_green .fl_time, .tl_free {color: #77a8b5;}    /*find something green*/
+body.style_color_green #userinfo_stats {color: #abd6ad;}
+body.style_color_green #menu > ul > li:nth-of-type(1) {background-color: #80af8a;}
+body.style_color_green #menu > ul > li:nth-of-type(2) {background-color: #78aa86;}
+body.style_color_green #menu > ul > li:nth-of-type(3) {background-color: #6fa585;}
+body.style_color_green #menu > ul > li:nth-of-type(4) {background-color: #659f82;}
+body.style_color_green #menu > ul > li:nth-of-type(5) {background-color: #58977f;}
+body.style_color_green #menu > ul > li:nth-of-type(6) {background-color: #4b907f;}
+body.style_color_green #menu > ul > li:nth-of-type(7) {background-color: #3d8a81;}
+body.style_color_green #menu > ul > li:nth-of-type(8) {background-color: #2e8180;}
+body.style_color_green #menu > ul > li:nth-of-type(9) {background-color: #247a80;}
+body.style_color_green #menu > ul > li:nth-of-type(10) {background-color: #1a707b;}
+body.style_color_green #menu > ul > li:nth-of-type(11) {background-color: #1e7682;}
+body.style_color_green .alertbar {background-color: rgba(75,144,127, 0.8);}
+body.style_color_green #settings_sections {background: #1a707b;}  /*find something green*/
+body.style_color_green .linkbox > strong {color: #83e4a6;}
+body.style_color_green .head {background: rgba(82,85,92, 0.75);}
+body.style_color_green .colhead {background: rgba(86,89,97, 0.75);}
+body.style_color_green .colhead_dark {background: rgba(82,85,92, 0.7); opacity: 0.7;}
+body.style_color_green tbody .colhead_dark {background: rgba(82,85,92, 0.7);}
+body.style_color_green .torrent_table .colhead_dark {background-color: rgba(85,88,95, 0.75);}
+body.style_color_green .forum_index td.read:after{background-color: #20717C;}
+body.style_color_green .forum_index td.unread:after {background-color: #47B39A;}
+body.style_color_green .staff_post .colhead_dark {background: rgba(56,55,56, 0.8);}
+body.style_color_green .noty_bar {border-left: #3eaca7 2px solid;}
 
 /* Dark Additions */
 body.style_color_dark a.social { background-image: url(images/Social-BW.png); }
@@ -1947,13 +1988,13 @@ body.style_color_chocolat .forum_post.forum_unread {
   border-top: 2px solid #eedfd1;
 }
 body.style_color_chocolat .noty_bar {
-	border-left: #63403C 2px solid;
+    border-left: #63403C 2px solid;
 }
 body.style_color_chocolat .collage_image:hover {
   box-shadow: 0px 0px 0px 3px #63403C;
 }
 body.style_color_chocolat .colhead td, body.style_color_chocolat .colhead_dark td, body.style_color_chocolat td.colhead, body.style_color_chocolat .head {
-	background-color: rgba(56,55,56, 0.8);
+    background-color: rgba(56,55,56, 0.8);
 }
 body.style_color_chocolat #collages .sign,#torrents .sign {
   padding: 5px;
@@ -1962,6 +2003,11 @@ body.style_color_chocolat #collages .sign,#torrents .sign {
 }
 
 /* Pink Additions */
+body.style_color_pink .colhead,
+body.style_color_pink .colhead_dark,
+body.style_color_pink .head {
+    background-color: #3b2655;
+}
 body.style_color_pink a.social { background-image: url(images/Social-Pink.png); }
 body.style_color_pink h1 a, body.style_color_pink h2 a, body.style_color_pink h3 a, body.style_color_pink h4 a, body.style_color_pink h5 a, body.style_color_pink h6 a {
   color: #df7cc2;
@@ -2039,18 +2085,13 @@ body.style_color_pink .forum_post.forum_unread {
   border-top: 2px solid #eedfd1;
 }
 body.style_color_pink .noty_bar {
-	border-left: #ef86d5 2px solid;
+    border-left: #ef86d5 2px solid;
 }
 body.style_color_pink .collage_image:hover {
   box-shadow: 0px 0px 0px 3px #ef86d5;
 }
 
-/* Responsive Changes (TO RECHECK) */
-/* 
-@media screen and (min-width: 1001px) and (max-width: 1099px) {#header {width: 950px;}  #content {width: 950px;}  #wrapper,.thin { width: 950px;}}
-@media screen and (min-width: 901px) and (max-width: 1000px)  {#header {width: 850px;}  #content {width: 850px;}  #wrapper,.thin { width: 850px;}}
-@media screen and (min-width: 801px) and (max-width: 900px)   {#header {width: 775px;}  #content {width: 775px;}  #wrapper,.thin { width: 775px;}} */
-
+/* Responsive Changes */
 @media screen and (min-width: 913px) {
   #header {
     width: 90%;
@@ -2097,7 +2138,7 @@ body.style_color_pink .collage_image:hover {
 
 /* Non-mobile view */
 @media screen and (min-width: 576px) {
-  /* use css grid to control layout of sidebar & main content for homepage, torrent details page, store */
+  /* use css grid to control layout of sidebar & main content for homepage, torrent details page */
   #index > #wrapper > #content > div.thin,
   #torrents > #wrapper > #content > div.torrents_details > div.thin {
     display: grid;
@@ -2126,7 +2167,7 @@ body.style_color_pink .collage_image:hover {
   }
     #settings_sections {
         max-width: 17vw;
-    }
+  }  
 }
 
 /* Mobile layout */
@@ -2180,7 +2221,7 @@ body.style_color_pink .collage_image:hover {
     content: "";
   }
   #wrapper > div:nth-of-type(2) {
-    /* For mods, the Alerts div is 2nd in the layout.  For users, the content div is next.
+    /* For mods, the Alerts div is 2nd div in the layout.  For users, the content div is 2nd.
     So we need to dynamically select the 2nd div, then push it down under the header. */
     margin-top: 64px;
   }
@@ -2190,7 +2231,7 @@ body.style_color_pink .collage_image:hover {
   #wrapper,.thin { width: 100%;  margin: 0 auto}
   #content,.sidebar {overflow: hidden} 
   #logo a {
-    background-image: url(https://anthelion.me/static/styles/public/images/logo.png);
+    background-image: url(images/logo.png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -2467,6 +2508,11 @@ body.style_color_pink .collage_image:hover {
     /* make labels narrower */
     form.search_form[name=torrents] > table > tbody > tr > td:nth-of-type(1) {
         width: 75px;
+    }
+    
+    /* Collections page */
+    #search_terms > td > input {
+        max-width: 60vw;
     }
 }
 
