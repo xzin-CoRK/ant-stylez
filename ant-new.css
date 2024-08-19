@@ -2138,21 +2138,25 @@ body.style_color_pink .collage_image:hover {
 
 /* Non-mobile view */
 @media screen and (min-width: 576px) {
-  /* use css grid to control layout of sidebar & main content for homepage, torrent details page */
+  /*
+    Use css grid to control layout of sidebar & main content for
+    homepage, torrent details page, wiki
+    */
   #index > #wrapper > #content > div.thin,
-  #torrents > #wrapper > #content > div.torrents_details > div.thin {
+  #torrents > #wrapper > #content > div.torrents_details > div.thin,
+  #wiki > #wrapper > #content > div.thin {
     display: grid;
     grid-template-columns: 71% 28%;
     gap: 8px;
   }
-  #torrents > #wrapper > #content > div.torrents_details > div.thin > div.header{
+  #torrents > #wrapper > #content > div.torrents_details > div.thin > div.header,
+  #wiki > #wrapper > #content > div.thin > div.header {
     grid-column-start: 1;
     grid-column-end: 3;
   }
-  #torrents > #wrapper > #content > div.torrents_details > div.thin > div.sidebar {
-    order: 2;
-  }
-  #index > #wrapper > #content > div.thin > div.sidebar {
+  #torrents > #wrapper > #content > div.torrents_details > div.thin > div.sidebar,
+  #index > #wrapper > #content > div.thin > div.sidebar,
+  #wiki > #wrapper > #content > div.thin > div.sidebar {
     order: 2;
   }
   
@@ -2167,7 +2171,16 @@ body.style_color_pink .collage_image:hover {
   }
     #settings_sections {
         max-width: 17vw;
-  }  
+  }
+    /* Collage and requests need percentage-based view for desktop */
+    #collage .sidebar,
+    #requests .sidebar {
+        width: 28%;
+    }
+    #collage .main_column,
+    #requests .main_column {
+        width: 71%;
+    }
 }
 
 /* Mobile layout */
