@@ -2159,8 +2159,12 @@ body.style_color_pink .collage_image:hover {
   #header:hover::after {
     content: "";
   }
-  #content  {
+  #wrapper > div:nth-of-type(2) {
+    /* For mods, the Alerts div is 2nd in the layout.  For users, the content div is next.
+    So we need to dynamically select the 2nd div, then push it down under the header. */
     margin-top: 64px;
+  }
+  #content  {
     width: 100%;
   }
   #wrapper,.thin { width: 100%;  margin: 0 auto}
