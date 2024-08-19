@@ -2577,6 +2577,7 @@ body.style_color_pink .collage_image:hover {
     #reelsa,
     #reelsb,
     #reelsc {
+        height: 65px;
         display: grid;
         grid-template-columns: 50px 50px 50px 50px 50px;
         place-items: center;
