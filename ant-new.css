@@ -2551,6 +2551,12 @@ body.style_color_pink .collage_image:hover {
     #wiki div.sidebar {
         order: 3;
     }
+    
+    /* Artists page */
+    #artist ul.stats.nobullet {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }
 
 /* Responsive redesign changes */
