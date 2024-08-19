@@ -2505,6 +2505,10 @@ body.style_color_pink .collage_image:hover {
     .providers .links {
         position: inherit;
     }
+    #torrents #poll_sidebar {
+        margin-top: initial !important;
+    }
+    
     /* Uploaded page */
     form.search_form[name=torrents] > table > tbody > tr > td > input {
         max-width: 60vw;
