@@ -2451,9 +2451,16 @@ body.style_color_pink .collage_image:hover {
 /* Slots page */
 
 /* Slightly wider bet amount input */
-#store > #wrapper > #content > div.thin > div.main_column > div.box.pad:nth-of-type(1) > table > tbody > tr {
+#store > #wrapper > #content > div.thin > div.main_column > div:nth-of-type(2) > table > tbody > tr {
     display: flex;
     gap: 24px;
+}
+
+#store > #wrapper > #content > div.thin > div.main_column > div:nth-of-type(2) > table > tbody > tr > td:nth-of-type(1) > input,
+#store > #wrapper > #content > div.thin > div.main_column > div:nth-of-type(2) > table > tbody > tr > td:nth-of-type(2) > input{
+    text-align: center;
+    width: 55px;
+    box-sizing: border-box;
 }
 
 /* Center the quote above the slot machine */
