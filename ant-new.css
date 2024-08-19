@@ -2499,8 +2499,16 @@ tr.notify_shout {
 div.top10title {
     overflow: hidden;
 }
+
+/* Forums */
+#forums #quickpost {
+    width: 100%;
+}
 #quickreplytext > div {
     padding: 8px 25px;
+}
+#newthreadtext > tbody > tr > td > #barX {
+    width: 98% !important;
 }
 
 
