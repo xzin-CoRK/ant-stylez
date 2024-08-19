@@ -2557,6 +2557,46 @@ body.style_color_pink .collage_image:hover {
         display: grid;
         grid-template-columns: auto auto;
     }
+    
+    #store > #wrapper > #content > div.thin {
+        display: flex;
+        flex-direction: column;
+    }
+    #store .sidebar {
+        width: 85vw !important;
+        order: 3;
+    }
+    #store h3 {
+        order: 1;
+    }
+    #store div.main_column {
+        width: 85vw !important;
+        order: 2;
+    }
+    #reelsa,
+    #reelsb,
+    #reelsc {
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px 50px;
+        place-items: center;
+        gap: 8px;
+    }
+    #reelsa > img,
+    #reelsb > img,
+    #reelsc > img {
+        width: 50px;
+    }
+    #store > #wrapper > #content > div.thin > div.main_column > div:nth-of-type(2) > table > tbody > tr {
+        display: grid !important;
+        grid-template-columns: auto auto;
+    }
+    #store > #wrapper > #content > div.thin > div.main_column > div:nth-of-type(2) > table > tbody > tr > td:last-of-type {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #store #content {
+        margin-top: 64px;
+    }
 }
 
 /* Responsive redesign changes */
