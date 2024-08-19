@@ -2174,12 +2174,14 @@ body.style_color_pink .collage_image:hover {
   }
     /* Collage and requests need percentage-based view for desktop */
     #collage .sidebar,
-    #requests .sidebar {
+    #requests .sidebar,
+    #artist .sidebar {
         width: 28%;
         float: right;
     }
     #collage .main_column,
-    #requests .main_column {
+    #requests .main_column,
+    #artist .main_column {
         width: 71%;
     }
 }
