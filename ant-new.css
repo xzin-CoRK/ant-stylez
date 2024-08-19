@@ -2107,6 +2107,17 @@ body.style_color_pink .collage_image:hover {
   #index > #wrapper > #content > div.thin > div.sidebar {
     order: 2;
   }
+  
+  /* Force user page to use old 2-column styling on desktop */
+  #user > #wrapper > #content > div.thin > div.sidebar {
+    float: right;
+    width: 28%;
+    height: 100%
+  }
+  #user > #wrapper > #content > div.thin > div.main_column {
+    width: 71%;
+    float: left
+  }  
 }
 
 /* Mobile layout */
