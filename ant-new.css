@@ -2528,6 +2528,23 @@ body.style_color_pink .collage_image:hover {
     #search_terms > td > input {
         max-width: 60vw;
     }
+    
+    /* Wiki */
+    
+    /* Change order to show 1: header, 2: body, 3: related */
+    #wiki div.thin {
+        display: flex;
+        flex-direction: column;
+    }
+    #wiki div.header {
+        order: 1;
+    }
+    #wiki div.main_column {
+        order: 2;
+    }
+    #wiki div.sidebar {
+        order: 3;
+    }
 }
 
 /* Responsive redesign changes */
