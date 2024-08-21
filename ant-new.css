@@ -4,14 +4,14 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(https://anthelion.me/static/styles/fonts/OpenSans.ttf) format('truetype');
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/OpenSans.ttf) format('truetype');
 }
 /* latin */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://anthelion.me/static/styles/fonts/OpenSans-Semibold.ttf) format('truetype');
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../fonts/OpenSans-Semibold.ttf) format('truetype');
 }
 
 * {
@@ -63,7 +63,7 @@ body {
 a {
   text-decoration: none;
   border: none;
-  color: #f0f0f0;
+  color: #80A6AF;
 }
 
 a:hover, .torrent_table .group a:hover {
@@ -263,7 +263,7 @@ ul.thin li {
 }
 
 #logo a {
-  background-image: url('https://anthelion.me/static/styles/public/images/logo.png');
+  background-image: url('../public/images/logo.png');
   background-size: contain;
   border: none;
   width: 230px;
@@ -278,6 +278,7 @@ ul.thin li {
   padding-bottom: 8px;
   background: rgba(35, 37, 42, 0.25);
 }
+
 #wrapper,.thin { 
   margin: 0 auto;
 }
@@ -288,11 +289,6 @@ ul.thin li {
   overflow: hidden;
   background: rgba(35, 37, 42, 0.75);
 }
-
-#head latest_topics {
-    margin: inherit;
-}
-
 #site_debug {
   max-width: 1280px;
   margin: auto;
@@ -860,15 +856,15 @@ a.social {
   list-style: none;
   margin: 3px 0;
   padding: 0 0 0 20px;
-  background: url(https://anthelion.me/static/styles/ambiance/images/Social-Ambiance.png) 0px 0px repeat-y;
+  background: url(images/Social-Ambiance.png) 0px 0px repeat-y;
   background-size: 16px;
   height: 16px;
 }
 a.social::after{ /* pre-load the images */
   position:absolute; width:0; height:0; overflow:hidden; z-index: -1;
-  content: url(https://anthelion.me/static/styles/ambiance/images/Social-Colored.png);
+  content: url(images/Social-Colored.png);
 }
-a.social:hover { background-image: url(https://anthelion.me/static/styles/ambiance/images/Social-Colored.png) !important; }
+a.social:hover { background-image: url(images/Social-Colored.png) !important; }
 
 a.social.tmdb { background-position-y: 0px ;}
 a.social.imdb { background-position-y: -16px; }
@@ -913,12 +909,13 @@ td:last-child {
 }
 
 .colhead_dark {
-  color: #fff;
-  vertical-align: middle
+  color: #ECEBF3;
+  vertical-align: middle;
+  opacity: 1;
 }
 
 tbody .colhead_dark {
-  background: #254955;
+  background: #578390;
   color: #fff!important;
   vertical-align: middle
 }
@@ -1820,36 +1817,58 @@ caption {
 /* Background Additions (to be pulled from CSS eventually) */
 body.style_bg_carbon {
   background-color: #53565c;
-  background-image: url('https://anthelion.me/static/styles/ambiance/images/carbon.jpg');
+  background-image: url('images/carbon.jpg');
 }
 body.style_bg_constellation {
   background-color: #53565c;
-  background-image: url('https://anthelion.me/static/styles/ambiance/images/constellation.jpg');
+  background-image: url('images/constellation.jpg');
 }
 body.style_bg_space {
   background-color: #53565c;
-  background-image: url('https://anthelion.me/static/styles/ambiance/images/space.jpg');
+  background-image: url('images/space.jpg');
 }
 body.style_bg_haze {
   background-color: #53565c;
-  background-image: url('https://anthelion.me/static/styles/ambiance/images/haze.png');
+  background-image: url('images/haze.png');
 }
 
 /* New blue theme */
-body.style_color_default body button,
-body.style_color_default body input[type=button],
-body.style_color_default body input[type=submit] {background-color: #578390;}
-body.style_color_default body button:hover,
-body.style_color_default body input[type=button]:hover,
-body.style_color_default body input[type=submit]:hover {background-color: #80a6af;}
-body.style_color_default body button:focus,
-body.style_color_default body input[type=button]:focus,
-body.style_color_default body input[type=submit]:focus {background-color: #80a6af;}
+body button,
+body input[type=button],
+body input[type=submit] {background-color: #578390;}
+body button:hover,
+body input[type=button]:hover,
+body input[type=submit]:hover {background-color: #80a6af;}
+body button:focus,
+body input[type=button]:focus,
+body input[type=submit]:focus {background-color: #80a6af;}
+
+div.head a,
+div.colheader a {
+  color: #d8d8d8;
+}
+
+h2 a {
+    color: #80A6AF;
+}
+#collage_table tr.row:nth-of-type(2n) {
+    background-color: rgba(39,42,47, 0.6);
+}
+
 
 /* Green Additions (original Ambiance)*/
 body.style_color_green body {color: #c6c9c9;}
 body.style_color_green a:hover, .torrent_table .group a:hover {color: #92d4a0;}
-body.style_color_green h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: #83e4a6;}
+
+body.style_color_green h1 a,
+body.style_color_green h2 a, 
+body.style_color_green h3 a, 
+body.style_color_green h4 a,
+body.style_color_green h5 a,
+body.style_color_green h6 a {
+    color: #83e4a6;
+}
+
 body.style_color_green #userform #settings_sections h2 a:hover {color: #71b0c3;}   /*find something green for mouse over.*/
 body.style_color_green .nav_dropdown > div {background: rgba(80,149,153, 0.8);}
 body.style_color_green #menu > ul > .nav_dropdown:hover {background-color: #509599;}
@@ -1880,7 +1899,7 @@ body.style_color_green .staff_post .colhead_dark {background: rgba(56,55,56, 0.8
 body.style_color_green .noty_bar {border-left: #3eaca7 2px solid;}
 
 /* Dark Additions */
-body.style_color_dark a.social { background-image: url(https://anthelion.me/static/styles/ambiance/images/Social-BW.png); }
+body.style_color_dark a.social { background-image: url(images/Social-BW.png); }
 body.style_color_dark #searchbars {
   background-color: rgba(24,32,41,0.25);
 }
@@ -1928,7 +1947,7 @@ body.style_color_dark .noty_buttons {background-color: rgba(44, 47, 54, 0.7)}
 
 
 /* Chocolat Additions */
-body.style_color_chocolat a.social { background-image: url(https://anthelion.me/static/styles/ambiance/images/Social-Chocolat.png); }
+body.style_color_chocolat a.social { background-image: url(images/Social-Chocolat.png); }
 body.style_color_chocolat h1 a, body.style_color_chocolat h2 a, body.style_color_chocolat h3 a, body.style_color_chocolat h4 a, body.style_color_chocolat h5 a, body.style_color_chocolat h6 a {
   color: #c5b09b;
 }
@@ -2013,7 +2032,7 @@ body.style_color_pink .colhead_dark,
 body.style_color_pink .head {
     background-color: #3b2655;
 }
-body.style_color_pink a.social { background-image: url(https://anthelion.me/static/styles/ambiance/images/Social-Pink.png); }
+body.style_color_pink a.social { background-image: url(images/Social-Pink.png); }
 body.style_color_pink h1 a, body.style_color_pink h2 a, body.style_color_pink h3 a, body.style_color_pink h4 a, body.style_color_pink h5 a, body.style_color_pink h6 a {
   color: #df7cc2;
 }
@@ -2197,6 +2216,12 @@ body.style_color_pink .collage_image:hover {
     scroll-margin-top: 64px
   }
 
+  /* Prevent horizontal scrolling */
+  html, body {
+    overflow-x: hidden;
+    width: 100vw;
+  }
+
   /* Header Stuff */
   #header {
     display: flex;
@@ -2249,10 +2274,11 @@ body.style_color_pink .collage_image:hover {
   #content  {
     width: 100%;
   }
+
   #wrapper,.thin { width: 100%;  margin: 0 auto}
   #content,.sidebar {overflow: hidden} 
   #logo a {
-    background-image: url(https://anthelion.me/static/styles/public/images/logo.png);
+    background-image: url(../public/images/logo.png);
     background-repeat: no-repeat;
     background-position: center;
   }
