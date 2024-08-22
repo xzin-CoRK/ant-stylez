@@ -1854,12 +1854,14 @@ h2 a {
 #collage_table tr.row:nth-of-type(2n) {
     background-color: rgba(39,42,47, 0.6);
 }
+#inbox table.message_table tr.row:nth-of-type(2n) {
+    background-color: rgba(39,42,47, 0.6);
+}
 
 
 /* Green Additions (original Ambiance)*/
 body.style_color_green body {color: #c6c9c9;}
 body.style_color_green a:hover, .torrent_table .group a:hover {color: #92d4a0;}
-
 body.style_color_green h1 a,
 body.style_color_green h2 a, 
 body.style_color_green h3 a, 
@@ -2235,7 +2237,7 @@ body.style_color_pink .collage_image:hover {
     transform: translateY(0);
     transition:.2s;
     padding-bottom: 60px;
-    background-color: #254955;
+    background-color: #578390;
     overflow: hidden;
     z-index: 1000;
   }
@@ -2541,6 +2543,103 @@ body.style_color_pink .collage_image:hover {
     #torrents #poll_sidebar {
         margin-top: initial !important;
     }
+    /* Get the mediainfo to display a little better on mobile screens */
+    table.mediainfo > tbody > tr {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+    }
+    blockquote.mediainfoRaw {
+        max-width: 100vw;
+        white-space: pre-line;
+    }
+    /* Torrent Details table when Grouping is enabled */
+    #torrents #torrent_table tr.group {
+        display: grid;
+        grid-template-columns: 100px calc((100vw - 100px)/2) calc((100vw - 100px)/2);
+    }
+    #torrents #torrent_table tr.group > td:nth-of-type(2) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    #torrents #torrent_table tr.group > td:nth-of-type(5) {
+        grid-column-start: 1;
+    }
+    #torrents #torrent_table tr.group > td:nth-of-type(5):after {
+        content: " snatches";
+        text-align: center;
+    }
+    #torrents #torrent_table tr.group > td:nth-of-type(5):after {
+        content: " snatches";
+        text-align: center;
+    }
+    #torrents #torrent_table tr.group > td:nth-of-type(6):after {
+        content: " seeders";
+        text-align: center;
+    }
+    #torrents #torrent_table tr.group > td:nth-of-type(7):after {
+        content: " leechers";
+        text-align: center;
+    }
+    #torrents #torrent_table tr.group_torrent {
+        display: grid;
+        grid-template-columns: 33.3vw 33.3vw 33.3vw;
+        grid-template-rows: 45px 20px 20px;
+    }
+    #torrents #torrent_table tr.group_torrent > td {
+        text-align: center;
+        padding: 0px;
+    }
+    #torrents #torrent_table tr.group_torrent > td:nth-of-type(1) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: left;
+        padding: 4px;
+    }
+    #torrents #torrent_table tr.group_torrent > td:nth-of-type(2) {display: none;} /* Hide number of files column */
+    #torrents #torrent_table tr.group_torrent > td:nth-of-type(3) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #torrents #torrent_table tr.group_torrent > td:nth-of-type(2):before {content: "Files: ";}
+    #torrents #torrent_table tr.group_torrent > td:nth-of-type(3):before {content: "Uploaded: ";}
+    #torrents #torrent_table tr.group_torrent > td:nth-of-type(3) > span {float: initial;}
+    #torrents #torrent_table tr.group_torrent > td:nth-of-type(4):before {content: "Size: ";}
+    #torrents #torrent_table tr.group_torrent > td:nth-of-type(5):before {content: "Snatches: ";}
+    #torrents #torrent_table tr.group_torrent > td:nth-of-type(6):before {content: "Seeders: ";}
+    #torrents #torrent_table tr.group_torrent > td:nth-of-type(7):before {content: "Leechers: ";}
+    
+    /* Torrents in non-grouped mode */
+    #torrents #torrent_table tr.colhead {
+        display: grid;
+        grid-template-columns: 25vw 50vw;
+    }
+    #torrents #torrent_table tr.colhead > td:nth-of-type(n+3) {
+        display:none;
+    }
+    #torrents #torrent_table tr.torrent {
+        display: grid;
+        grid-template-columns: 25vw 25vw 25vw 25vw;
+    }
+    #torrents #torrent_table tr.torrent > td:nth-of-type(1) {
+        grid-row-start: 1;
+        grid-row-end: 4;
+        margin:auto;
+    }
+    #torrents #torrent_table tr.torrent > td:nth-of-type(2) {
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+    #torrents #torrent_table tr.torrent > td:nth-of-type(4) {
+        text-align: center;
+    }
+    #torrents #torrent_table tr.torrent > td:nth-of-type(3):before {content: "Files: "}
+    #torrents #torrent_table tr.torrent > td:nth-of-type(4):before {content: "Time: "}
+    #torrents #torrent_table tr.torrent > td:nth-of-type(5):before {content: "Size: "}
+    #torrents #torrent_table tr.torrent > td:nth-of-type(6):before {content: "Snatches: "}
+    #torrents #torrent_table tr.torrent > td:nth-of-type(7):before {content: "Seeders: "}
+    #torrents #torrent_table tr.torrent > td:nth-of-type(8):before {content: "Leechers: "}
     
     /* Uploaded page */
     form.search_form[name=torrents] > table > tbody > tr > td > input {
@@ -2560,10 +2659,54 @@ body.style_color_pink .collage_image:hover {
     form.search_form[name=torrents] > table > tbody > tr > td:nth-of-type(1) {
         width: 75px;
     }
+
     
     /* Collections page */
     #search_terms > td > input {
         max-width: 60vw;
+    }
+    #collage #collage_table tr > td:nth-of-type(6) {
+        display: none;
+    }
+    #collage_table tr.colhead {
+        display: grid;
+        grid-template-columns: 25vw 50vw 25vw;
+        justify-items: center;
+        align-items: center;
+    }
+    #collage_table tr.colhead > td:nth-of-type(4),
+    #collage_table tr.colhead > td:nth-of-type(5),
+    #collage_table tr.colhead > td:nth-of-type(7){
+        display: none;
+    }
+    #collage_table tr.row {
+        display: grid;
+        grid-template-columns: 25vw 50vw 25vw;
+        grid-template-rows: 50px 50px;
+        justify-items: center;
+        align-items: center;
+    }
+    #collage_table tr.row td {
+        text-align: center;
+    }
+    #collage #collage_table tr.row > td:nth-of-type(2) {
+        max-height: 50px;
+        overflow: hidden;
+    }
+    #collage_table td {
+        padding: 4px;
+    }
+    #collage #collage_table tr.row > td:nth-of-type(4):before {
+        content: "subs: ";
+        font-style: italic;
+    }
+    #collage #collage_table tr.row > td:nth-of-type(5):before {
+        content: "updated: ";
+        font-style: italic;
+    }
+    #collage #collage_table tr.row > td:nth-of-type(7):before {
+        content: "author: ";
+        font-style: italic;
     }
     
     /* Wiki */
