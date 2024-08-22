@@ -1862,6 +1862,7 @@ h2 a {
 /* Green Additions (original Ambiance)*/
 body.style_color_green body {color: #c6c9c9;}
 body.style_color_green a:hover, .torrent_table .group a:hover {color: #92d4a0;}
+
 body.style_color_green h1 a,
 body.style_color_green h2 a, 
 body.style_color_green h3 a, 
@@ -2223,7 +2224,6 @@ body.style_color_pink .collage_image:hover {
     overflow-x: hidden;
     width: 100vw;
   }
-
   /* Header Stuff */
   #header {
     display: flex;
@@ -2659,7 +2659,6 @@ body.style_color_pink .collage_image:hover {
     form.search_form[name=torrents] > table > tbody > tr > td:nth-of-type(1) {
         width: 75px;
     }
-
     
     /* Collections page */
     #search_terms > td > input {
