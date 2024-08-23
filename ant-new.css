@@ -63,7 +63,7 @@ body {
 a {
   text-decoration: none;
   border: none;
-  color: #80A6AF;
+  color: #71b3c3;
 }
 
 a:hover, .torrent_table .group a:hover {
@@ -2247,7 +2247,7 @@ body.style_color_pink .collage_image:hover {
 
   /* Show an expand icon on the menu bar */
   #header::after {
-    content: "▾";
+    content: "â–¾";
     display: block;
     text-align: center;
     font-size: 20px;
