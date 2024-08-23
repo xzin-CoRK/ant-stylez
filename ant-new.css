@@ -63,7 +63,7 @@ body {
 a {
   text-decoration: none;
   border: none;
-  color: #71b3c3;
+  color: #80A6AF;
 }
 
 a:hover, .torrent_table .group a:hover {
@@ -2247,7 +2247,7 @@ body.style_color_pink .collage_image:hover {
 
   /* Show an expand icon on the menu bar */
   #header::after {
-    content: "â–¾";
+    content: "▾";
     display: block;
     text-align: center;
     font-size: 20px;
@@ -2366,7 +2366,10 @@ body.style_color_pink .collage_image:hover {
   }
 
   /* Forums */
-  #forums #content .thin > table.forum_post > tbody > tr > td > div {
+  #forums #content .thin > table.forum_post > tbody > tr.colhead_dark > td {
+    padding: 6px 10px;
+  }
+  #forums #content .thin > table.forum_post > tbody > tr.colhead_dark > td > div {
     display: flex;
     flex-wrap: wrap;
   }
