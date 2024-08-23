@@ -63,7 +63,7 @@ body {
 a {
   text-decoration: none;
   border: none;
-  color: #80A6AF;
+  color: #71b3c3;
 }
 
 a:hover, .torrent_table .group a:hover {
@@ -414,7 +414,7 @@ p.min_padding {
 }
 
 .fl_time, .tl_free {
-  color: #77a8b5;
+  color: #20BF55;
 }
 
 .nav_dropdown:hover > div > a {
@@ -1842,10 +1842,15 @@ body input[type=submit]:hover {background-color: #80a6af;}
 body button:focus,
 body input[type=button]:focus,
 body input[type=submit]:focus {background-color: #80a6af;}
+div.linkbox > strong {
+    color: #ECEBF3;
+}
 
 div.head a,
-div.colheader a {
-  color: #d8d8d8;
+div.colheader a,
+tr.colhead a {
+  text-decoration: underline;
+  color: #ECEBF3;
 }
 
 h2 a {
@@ -2273,7 +2278,7 @@ body.style_color_pink .collage_image:hover {
   }
   #wrapper > div:nth-of-type(2) {
     /* For mods, the Alerts div is 2nd div in the layout.  For users, the content div is 2nd.
-    So we need to dynamically select the 2nd div, then push it down under the header. */
+    So we need to dynamically select the 2nd div, then push it down below the header. */
     margin-top: 64px;
   }
   #content  {
@@ -2617,35 +2622,35 @@ body.style_color_pink .collage_image:hover {
     #torrents #torrent_table tr.group_torrent > td:nth-of-type(7):before {content: "Leechers: ";}
     
     /* Torrents in non-grouped mode */
-    #torrents #torrent_table tr.colhead {
+    #torrents table.torrent_table tr.colhead {
         display: grid;
         grid-template-columns: 25vw 50vw;
     }
-    #torrents #torrent_table tr.colhead > td:nth-of-type(n+3) {
+    #torrents table.torrent_table tr.colhead > td:nth-of-type(n+3) {
         display:none;
     }
-    #torrents #torrent_table tr.torrent {
+    #torrents table.torrent_table tr.torrent {
         display: grid;
         grid-template-columns: 25vw 25vw 25vw 25vw;
     }
-    #torrents #torrent_table tr.torrent > td:nth-of-type(1) {
+    #torrents table.torrent_table tr.torrent > td:nth-of-type(1) {
         grid-row-start: 1;
         grid-row-end: 4;
         margin:auto;
     }
-    #torrents #torrent_table tr.torrent > td:nth-of-type(2) {
+    #torrents table.torrent_table tr.torrent > td:nth-of-type(2) {
         grid-column-start: 2;
         grid-column-end: 5;
     }
-    #torrents #torrent_table tr.torrent > td:nth-of-type(4) {
+    #torrents table.torrent_table tr.torrent > td:nth-of-type(4) {
         text-align: center;
     }
-    #torrents #torrent_table tr.torrent > td:nth-of-type(3):before {content: "Files: "}
-    #torrents #torrent_table tr.torrent > td:nth-of-type(4):before {content: "Time: "}
-    #torrents #torrent_table tr.torrent > td:nth-of-type(5):before {content: "Size: "}
-    #torrents #torrent_table tr.torrent > td:nth-of-type(6):before {content: "Snatches: "}
-    #torrents #torrent_table tr.torrent > td:nth-of-type(7):before {content: "Seeders: "}
-    #torrents #torrent_table tr.torrent > td:nth-of-type(8):before {content: "Leechers: "}
+    #torrents table.torrent_table tr.torrent > td:nth-of-type(3):before {content: "Files: "}
+    #torrents table.torrent_table tr.torrent > td:nth-of-type(4):before {content: "Time: "}
+    #torrents table.torrent_table tr.torrent > td:nth-of-type(5):before {content: "Size: "}
+    #torrents table.torrent_table tr.torrent > td:nth-of-type(6):before {content: "Snatches: "}
+    #torrents table.torrent_table tr.torrent > td:nth-of-type(7):before {content: "Seeders: "}
+    #torrents table.torrent_table tr.torrent > td:nth-of-type(8):before {content: "Leechers: "}
     
     /* Uploaded page */
     form.search_form[name=torrents] > table > tbody > tr > td > input {
@@ -2738,6 +2743,17 @@ body.style_color_pink .collage_image:hover {
         grid-template-columns: auto auto;
     }
     
+    /* Store page */
+    #store table.store_table tr.row {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+    }
+    #store table.store_table tr.row > td:nth-of-type(3) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-wrap: wrap;
+    }
+    
     /* Slots page */
     #store > #wrapper > #content > div.thin {
         display: flex;
@@ -2786,6 +2802,20 @@ body.style_color_pink .collage_image:hover {
 
 /* Responsive redesign changes */
 
+/* Alternating row color for store table */
+#store table.store_table tr.row:nth-of-type(4n) {
+    background: rgba(39,42,47, 0.6);
+}
+
+/* Alternating row color for userhistory table */
+#userhistory table tr.row:nth-of-type(2n) {
+    background: rgba(39,42,47, 0.6);
+}
+/* Alternating row color for invites table */
+#user table.invite_table tr.row:nth-of-type(2n) {
+    background: rgba(39,42,47, 0.6);
+}
+
 /* Slots page */
 
 /* Slightly wider bet amount input */
@@ -2823,6 +2853,10 @@ div.top10title {
 }
 #newthreadtext > tbody > tr > td > #barX {
     width: 98% !important;
+}
+
+div.latest_topics {
+    font-weight: bold;
 }
 
 
