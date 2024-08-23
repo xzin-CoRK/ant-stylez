@@ -1865,8 +1865,10 @@ h2 a {
 
 
 /* Green Additions (original Ambiance)*/
+body.style_color_green a {color:#f0f0f0;}
 body.style_color_green body {color: #c6c9c9;}
-body.style_color_green a:hover, .torrent_table .group a:hover {color: #92d4a0;}
+body.style_color_green a:hover,
+body.style_color_green.torrent_table .group a:hover {color: #92d4a0;}
 body.style_color_green h1 a,
 body.style_color_green h2 a, 
 body.style_color_green h3 a, 
@@ -1879,7 +1881,29 @@ body.style_color_green h6 a {
 body.style_color_green #userform #settings_sections h2 a:hover {color: #71b0c3;}   /*find something green for mouse over.*/
 body.style_color_green .nav_dropdown > div {background: rgba(80,149,153, 0.8);}
 body.style_color_green #menu > ul > .nav_dropdown:hover {background-color: #509599;}
-body.style_color_green .fl_time, .tl_free {color: #77a8b5;}    /*find something green*/
+body.style_color_green .fl_time,
+body.style_color_green.tl_free {
+  color: #20BF55;    /*find something green*/
+}
+body.style_color_green button,
+body.style_color_green input[type=button],
+body.style_color_green input[type=submit] {
+  font-family: 'Open Sans',Helvetica,Arial,Tahoma,sans-serif;
+  background-color: rgba(45,109,106, 0.5);
+  color: #fff
+}
+
+body.style_color_green button:hover,
+body.style_color_green input[type=button]:hover,
+body.style_color_green input[type=submit]:hover {
+  background-color: #317f8e
+}
+
+body.style_color_green button:focus,
+body.style_color_green input[type=button]:focus,
+body.style_color_green input[type=submit]:focus {
+  background-color: #2f707c
+}
 body.style_color_green #userinfo_stats {color: #abd6ad;}
 body.style_color_green #menu > ul > li:nth-of-type(1) {background-color: #80af8a;}
 body.style_color_green #menu > ul > li:nth-of-type(2) {background-color: #78aa86;}
@@ -1894,7 +1918,8 @@ body.style_color_green #menu > ul > li:nth-of-type(10) {background-color: #1a707
 body.style_color_green #menu > ul > li:nth-of-type(11) {background-color: #1e7682;}
 body.style_color_green .alertbar {background-color: rgba(75,144,127, 0.8);}
 body.style_color_green #settings_sections {background: #1a707b;}  /*find something green*/
-body.style_color_green .linkbox > strong {color: #83e4a6;}
+body.style_color_green div.linkbox > a {color: #83e4a6;}
+body.style_color_green div.linkbox > strong {color: #fff;}
 body.style_color_green .head {background: rgba(82,85,92, 0.75);}
 body.style_color_green .colhead {background: rgba(86,89,97, 0.75);}
 body.style_color_green .colhead_dark {background: rgba(82,85,92, 0.7); opacity: 0.7;}
@@ -2034,6 +2059,9 @@ body.style_color_chocolat #collages .sign,#torrents .sign {
 }
 
 /* Pink Additions */
+body.style_color_pink a {color:#fff;}
+body.style_color_pink #nav_user a,
+body.style_color_pink #nav_links a{color:#fff;}
 body.style_color_pink .colhead,
 body.style_color_pink .colhead_dark,
 body.style_color_pink .head {
@@ -2087,7 +2115,8 @@ body.style_color_pink #menu > ul > .nav_dropdown:hover,
 body.style_color_pink .nav_dropdown > div {
   background-color: #e295d2;
 }
-body.style_color_pink .linkbox > strong { color: #db7bc7; }
+body.style_color_pink div.linkbox > a {color: #db7bc7;}
+body.style_color_pink div.linkbox > strong { color: #fff; }
 body.style_color_pink .alertbar { background-color: rgba(79,48,99, 0.8); }
 body.style_color_pink .hide_torrents > .show_torrents_link:after,
 body.style_color_pink .show_torrents > .show_torrents_link:after,
@@ -2252,7 +2281,7 @@ body.style_color_pink .collage_image:hover {
 
   /* Show an expand icon on the menu bar */
   #header::after {
-    content: "▾";
+    content: "â–¾";
     display: block;
     text-align: center;
     font-size: 20px;
@@ -2855,7 +2884,7 @@ div.top10title {
     width: 98% !important;
 }
 
-div.latest_topics {
+div.head.latest_topics {
     font-weight: bold;
 }
 
