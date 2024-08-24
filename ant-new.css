@@ -27,22 +27,22 @@
 
 .cats_featurefilm:after {
   content: "Film";
-  color: #1D818E;
+  color: #ECEBF3;
   font-size: 20px;
 }
 .cats_shortfilm:after {
   content: "Short";
-  color: #88C796;
+  color: #ECEBF3;
   font-size: 16px;
 }
 .cats_miniseries:after {
   content: "TV";
-  color: #4DC593;
+  color: #ECEBF3;
   font-size: 20px;
 }
 .cats_other:after {
   content: "Other";
-  color: #0D5968;
+  color: #ECEBF3;
   font-size: 16px;
 }
 
@@ -1743,7 +1743,7 @@ a.last_read > svg {
   top: 13px;
   left: 5px;
   border-radius: 2px;
-  background-color: #74C796;
+  background-color: #ECEBF3;
 }
 .show_torrents > .show_torrents_link:before {
   content: "";
@@ -1753,7 +1753,7 @@ a.last_read > svg {
   top: 5px;
   left: 13px;
   border-radius: 2px;
-  background-color: #74C796;
+  background-color: #ECEBF3;
 }
 
 .search_warning {
@@ -1861,6 +1861,15 @@ h2 a {
 }
 #inbox table.message_table tr.row:nth-of-type(2n) {
     background-color: rgba(39,42,47, 0.6);
+}
+
+div.show_torrents:hover:before,
+div.show_torrents:hover:after,
+div.hide_torrents:hover:before,
+div.hide_torrents:hover:after,
+a.show_torrents_link:hover:before,
+a.show_torrents_link:hover:after {
+    background-color: #71b3c3;
 }
 
 
