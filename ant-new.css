@@ -2029,14 +2029,15 @@ body.style_color_chocolat #menu > ul > .nav_dropdown:hover,
 body.style_color_chocolat .nav_dropdown > div {background-color: #603D39;}
 body.style_color_chocolat .linkbox > strong { color: #66433E; }
 body.style_color_chocolat .alertbar { background-color: rgba(138,97,82, 0.8); }
-body.style_color_pink div.show_torrents:hover:before,
-body.style_color_pink div.show_torrents:hover:after,
-body.style_color_pink div.hide_torrents:hover:before,
-body.style_color_pink div.hide_torrents:hover:after,
-body.style_color_pink a.show_torrents_link:hover:before,
-body.style_color_pink a.show_torrents_link:hover:after {
+body.style_color_chocolat div.show_torrents:hover:before,
+body.style_color_chocolat div.show_torrents:hover:after,
+body.style_color_chocolat div.hide_torrents:hover:before,
+body.style_color_chocolat div.hide_torrents:hover:after,
+body.style_color_chocolat a.show_torrents_link:hover:before,
+body.style_color_chocolat a.show_torrents_link:hover:after {
     background-color: #6D4942;
 }
+
 body.style_color_chocolat .forum_index td.read:after { background-color: #845C4F; }
 body.style_color_chocolat .forum_index td.unread:after { background-color: #66433E; }
 body.style_color_chocolat .forum_index td.read_sticky:after,
