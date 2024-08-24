@@ -1939,6 +1939,15 @@ body.style_color_green .forum_index td.unread:after {background-color: #47B39A;}
 body.style_color_green .staff_post .colhead_dark {background: rgba(56,55,56, 0.8);}
 body.style_color_green .noty_bar {border-left: #3eaca7 2px solid;}
 
+body.style_color_green div.show_torrents:hover:before,
+body.style_color_green div.show_torrents:hover:after,
+body.style_color_green div.hide_torrents:hover:before,
+body.style_color_green div.hide_torrents:hover:after,
+body.style_color_green a.show_torrents_link:hover:before,
+body.style_color_green a.show_torrents_link:hover:after {
+    background-color: #88C796;
+}
+
 /* Dark Additions */
 body.style_color_dark a.social { background-image: url(images/Social-BW.png); }
 body.style_color_dark #searchbars {
@@ -2080,19 +2089,16 @@ body.style_color_pink a.social { background-image: url(images/Social-Pink.png); 
 body.style_color_pink h1 a, body.style_color_pink h2 a, body.style_color_pink h3 a, body.style_color_pink h4 a, body.style_color_pink h5 a, body.style_color_pink h6 a {
   color: #df7cc2;
 }
-body.style_color_pink .cats_featurefilm:after { color: #4f3063; }
-body.style_color_pink .group .cats_featurefilm { background-color: #4f3063; }
-body.style_color_pink .cats_shortfilm:after { color: #9f5c9c; }
-body.style_color_pink .group .cats_shortfilm { background-color: #9f5c9c; }
-body.style_color_pink .cats_miniseries:after { color: #c871b9; }
-body.style_color_pink .group .cats_miniseries { background-color: #c871b9; }
-body.style_color_pink .cats_other:after { color: #ef86d5; }
-body.style_color_pink .group .cats_other { background-color: #ef86d5; }
-body.style_color_pink a:hover, body.style_color_pink .torrent_table .group a:hover { color: #db7bc7; }
-body.style_color_pink ::selection,
-body.style_color_pink ::-moz-selection {
-  background: #8b518e;
+
+body.style_color_green div.show_torrents:hover:before,
+body.style_color_green div.show_torrents:hover:after,
+body.style_color_green div.hide_torrents:hover:before,
+body.style_color_green div.hide_torrents:hover:after,
+body.style_color_green a.show_torrents_link:hover:before,
+body.style_color_green a.show_torrents_link:hover:after {
+    background-color: #8b518e;
 }
+
 body.style_color_pink button,
 body.style_color_pink input[type=button],
 body.style_color_pink input[type=submit] {
@@ -2130,7 +2136,7 @@ body.style_color_pink .alertbar { background-color: rgba(79,48,99, 0.8); }
 body.style_color_pink .hide_torrents > .show_torrents_link:after,
 body.style_color_pink .show_torrents > .show_torrents_link:after,
 body.style_color_pink .show_torrents > .show_torrents_link:before {
-  background-color: #b367aa;
+  background-color: #fff;
 }
 body.style_color_pink .forum_index td.read:after { background-color: #643c72; }
 body.style_color_pink .forum_index td.unread:after { background-color: #db7bc7; }
