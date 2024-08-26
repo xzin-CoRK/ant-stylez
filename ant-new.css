@@ -1057,7 +1057,7 @@ span.center_poll {
 }
 
 .torrent_table .colhead_dark {
-  background-color: #254955;
+  background-color: #578390;
   height: 36px!important;
   vertical-align: middle!important
 }
@@ -2417,6 +2417,20 @@ body.style_color_pink .collage_image:hover {
   /* Limit input sizes so they don't go offscreen */
   .inputtext {
     max-width: 60vw;
+  }
+
+  /* Homepage */
+
+  /* Show main content (newsposts) above sidebar content */
+  #index #wrapper #content div.thin {
+    display: flex;
+    flex-direction: column;
+  }
+  #index #wrapper #content div.thin div.sidebar {
+    order: 2;
+  }
+  #index #wrapper #content div.thin div.main_column {
+    order: 1;
   }
 
   /* Forums */
