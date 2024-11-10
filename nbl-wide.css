@@ -3202,20 +3202,22 @@ a.Snatched:hover {
     width: 100% !important;
 }
 .season {
-    width: 244px;
+    /* Don't need !important once changed in show.css */
+    width: 244px !important;
 }
 .showname {
-    width: 230px;
+    /* Don't need !important once changed in show.css */
+    width: 230px !important;
 }
 .tagssh {
-    width: 635px;
+    /* Don't need !important once changed in show.css */
+    width: 635px !important;
 }
 .codecs {
-    margin-left: 240px;
+    /* Don't need !important once changed in show.css */
+    margin-left: 240px !important;
 }
-/* END SHOW.CSS CHANGES */
 
-/* SHOW.CSS ADDITIONS -- add the following to show.css */
 #torrents .show_title_wrap {
     display: grid;
     grid-template-columns: 1fr 280px;
