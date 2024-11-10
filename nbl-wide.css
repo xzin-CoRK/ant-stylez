@@ -43,6 +43,7 @@ html {
 
 body {
     width: 100%;
+    overflow-x: hidden;
     background-color: #191b22;
     font-family: 'Open Sans', Helvetica, Arial, Tahoma, sans-serif;
     font-size: 12px;
@@ -210,7 +211,7 @@ ul.thin li {
 }
 
 #header {
-    width: 1000px;
+    width: 100%;
     padding: 0;
     height: 104px;
     position: relative;
@@ -223,7 +224,7 @@ ul.thin li {
 }
 
 #content {
-    width: 1000px;
+    width: 100%;
     position: relative;
 }
 
@@ -248,14 +249,14 @@ ul.thin li {
 }
 
 #wrapper {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
 }
 
 #wrapper,
 .thin {
-    width: 1000px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -331,7 +332,7 @@ ul.thin li {
 
 nav#mainnav {
     top: 104px;
-    width: 1000px;
+    width: 100%;
     position: absolute;
 }
 
@@ -340,6 +341,7 @@ nav#mainnav ul ul {
     opacity: 0;
     transition: opacity 200ms linear;
     z-index: 99999;
+    width: 12.5%;
 }
 
 nav#mainnav ul li:hover>ul {
@@ -353,6 +355,8 @@ nav#mainnav ul {
     padding: 0;
     position: relative;
     display: inline-table;
+    width: 100%;
+    max-width: min(90vw, 1600px);
 }
 
 nav#mainnav ul:after {
@@ -362,9 +366,12 @@ nav#mainnav ul:after {
 }
 
 nav#mainnav ul li {
-    width: 125px;
     float: left;
     margin: 0;
+}
+
+nav#mainnav > ul > li {
+    width: 12.5%;
 }
 
 nav#mainnav ul li:hover {
@@ -399,6 +406,10 @@ nav#mainnav ul ul li {
     position: relative;
 }
 
+nav#mainnav > ul > li > ul > li {
+    width: 100%;
+}
+
 nav#mainnav ul ul li a {
     color: #fff;
 }
@@ -429,6 +440,10 @@ span.infinity {
     position: absolute;
     right: 20px;
     top: 35%;
+}
+
+#header_bottom {
+    width: 100%;
 }
 
 #stats_block ul li,
@@ -637,7 +652,7 @@ span.stat {
 }
 
 #searchbars input {
-    width: 120px;
+    width: 90%;
     border: 1px solid #fff;
     padding: 0 2px 0 10px;
     background: transparent;
@@ -647,15 +662,15 @@ span.stat {
 }
 
 #searchbars ul {
-    width: 955px;
+    width: 100%;
     margin: 0 auto;
-    display: block;
+    display: flex;
 }
 
 #searchbars ul li {
+    flex: 1 1 auto;
     margin: 0 1px;
     list-style: none;
-    position: relative;
 }
 
 #searchbars ul li ul {
@@ -814,11 +829,63 @@ input.hidden {
 }
 
 .thin {
-    width: 96%;
+    width: 100%;
     min-width: 960px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
+
+/* Ensure consistent space between searchbar and first block of content */
+.thin:nth-child(1) {
+    margin-top: 10px;
+}
+
+/* Front page responsive poster display */
+
+#index div.thin > div.box > table > tbody {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2px;
+}
+
+#index div.thin > div.box > table > tbody > tr {
+    display: contents;
+}
+
+@media screen and (min-width: 550px) {
+    #index div.thin > div.box > table > tbody {
+        grid-template-columns: repeat(3, 1fr);
+    } 
+}
+
+@media screen and (max-width: 1440px) {
+    #index div.thin > div.box > table > tbody {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #index .banner_col {
+        height: 50px;
+    }
+}
+
+
+/* Show 5 columns above 1440px width */
+@media screen and (min-width: 1441px) {
+    #index div.thin > div.box > table > tbody {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    #index .banner_col {
+        height: 58px;
+    }
+}
+
+#index .banner_col {
+    aspect-ratio: 5;
+    width: 100%;
+}
+/* end front page responsive poster display */
 
 h2 a {
     color: #2b90d9;
@@ -3120,3 +3187,56 @@ a.Snatched:hover {
 }
 
 /* Grenik - End date picker dropdown formating */
+
+
+/* CHANGES NEEDED IN SHOW.CSS */
+.main_table {
+    /* value just providing an override; Remove 97% width instead */
+    width: 100%;
+}
+.synopsis {
+    /* value just providing an override; Remove 77% width instead */
+    width: 100%;
+}
+.season {
+    width: 244px;
+}
+.showname {
+    width: 230px;
+}
+.tagssh {
+    width: 635px;
+}
+.codecs {
+    margin-left: 240px;
+}
+/* END SHOW.CSS CHANGES */
+
+/* SHOW.CSS ADDITIONS -- add the following to show.css */
+#torrents .show_title_wrap {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    overflow: hidden;
+    column-gap: 10px;
+}
+
+#torrents .show_title_wrap > .head {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+}
+
+#torrents .show_title_wrap > .main_pad {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
+}
+
+#torrents .show_title_wrap > .synopsis {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+
+#torrents .show_title_wrap > .side_bar{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    margin: auto;
+}
