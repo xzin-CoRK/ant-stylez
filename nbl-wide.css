@@ -3197,6 +3197,10 @@ a.Snatched:hover {
     /* value just providing an override; Remove 77% width instead */
     width: 100% !important;
 }
+.side_bar {
+    /* value just providing an override; remove 210px width instead */
+    width: 100% !important;
+}
 .season {
     width: 244px;
 }
