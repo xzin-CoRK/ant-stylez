@@ -3223,6 +3223,7 @@ a.Snatched:hover {
     grid-template-columns: 1fr 280px;
     overflow: hidden;
     column-gap: 10px;
+    width: 100% !important; /* just remove 95% width from show.css instead */
 }
 
 #torrents .show_title_wrap > .head {
