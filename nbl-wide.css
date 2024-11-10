@@ -3191,11 +3191,11 @@ a.Snatched:hover {
 /* CHANGES NEEDED IN SHOW.CSS */
 .main_table {
     /* value just providing an override; Remove 97% width instead */
-    width: 100%;
+    width: 100% !important;
 }
 .synopsis {
     /* value just providing an override; Remove 77% width instead */
-    width: 100%;
+    width: 100% !important;
 }
 .season {
     width: 244px;
