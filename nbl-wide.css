@@ -279,7 +279,7 @@ ul.thin li {
 
 #logo {
     width: 1000px;
-    background: url(images/logo.svg) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/logo.svg) no-repeat center center;
     background-size: 485px;
     height: 107px;
     position: relative;
