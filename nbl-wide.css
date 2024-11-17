@@ -4,7 +4,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url(../fonts/OpenSans.ttf) format('truetype');
+    src: local('Open Sans'), local('OpenSans'), url(https://nebulance.io/static/styles/themes/fonts/OpenSans.ttf) format('truetype');
 }
 
 /* latin */
@@ -12,7 +12,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../fonts/OpenSans-Semibold.ttf) format('truetype');
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://nebulance.io/static/styles/themes/fonts/OpenSans-Semibold.ttf) format('truetype');
 }
 
 .cats_col {
@@ -256,7 +256,7 @@ ul.thin li {
 
 #wrapper,
 .thin {
-    max-width: 1600px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -278,7 +278,8 @@ ul.thin li {
 }
 
 #logo {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/logo.svg) no-repeat center center;
+    width: 1000px;
+    background: url(images/logo.svg) no-repeat center center;
     background-size: 485px;
     height: 107px;
     position: relative;
@@ -343,7 +344,7 @@ nav#mainnav ul ul {
     width: 12.5%;
 }
 
-nav#mainnav ul li:hover>ul {
+nav#mainnav ul li:hover > ul {
     visibility: visible;
     opacity: 1;
 }
@@ -355,7 +356,7 @@ nav#mainnav ul {
     position: relative;
     display: inline-table;
     width: 100%;
-    max-width: min(90vw, 1600px);
+    max-width: min(90vw, 1280px);
 }
 
 nav#mainnav ul:after {
@@ -369,8 +370,16 @@ nav#mainnav ul li {
     margin: 0;
 }
 
+nav#mainnav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+
 nav#mainnav > ul > li {
-    width: 12.5%;
+    flex: 1 1 12.5%;
+    text-align: center;
 }
 
 nav#mainnav ul li:hover {
@@ -580,7 +589,7 @@ table.userinfo_stats td {
 #nav_tools {
     padding-right: 8px !important;
     margin: 0 7px !important;
-    background-image: url(https://nebulance.io/static/styles/themes/calm/images/dropdown_arrow.png);
+    background-image: url(images/dropdown_arrow.png);
     background-repeat: no-repeat;
     background-position: right center;
 }
@@ -828,8 +837,8 @@ input.hidden {
 }
 
 .thin {
+    min-width: inherit;
     width: 100%;
-    min-width: 960px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
@@ -843,7 +852,6 @@ input.hidden {
 }
 
 /* Front page responsive poster display */
-
 #index div.thin > div.box > table > tbody {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -854,13 +862,19 @@ input.hidden {
     display: contents;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (max-width: 550px) {
     #index div.thin > div.box > table > tbody {
-        grid-template-columns: repeat(3, 1fr);
-    } 
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 700px) {
+    #index div.thin > div.box > table > tbody {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1080px) {
     #index div.thin > div.box > table > tbody {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -885,7 +899,6 @@ input.hidden {
     width: 100%;
 }
 /* end front page responsive poster display */
-
 h2 a {
     color: #2b90d9;
 }
@@ -1092,56 +1105,56 @@ table.boxstat td:first-child {
 }
 
 .icon_warning {
-    background: url('https://nebulance.io/static/styles/themes/calm/images/warn.svg') no-repeat center bottom;
+    background: url('images/warn.svg') no-repeat center bottom;
 }
 
 .icon_okay {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/okay.svg) no-repeat center bottom;
+    background: url(images/okay.svg) no-repeat center bottom;
 }
 
 .icon_disk_none {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/disk.svg) no-repeat center bottom;
+    background: url(images/disk.svg) no-repeat center bottom;
 }
 
 .icon_disk_leech {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/diskdown.svg) no-repeat center bottom;
+    background: url(images/diskdown.svg) no-repeat center bottom;
 }
 
 .icon_disk_seed {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/diskup.svg) no-repeat center bottom;
+    background: url(images/diskup.svg) no-repeat center bottom;
 }
 
 .icon_disk_grabbed {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/diskgrabbed.svg) no-repeat center bottom;
+    background: url(images/diskgrabbed.svg) no-repeat center bottom;
 }
 
 .icon_search {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/search.svg) no-repeat center bottom;
+    background: url(images/search.svg) no-repeat center bottom;
 }
 
 .icon_doubleseed {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/doubleseed.svg) no-repeat center bottom;
+    background: url(images/doubleseed.svg) no-repeat center bottom;
 }
 
 .icon_disk_snatched {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/disksnatched.svg) no-repeat center bottom;
+    background: url(images/disksnatched.svg) no-repeat center bottom;
 }
 
 .icon_bookmark {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/bookmark.svg) no-repeat center bottom;
+    background: url(images/bookmark.svg) no-repeat center bottom;
     cursor: pointer;
 }
 
 .icon_bookmark.bookmarked {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/bookmarked.svg) no-repeat center bottom;
+    background: url(images/bookmarked.svg) no-repeat center bottom;
 }
 
 .icon_watched {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/watched.svg) no-repeat center bottom;
+    background: url(images/watched.svg) no-repeat center bottom;
 }
 
 #top_info .icon_warning {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/warn.svg) no-repeat center bottom;
+    background: url(images/warn.svg) no-repeat center bottom;
 }
 
 #staff_tools .icon,
@@ -1471,32 +1484,32 @@ ul.poll li.graph {
     padding-left: 20px;
 }
 
-.featured>tbody>tr:first-child td:before {
+.featured > tbody > tr:first-child td:before {
     border-top: #282c37 25px solid;
 }
 
-.featured>tbody>tr:first-child td:after {
+.featured > tbody > tr:first-child td:after {
     border-top: #282c37 25px solid;
 }
 
-.featured>tbody>tr:first-child td>.featured-bevels:before {
+.featured > tbody > tr:first-child td > .featured-bevels:before {
     border-left: #282c37 25px solid;
 }
 
-.featured>tbody>tr:first-child td>.featured-bevels:after {
+.featured > tbody > tr:first-child td > .featured-bevels:after {
     border-right: #282c37 25px solid;
 }
 
 .show_torrents {
     width: 28px;
     height: 28px;
-    background: url(https://nebulance.io/static/styles/themes/calm/images/show.png) no-repeat center center;
+    background: url(images/show.png) no-repeat center center;
 }
 
 .hide_torrents {
     width: 28px;
     height: 28px;
-    background: url(https://nebulance.io/static/styles/themes/calm/images/hide.png) no-repeat center center;
+    background: url(images/hide.png) no-repeat center center;
 }
 
 .show_torrents_link {
@@ -1748,14 +1761,14 @@ div.tagtable {
 .last_post {
     width: 15px;
     height: 15px;
-    background: url(https://nebulance.io/static/styles/themes/calm/images/go_last_read.svg) no-repeat center center;
+    background: url(images/go_last_read.svg) no-repeat center center;
     margin-left: 5px;
 }
 
 .last_read {
     width: 15px;
     height: 15px;
-    background: url(https://nebulance.io/static/styles/themes/calm/images/go_last_read.svg) no-repeat center center;
+    background: url(images/go_last_read.svg) no-repeat center center;
     margin-left: 5px;
 }
 
@@ -1773,39 +1786,39 @@ div.tagtable {
 }
 
 .colhead_dark .last_read {
-    background-image: url(https://nebulance.io/static/styles/themes/calm/images/go_last_read.svg);
+    background-image: url(images/go_last_read.svg);
 }
 
 .unread_locked_sticky {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/locked_sticky_unread.svg) no-repeat center center;
+    background: url(images/locked_sticky_unread.svg) no-repeat center center;
 }
 
 .read_locked_sticky {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/locked_sticky_read.svg) no-repeat center center;
+    background: url(images/locked_sticky_read.svg) no-repeat center center;
 }
 
 .read_sticky {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/sticky_read.svg) no-repeat center center;
+    background: url(images/sticky_read.svg) no-repeat center center;
 }
 
 .unread_sticky {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/sticky_unread.svg) no-repeat center center;
+    background: url(images/sticky_unread.svg) no-repeat center center;
 }
 
 .unread_locked {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/locked_unread.svg) no-repeat center center;
+    background: url(images/locked_unread.svg) no-repeat center center;
 }
 
 .read_locked {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/locked_read.svg) no-repeat center center;
+    background: url(images/locked_read.svg) no-repeat center center;
 }
 
 .unread {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/unread.svg) no-repeat center center;
+    background: url(images/unread.svg) no-repeat center center;
 }
 
 .read {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/read.svg) no-repeat center center;
+    background: url(images/read.svg) no-repeat center center;
 }
 
 table.forum_index {
@@ -1920,7 +1933,7 @@ td.badgesrow,
 }
 
 tr.unreadpm {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/content.png) repeat;
+    background: url(images/content.png) repeat;
 }
 
 .permission_head {
@@ -2078,7 +2091,7 @@ span.postlink {
     display: block;
     width: 10px;
     height: 10px;
-    background: url(https://nebulance.io/static/styles/themes/calm/images/viewpost.svg) no-repeat center center;
+    background: url(images/viewpost.svg) no-repeat center center;
 }
 
 a.postlink {
@@ -2405,7 +2418,7 @@ img.win.flash {
     width: 60px;
     height: 150px;
     position: absolute;
-    background: url(https://nebulance.io/static/styles/themes/calm/images/betchip.png) no-repeat center center;
+    background: url(images/betchip.png) no-repeat center center;
 }
 
 .chip span {
@@ -2573,7 +2586,7 @@ img.win.flash {
 #donorbargreen {
     display: inline-block;
     height: 15px;
-    background: url(https://nebulance.io/static/styles/themes/calm/images/green.png) repeat center center;
+    background: url(images/green.png) repeat center center;
     color: #fff;
     font-weight: 400;
     text-align: right;
@@ -2897,7 +2910,7 @@ blockquote.bbcode.error code.error {
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
     border: 1px solid #666;
-    background: #888 url(https://nebulance.io/static/styles/themes/calm/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+    background: #888 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
     font-weight: 400;
     color: #333;
 }
@@ -2937,7 +2950,7 @@ blockquote.bbcode.error code.error {
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
     border: 1px solid #aaa;
-    background: #fff url(https://nebulance.io/static/styles/themes/calm/images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+    background: #fff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
     font-weight: 400;
     color: #212121;
 }
@@ -2984,25 +2997,24 @@ a.Snatched:hover {
 }
 
 .icon_follow {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/follow.svg) no-repeat center bottom;
+    background: url(images/follow.svg) no-repeat center bottom;
     cursor: pointer;
 }
 
 .icon_follow.followed {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/followed.svg) no-repeat center bottom;
+    background: url(images/followed.svg) no-repeat center bottom;
 }
 
 .icon_notify {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/notify.svg) no-repeat center bottom;
+    background: url(images/notify.svg) no-repeat center bottom;
     cursor: pointer;
 }
 
 .icon_notify.notified {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/notified.svg) no-repeat center bottom;
+    background: url(images/notified.svg) no-repeat center bottom;
 }
 
 /* Grenik - Added below for dropdown list in user.php for 2FA Country Change */
-
 #TwoFactorCountry::placeholder {
     color: #bbb;
 }
@@ -3044,7 +3056,6 @@ a.Snatched:hover {
 
 /* Custom theme for Pikaday */
 /* Grenik - Updated date picker styling in user.php */
-
 /* Placeholder text color for the date picker input */
 #TravelEndDate::placeholder {
     color: #bbb;
@@ -3186,44 +3197,34 @@ a.Snatched:hover {
 }
 
 /* Grenik - End date picker dropdown formating */
-
-
 /* CHANGES NEEDED IN SHOW.CSS */
 .main_table {
     /* value just providing an override; Remove 97% width instead */
-    width: 100% !important;
+    width: 100%;
 }
 .synopsis {
     /* value just providing an override; Remove 77% width instead */
-    width: 100% !important;
-}
-.side_bar {
-    /* value just providing an override; remove 210px width instead */
-    width: 100% !important;
+    width: 100%;
 }
 .season {
-    /* Don't need !important once changed in show.css */
-    width: 244px !important;
+    width: 244px;
 }
 .showname {
-    /* Don't need !important once changed in show.css */
-    width: 230px !important;
+    width: 230px;
 }
 .tagssh {
-    /* Don't need !important once changed in show.css */
-    width: 635px !important;
+    width: 635px;
 }
 .codecs {
-    /* Don't need !important once changed in show.css */
-    margin-left: 240px !important;
+    margin-left: 240px;
 }
-
+/* END SHOW.CSS CHANGES */
+/* SHOW.CSS ADDITIONS -- add the following to show.css */
 #torrents .show_title_wrap {
     display: grid;
     grid-template-columns: 1fr 280px;
     overflow: hidden;
     column-gap: 10px;
-    width: 100% !important; /* just remove 95% width from show.css instead */
 }
 
 #torrents .show_title_wrap > .head {
@@ -3239,10 +3240,117 @@ a.Snatched:hover {
 #torrents .show_title_wrap > .synopsis {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
+    max-width: calc(90vw - 340px);
 }
 
-#torrents .show_title_wrap > .side_bar{
+#torrents .show_title_wrap > .side_bar {
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
     margin: auto;
+}
+
+@media screen and (max-width: 510px) {
+    /* Show Page */
+    .image_wrap > .box {
+        height: inherit !important;
+    }
+    img.banner {
+        max-width: calc(100vw)
+    }
+    #torrents .show_title_wrap {
+        grid-template-columns: 1fr;
+    }
+    #torrents .show_title_wrap > .synopsis {
+        max-width: 100vw;
+    }
+    #torrents .show_title_wrap > .side_bar {
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+    }
+    .image_wrap {
+        text-align: inherit;
+    }
+    #castbox > table > tbody {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #castbox > table > tbody > tr {
+        margin: auto;
+    }
+}
+
+/* END SHOW.CSS ADDITIONS */
+
+/* Responsive layout */
+
+@media screen and (max-width: 920px) {
+    #searchbars {
+        top: 150px;
+    }
+    #candyfloss {
+        height: 84px;
+    }
+}
+
+
+/* Mobile-view */
+@media screen and (max-width: 510px) {
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100vw;
+    }
+    #wrapper {
+        width: 100vw;
+    }
+
+    /* Header/navigation menu */
+    nav#mainnav > ul {
+        flex-wrap: wrap;
+        max-width: 100vw;
+    }
+    nav#mainnav > ul > li {
+        flex: 1 1 25%;
+    }
+    nav#mainnav ul li a {
+        padding: 7px;
+    }
+    nav#mainnav > ul > li > ul {
+        width: 25%;
+    }
+    nav#mainnav > ul > li:nth-of-type(2) > ul,
+    nav#mainnav > ul > li:nth-of-type(3) > ul {
+        top: calc(100% - 41px);
+    }
+    #searchbars {
+        top: 170px;
+    }
+    #candyfloss {
+        height: 130px;
+    }
+    #searchbars ul {
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        gap: 4px;
+    }
+    #searchbars ul li {
+        margin: 0px;
+        flex: 1 1 21%;
+    }
+    #userinfo_major {
+        display: none;
+    }
+
+    /* Main content/sidebar */
+    .main_column {
+        width: 100%;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .thin {
+        padding: 0px;
+    }
 }
