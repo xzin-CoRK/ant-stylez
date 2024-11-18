@@ -3391,16 +3391,17 @@ body {
     }
     nav#mainnav > ul > li {
         flex: 1 1 25%;
+        position: relative;
     }
     nav#mainnav ul li a {
         padding: 7px;
     }
     nav#mainnav > ul > li > ul {
-        width: 25%;
+        width: 100%;
     }
     nav#mainnav > ul > li:nth-of-type(2) > ul,
     nav#mainnav > ul > li:nth-of-type(3) > ul {
-        top: calc(100% - 28px);
+        top: calc(100%);
     }
     #searchbars {
         top: 170px;
@@ -3432,17 +3433,5 @@ body {
     }
     .thin {
         padding: 0px;
-    }
-}
-@media screen and (max-width: 392px) {
-    nav#mainnav > ul > li:nth-of-type(2) > ul,
-    nav#mainnav > ul > li:nth-of-type(3) > ul {
-        top: calc(100% - 42px);
-    }
-}
-@media screen and (min-width: 392px) and (max-width: 510px) {
-    nav#mainnav > ul > li:nth-of-type(2) > ul,
-    nav#mainnav > ul > li:nth-of-type(3) > ul {
-        top: calc(100% - 28px);
     }
 }
