@@ -3352,6 +3352,11 @@ tr.torrent > td > div.tagssh:nth-child(1) > .codecs {
 
 /* END SHOW.CSS ADDITIONS */
 /* Responsive layout */
+html,
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    }
 @media screen and (max-width: 920px) {
     #searchbars {
         top: 150px;
@@ -3367,11 +3372,6 @@ tr.torrent > td > div.tagssh:nth-child(1) > .codecs {
 
 /* Mobile-view */
 @media screen and (max-width: 510px) {
-    html,
-    body {
-        overflow-x: hidden;
-        width: 100vw;
-    }
     #wrapper {
         width: 100vw;
     }
