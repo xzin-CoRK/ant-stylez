@@ -3356,7 +3356,6 @@ html,
 body {
     overflow-x: hidden;
     width: 100vw;
-    max-width: 100vw;
     }
 @media screen and (max-width: 920px) {
     #searchbars {
@@ -3379,6 +3378,10 @@ body {
     #stats_block {
         top: 5px;
         right: 65vw;
+    }
+    #logo a {
+        width: inherit;
+        left: 0;
     }
 
     /* Header/navigation menu */
@@ -3442,4 +3445,8 @@ body {
     nav#mainnav > ul > li:nth-of-type(3) > ul {
         top: calc(100% - 28px);
     }
+}
+
+* {
+  outline: 1px solid red;
 }
