@@ -42,7 +42,7 @@ html {
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
     background-color: #191b22;
     font-family: 'Open Sans', Helvetica, Arial, Tahoma, sans-serif;
@@ -2980,7 +2980,7 @@ blockquote.bbcode.error code.error {
 }
 
 .season_head {
-    margin: 1px;
+    margin: 0px;
     font-weight: 600;
     color: #2b90d9;
 }
@@ -3206,18 +3206,7 @@ a.Snatched:hover {
     /* value just providing an override; Remove 77% width instead */
     width: 100%;
 }
-.season {
-    width: 244px;
-}
-.showname {
-    width: 230px;
-}
-.tagssh {
-    width: 635px;
-}
-.codecs {
-    margin-left: 240px;
-}
+
 /* END SHOW.CSS CHANGES */
 /* SHOW.CSS ADDITIONS -- add the following to show.css */
 #torrents .show_title_wrap {
@@ -3250,7 +3239,7 @@ a.Snatched:hover {
 }
 
 @media screen and (max-width: 510px) {
-    /* Show Page */
+    /* Show Page mobile layout */
     .image_wrap > .box {
         height: inherit !important;
     }
@@ -3261,6 +3250,7 @@ a.Snatched:hover {
         grid-template-columns: 1fr;
     }
     #torrents .show_title_wrap > .synopsis {
+        width: 100vw;
         max-width: 100vw;
     }
     #torrents .show_title_wrap > .side_bar {
@@ -3277,12 +3267,91 @@ a.Snatched:hover {
     #castbox > table > tbody > tr {
         margin: auto;
     }
+    .tagssh {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .icons {
+        position: inherit;
+    }
+    tr.torrent > td > div.tagssh:nth-child(1) {
+        margin-left: calc(20%);
+    }
+}
+
+/* Break the show page into 1 column at a wider breakpoint than other pages to account for the width of torrent table */
+@media screen and (min-width: 510px) and (max-width: 975px) {
+    #torrents .show_title_wrap {
+        grid-template-columns: 1fr;
+    }
+    #torrents .show_title_wrap > .synopsis {
+        max-width: 100vw;
+    }
+    #torrents .show_title_wrap > .sidebar {
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+        width: 100%;
+    }
+    #castbox > table > tbody {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #castbox > table > tbody > tr {
+        margin: auto;
+    }
+}
+
+/* Responsive torrent table */
+#discog_table > tbody > tr {
+    display: grid;
+    grid-template-columns: 1fr 54px 32px 32px 32px;
+}
+
+tr.torrent > td,
+tr.colhead > td:nth-child(1) {
+    display: flex;
+    width: inherit;
+}
+.season,
+.showname {
+    flex-shrink: 1;
+    flex-basis: 30%;
+    position: inherit;
+}
+.tagssh {
+    width: inherit;
+    flex-grow: 1;
+    flex-basis: 70%;
+}
+.codecs {
+    margin: inherit;
+}
+tr.torrent > td > div.tagssh:nth-child(1) > .codecs {
+    margin-left: calc(30%);
+}
+
+@media screen and (min-width: 975px) and (max-width: 1040px) {
+    .season,
+    .showname {
+        flex-shrink: 1;
+        flex-basis: 20%;
+        position: inherit;
+    }
+    .tagssh {
+        width: inherit;
+        flex-grow: 1;
+        flex-basis: 80%;
+    }
+    .codecs {
+        margin: inherit;
+    }
+    tr.torrent > td > div.tagssh:nth-child(1) > .codecs {
+        margin-left: calc(20%);
+    }
 }
 
 /* END SHOW.CSS ADDITIONS */
-
 /* Responsive layout */
-
 @media screen and (max-width: 920px) {
     #searchbars {
         top: 150px;
@@ -3372,5 +3441,4 @@ a.Snatched:hover {
     nav#mainnav > ul > li:nth-of-type(3) > ul {
         top: calc(100% - 28px);
     }
-    
 }
