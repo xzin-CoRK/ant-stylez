@@ -3446,7 +3446,3 @@ body {
         top: calc(100% - 28px);
     }
 }
-
-* {
-  outline: 1px solid red;
-}
