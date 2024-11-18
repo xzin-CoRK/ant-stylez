@@ -3426,12 +3426,12 @@ body {
 
     /* Main content/sidebar */
     .main_column {
-        width: 100%;
+        width: 100% !important;
     }
     .sidebar {
-        width: 100%;
+        width: 100% !important;
     }
     .thin {
-        padding: 0px;
+        padding: 0px !important;
     }
 }
