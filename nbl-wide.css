@@ -3372,6 +3372,10 @@ body {
 
 /* Mobile-view */
 @media screen and (max-width: 510px) {
+    /* Disables menu links when on mobile so that it only displays submenu */
+    .hovertouch {
+        pointer-events: none;
+    }
     #wrapper {
         width: 100vw;
     }
