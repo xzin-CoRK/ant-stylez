@@ -3429,9 +3429,9 @@ body {
         width: 100% !important;
     }
     .sidebar {
-        width: 100% !important;
+        width: 100%;
     }
     .thin {
-        padding: 0px !important;
+        padding: 0px;
     }
 }
