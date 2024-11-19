@@ -3264,12 +3264,20 @@ a.Snatched:hover {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    #torrents tr.colhead td {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        height: 100%;
+    }
     #castbox > table > tbody > tr {
         margin: auto;
     }
     .tagssh {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        white-space: pre-wrap;
     }
     .icons {
         position: inherit;
