@@ -724,12 +724,8 @@ span.stat {
     text-align: center;
     font-weight: 600;
     color: red;
-    position: absolute;
-    bottom: 0;
-    top: 35%;
-    right: 3%;
-    z-index: 1000;
-    height: 25px;
+    position: relative;
+    transform: translateY( 55px); /* Moves it down by 55px */
 }
 
 .blend {
@@ -3205,13 +3201,16 @@ a.Snatched:hover {
 }
 
 /* Grenik - End date picker dropdown formating */
+
+
+
 /* CHANGES NEEDED IN SHOW.CSS */
 .main_table {
-    /* value just providing an override; Remove 97% width instead */
+    /* TODO: value just providing an override; Remove 97% width instead */
     width: 100%;
 }
 .synopsis {
-    /* value just providing an override; Remove 77% width instead */
+    /* TODO: value just providing an override; Remove 77% width instead */
     width: 100%;
 }
 
@@ -3297,7 +3296,19 @@ a.Snatched:hover {
     /* Browse page */
     #torrents #torrent_table tr.torrent {
         display: grid;
-        flex-direction: row;
+        grid-template-columns: auto auto auto auto auto;
+    }
+    #torrents #torrent_table tr.torrent > td:nth-child(1),
+    #torrents #torrent_table tr.torrent > td:nth-child(2) {
+        grid-column: 1 / span 5;
+        width: 100vw;
+    }
+    #torrents #torrent_table tr.torrent > td:nth-child(3) {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #torrents #torrent_table tr.torrent > td:nth-child(3) > div {
+        position: inherit !important;
     }
 }
 
@@ -3328,6 +3339,12 @@ a.Snatched:hover {
     display: grid;
     grid-template-columns: 1fr 54px 32px 32px 32px;
 }
+#discog_table tr.colhead td {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        height: 100%;
+    }
 
 #discog_table tr.torrent > td,
 #discog_table tr.colhead > td:nth-child(1) {
@@ -3350,6 +3367,10 @@ a.Snatched:hover {
 }
 tr.torrent > td > div.tagssh:nth-child(1) > .codecs {
     margin-left: calc(30%);
+}
+
+.icons {
+    background-color: #191b22; /* TODO: Change this in the other 2 theme stylesheets as needed */
 }
 
 @media screen and (min-width: 975px) and (max-width: 1040px) {
