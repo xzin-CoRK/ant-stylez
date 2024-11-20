@@ -3207,11 +3207,11 @@ a.Snatched:hover {
 /* CHANGES NEEDED IN SHOW.CSS */
 .main_table {
     /* TODO: value just providing an override; Remove 97% width instead */
-    width: 100%;
+    width: 100% !important;
 }
 .synopsis {
     /* TODO: value just providing an override; Remove 77% width instead */
-    width: 100%;
+    width: 100% !important;
 }
 
 /* END SHOW.CSS CHANGES */
@@ -3221,6 +3221,7 @@ a.Snatched:hover {
     grid-template-columns: 1fr 280px;
     overflow: hidden;
     column-gap: 10px;
+    width: 100% !important; /* TODO: override; remove width: 95% from show.css (line 162)  */
 }
 
 #torrents .show_title_wrap > .head {
