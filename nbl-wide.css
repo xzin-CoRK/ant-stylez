@@ -854,7 +854,7 @@ input.hidden {
 /* Front page responsive poster display */
 #index div.thin > div.box > table > tbody {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
     column-gap: 2px;
 }
 
@@ -887,7 +887,7 @@ input.hidden {
 /* Show 5 columns above 1440px width */
 @media screen and (min-width: 1441px) {
     #index div.thin > div.box > table > tbody {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     #index .banner_col {
         height: 58px;
@@ -895,8 +895,10 @@ input.hidden {
 }
 
 #index .banner_col {
-    aspect-ratio: 5;
+    aspect-ratio: 75 / 14;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /* end front page responsive poster display */
 h2 a {
@@ -3264,7 +3266,7 @@ a.Snatched:hover {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    #torrents tr.colhead td {
+    #discog_table tr.colhead td {
         display: flex;
         align-items: center;
         box-sizing: border-box;
@@ -3284,6 +3286,12 @@ a.Snatched:hover {
     }
     tr.torrent > td > div.tagssh:nth-child(1) {
         margin-left: calc(20%);
+    }
+    
+    /* Browse page */
+    #torrents #torrent_table tr.torrent {
+        display: grid;
+        flex-direction: row;
     }
 }
 
@@ -3315,8 +3323,8 @@ a.Snatched:hover {
     grid-template-columns: 1fr 54px 32px 32px 32px;
 }
 
-tr.torrent > td,
-tr.colhead > td:nth-child(1) {
+#discog_table tr.torrent > td,
+#discog_table tr.colhead > td:nth-child(1) {
     display: flex;
     width: inherit;
 }
