@@ -852,6 +852,12 @@ input.hidden {
 }
 
 /* Front page responsive poster display */
+
+/* remove this override; instead, remove hardcoded width from HTML */
+#index div.thin > div.box > table {
+    width: 100% !important;
+}
+
 #index div.thin > div.box > table > tbody {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
@@ -885,9 +891,9 @@ input.hidden {
 
 
 /* Show 5 columns above 1440px width */
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1280px) {
     #index div.thin > div.box > table > tbody {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
     #index .banner_col {
         height: 58px;
