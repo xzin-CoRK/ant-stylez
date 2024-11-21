@@ -278,7 +278,7 @@ ul.thin li {
 }
 
 #logo {
-    width: min(80vw, 1000px);
+    width: 100%;
     background: url(https://nebulance.io/static/styles/themes/calm/images/logo.svg) no-repeat center center;
     background-size: 485px;
     height: 107px;
@@ -721,11 +721,11 @@ span.stat {
 }
 
 .nicebar {
-    text-align: left;
+    text-align: center;
     font-weight: 600;
     color: red;
     position: relative;
-    transform: translateX(25%) translateY( 55px);
+    transform: translateY( 55px);
 }
 
 .blend {
@@ -3296,12 +3296,27 @@ img.banner {
     }
     .icons {
         position: inherit;
+        display: flex;
+        justify-content: space-around;
     }
     tr.torrent > td > div.tagssh:nth-child(1) {
         margin-left: calc(20%);
     }
     
     /* Browse page */
+    #torrents #torrent_table tr.torrent td:nth-child(2) {
+        text-align: center;
+    }
+    #torrents #torrent_table tr.torrent td:nth-child(2) > div {
+        position: inherit !important;
+        text-align: center;
+    }
+    #torrents #torrent_table tr.torrent div.tags > div {
+        max-width: 100% !important;
+    }
+    #torrents #torrent_table tr.torrent a.tooltipstered {
+        font-weight: bold;
+    }
     #torrents #torrent_table tr.torrent {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
@@ -3318,6 +3333,52 @@ img.banner {
     #torrents #torrent_table tr.torrent > td:nth-child(3) > div {
         position: inherit !important;
     }
+     #torrents #search_box tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filter_torrents .inputtext {
+        width: 100%;
+    }
+    
+    /* Gallery & People */
+    #shows #form1 div.box > table > tbody,
+    #people div.box > table > tbody{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-template-rows: 1fr auto;
+        gap: 10px;
+    }
+    #shows #form1 div.box > table > tbody > tr,
+    #people div.box > table > tbody > tr{
+        display: contents;
+    }
+    #shows #form1 div.box > table > tbody > tr > td,
+    #people div.box > table > tbody > tr > td{
+        padding: inherit;
+    }
+    .showmaze {
+        width: 100%;
+        height: 100%;
+        margin: inherit;
+    }
+    #shows div.showswrapper,
+    #people div.showswrapper{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 2px;
+        width: 100%;
+        height: 100%;
+    }
+    div.showswrapper img.showmaze {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .showsfoot > span {
+        vertical-align: middle;
+    }
+    
 }
 
 /* Break the show page into 1 column at a wider breakpoint than other pages to account for the width of torrent table */
@@ -3532,25 +3593,34 @@ body {
     #forums div.thin > div.head {
         height: inherit;
     }
-    #forums .forum_post {
+    #forums .forum_post,
+    #userhistory .forum_post{
         width: 100vw;
         max-width: 100vw;
     }
-    #forums td.avatar {
+    #forums td.avatar,
+    #userhistory td.avatar{
         width: 25%;
     }
-    #forums td.postbody {
+    #forums td.postbody,
+    #userhistory td.postbody{
         width: 75%;
         word-wrap: anywhere;
     }
-    #forums div.post_container {
+    #forums div.post_container,
+    #userhistory div.post_container{
         width: 100%;
     }
-    #forums img.avatar {
+    #forums img.avatar,
+    #userhistory img.avatar{
         width: 100%;
     }
     
-    /* Staff */
+    
+    /* Requests */
+    #requests div.thin input[type=text] {
+        width: 100%;
+    }
     
     
     /* Settings */
@@ -3578,5 +3648,38 @@ body {
     #user div.thin input[type=password],
         #user div.thin select {
         width: 250px;
+    }
+}
+
+
+/* PUT IN tvschedule.css */
+@media screen and (max-width: 510px) {
+    #tvschedule div.thin table.nobr tr {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-items: center;
+    }
+    #tvschedule div.thin table.nobr tr td:nth-child(3) {
+        grid-column: 1 / span 2;
+    }
+    #tvschedule table.tvschedule tr:not(.head) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* PUT IN follows.css */
+@media screen and (max-width: 510px) {
+    #follows table.main > tbody {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #follows table.main > tbody > tr {
+        display: contents;
+    }
+    #follows div.showmaze {
+        display: flex;
     }
 }
