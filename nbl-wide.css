@@ -3290,14 +3290,14 @@ img.banner {
     }
     .tagssh {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         flex-wrap: wrap;
-        white-space: pre-wrap;
+        white-space: pre-line;
     }
     .icons {
         position: inherit;
         display: flex;
-        justify-content: space-around;
+        justify-content: end;
     }
     tr.torrent > td > div.tagssh:nth-child(1) {
         margin-left: calc(20%);
