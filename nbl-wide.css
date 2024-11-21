@@ -3632,17 +3632,50 @@ body {
     #user tr.colhead > td[colspan="2"] {
         grid-column: 1 / span 2;
     }
-/*    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr {
+    
+    /* API Keys section */
+    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto auto auto;
     }
-    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr:first-child {
-        display: grid;
+    /* Hide the header rows */
+    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr:nth-child(1),
+    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr:nth-child(2){
+        display: none;
     }
-    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr:first-child > th:first-child {
-        grid-column: 1 / span 3;
+    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr > td:first-child {
+        grid-column: 1 / span 4;
     }
-*/
+    /* Display checkbox labels inline */
+    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr > td:nth-child(2)::after {
+        padding-left: 4px;
+        content: "List"
+    }
+    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr > td:nth-child(3)::after {
+        padding-left: 4px;
+        content: "Download"
+    }
+    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr > td:nth-child(4)::after {
+        padding-left: 4px;
+        content: "Upload"
+    }
+    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr > td:nth-child(5)::after {
+        padding-left: 4px;
+        content: "Delete"
+    }
+    
+    /* User Profile / Signature / Torrent Footer bbcode areas */
+    #user #userform table > tbody > tr:nth-child(49) > td:first-child,
+    #user #userform table > tbody > tr:nth-child(52) > td:first-child,
+    #user #userform table > tbody > tr:nth-child(55) > td:first-child{
+        box-sizing: border-box;
+        width: 100vw;
+    }
+    
+    #user textarea {
+        max-width: inherit;
+    }
+
     
     #user div.thin input[type=text],
     #user div.thin input[type=password],
