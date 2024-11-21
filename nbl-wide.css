@@ -721,11 +721,11 @@ span.stat {
 }
 
 .nicebar {
-    text-align: right;
+    text-align: left;
     font-weight: 600;
     color: red;
     position: relative;
-    transform: translateY( 55px); /* Moves it down by 55px */
+    transform: translateX(25%) translateY( 55px);
 }
 
 .blend {
