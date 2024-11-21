@@ -3529,6 +3529,9 @@ body {
     }
     
     /* Forums */
+    #forums div.thin > div.head {
+        height: inherit;
+    }
     #forums .forum_post {
         width: 100vw;
         max-width: 100vw;
