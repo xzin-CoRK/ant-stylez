@@ -1174,7 +1174,7 @@ table.boxstat td:first-child {
 }
 
 .details {
-    width: 96%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
