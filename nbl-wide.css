@@ -3575,6 +3575,19 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    #torrents #content table.showinfo {
+        margin: inherit;
+    }
+    #torrents #content table.showinfo > tbody > tr {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+    #torrents #content table.showinfo > tbody > tr > td:first-child {
+        width: 100% !important;
+    }
+    #torrents #content table.showinfo > tbody > tr > td:first-child > img {
+        width: 100%;
+    }
     
     /* Top 10 Page */
     #top10 .thin div.head {
