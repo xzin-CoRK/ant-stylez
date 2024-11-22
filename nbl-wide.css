@@ -1312,10 +1312,6 @@ table {
     border: none;
 }
 
-#discog_table {
-    border: 3px solid #313543;  /* TODO: choose appropriate colors for other 2 palettes */
-}
-
 tr.rowa,
 .rowa {
     background-color: #282c37;
@@ -3482,6 +3478,7 @@ html,
 body {
     overflow-x: hidden;
     width: 100vw;
+    height: 100vh;
     }
 #forums td.postbody {
     width: inherit; /* TODO: placeholder only; remove width: 800px from structure.css (line 664) */
@@ -3766,7 +3763,10 @@ body {
 
 /* STYLE changes */
 #user #userform > table {
-    border: 3px solid #313543;          /* TODO: pick appropriate color and add to other 2 palettes */
+    border: 3px solid #313543;
+}
+#discog_table {
+    border: 3px solid #313543;  /* TODO: choose appropriate colors for other 2 palettes */
 }
 #discog_table tr {
     border-top: 1px solid #282828;      /* TODO: pick appropriate color and add to other 2 palettes */
@@ -3775,4 +3775,7 @@ body {
 #discog_table td {
     border-top: none;
     border-bottom: none;
+}
+#discog_table tr.colhead {
+    border: none;
 }
