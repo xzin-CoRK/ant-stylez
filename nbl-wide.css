@@ -3435,7 +3435,7 @@ img.banner {
     margin: inherit !important;     /* TODO: remove !important when merging into show.css */
 }
 tr.torrent > td > div.tagssh:nth-child(1) > .codecs {
-    margin-left: calc(30%);
+    margin-left: calc(30%) !important;  /* TODO: remove !important when merging into show.css */
 }
 
 .icons {
