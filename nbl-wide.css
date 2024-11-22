@@ -333,7 +333,7 @@ ul.thin li {
 nav#mainnav {
     top: 104px;
     width: 100%;
-    position: inherit;
+    position: inherit !important;
 }
 
 nav#mainnav ul ul {
@@ -3783,12 +3783,12 @@ body {
 #user #userform > table > tbody > tr.colhead > td {
     background-color: #272b37 !important;       /* TODO: pick appropriate color and add to other 2 palettes */
 }
-#follows .box {
+#follows .box,
+#tvschedule .box {
     border: 3px solid #313543;                  /* TODO: pick appropriate color and add to other 2 palettes */
-}
-#follows .box .pad {
     background-color: #191b22;                  /* TODO: pick appropriate color and add to other 2 palettes */
 }
+
 #follows .box .linkbox {
     display: none;
 }
