@@ -3790,7 +3790,7 @@ body {
     background-color: #272b37 !important;       /* TODO: pick appropriate color and add to other 2 palettes */
 }
 #torrents div.thin #search_box > .box,
-#torrents div.thin form,
+#torrents div.thin > form:nth-of-type(1),
 #requests div.thin .box,
 #follows div.thin .box,
 #tvschedule .box {
@@ -3809,8 +3809,4 @@ body {
 }
 #requests .cat_list tr.rowa {
     background-color: #191b22 !important;       /* TODO: remove `class="rowa"` in the HTML instead (requests.php) */
-}
-#index div.tooltipstered::after {
-    content: "Hide";
-    float: right;
 }
