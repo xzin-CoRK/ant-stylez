@@ -3557,6 +3557,25 @@ body {
         padding: 0px;
     }
     
+    /* Torrent page */
+    #torrents #details_top > .sidebar {
+        width: 100vw;
+    }
+    #torrents #details_top > .middle_column {
+        width: 100vw;
+    }
+    #torrents table.mediainfo > tbody > tr {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #torrents #mediainfobox div.showinfobox > div > a {
+        line-break: anywhere;
+    }
+    #torrents #tag_container #torrent_tags ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
     /* Top 10 Page */
     #top10 .thin div.head {
         height: inherit;
