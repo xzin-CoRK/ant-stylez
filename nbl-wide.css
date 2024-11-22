@@ -412,6 +412,7 @@ nav#mainnav ul ul {
     text-align: left;
     position: absolute;
     top: 100%;
+    left: 0;
 }
 
 nav#mainnav ul ul li {
