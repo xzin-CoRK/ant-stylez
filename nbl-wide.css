@@ -333,7 +333,7 @@ ul.thin li {
 nav#mainnav {
     top: 104px;
     width: 100%;
-    position: inherit !important;
+    position: inherit !important;           /* TODO: remove !important */
 }
 
 nav#mainnav ul ul {
@@ -375,7 +375,12 @@ nav#mainnav > ul {
     justify-content: space-evenly;
     align-items: stretch;
 }
-
+nav#mainnav > ul > li.dropdown-more {
+    position: relative;
+}
+nav#mainnav > ul > li.dropdown-more > ul {
+    width: 100%;
+}
 
 nav#mainnav > ul > li {
     flex: 1 1 12.5%;
@@ -1235,7 +1240,7 @@ table.boxstat td:first-child {
 }
 
 .head {
-    height: 30px;
+    height: inherit;
     border: none;
     background-color: #313543;
     padding: 3px 10px !important;
@@ -3783,7 +3788,10 @@ body {
 #user #userform > table > tbody > tr.colhead > td {
     background-color: #272b37 !important;       /* TODO: pick appropriate color and add to other 2 palettes */
 }
-#follows .box,
+#torrents div.thin #search_box > .box,
+#torrents div.thin form,
+#requests div.thin .box,
+#follows div.thin .box,
 #tvschedule .box {
     border: 3px solid #313543;                  /* TODO: pick appropriate color and add to other 2 palettes */
     background-color: #191b22;                  /* TODO: pick appropriate color and add to other 2 palettes */
@@ -3791,4 +3799,17 @@ body {
 
 #follows .box .linkbox {
     display: none;
+}
+#torrents #cat_list tr.rowa {
+    background-color: #191b22 !important;       /* TODO: remove `class="rowa"` in the HTML instead (torrents.php) */
+}
+#torrents table.cat_list tr.rowa {
+    background-color: #191b22 !important;       /* TODO: remove `class="rowa"` in the HTML instead (torrents.php) */
+}
+#requests .cat_list tr.rowa {
+    background-color: #191b22 !important;       /* TODO: remove `class="rowa"` in the HTML instead (requests.php) */
+}
+#index div.tooltipstered::after {
+    content: "Hide";
+    float: right;
 }
