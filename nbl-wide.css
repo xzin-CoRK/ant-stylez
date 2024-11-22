@@ -3358,9 +3358,9 @@ img.banner {
         padding: inherit;
     }
     .showmaze {
-        width: 100%;
-        height: 100%;
-        margin: inherit;
+        width: 100% !important;     /* TODO: remove !important when putting into show.css */
+        height: 100% !important;    /* TODO: remove !important when putting into show.css */
+        margin: inherit !important; /* TODO: remove !important when putting into show.css */
     }
     #shows div.showswrapper,
     #people div.showswrapper{
