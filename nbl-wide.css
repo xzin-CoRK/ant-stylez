@@ -3485,6 +3485,7 @@ body {
 }
 #site_debug {
     max-width: 1280px;
+    margin: auto;
 }
 @media screen and (max-width: 920px) {
     #searchbars {
@@ -3778,4 +3779,16 @@ body {
 }
 #discog_table tr.colhead {
     border: none;
+}
+#user #userform > table > tbody > tr.colhead > td {
+    background-color: #272b37 !important;       /* TODO: pick appropriate color and add to other 2 palettes */
+}
+#follows .box {
+    border: 3px solid #313543;                  /* TODO: pick appropriate color and add to other 2 palettes */
+}
+#follows .box .pad {
+    background-color: #191b22;                  /* TODO: pick appropriate color and add to other 2 palettes */
+}
+#follows .box .linkbox {
+    display: none;
 }
