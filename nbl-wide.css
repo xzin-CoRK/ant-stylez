@@ -3424,7 +3424,7 @@ img.banner {
 .showname {
     flex-shrink: 1;
     flex-basis: 30%;
-    position: inherit;
+    position: inherit !important;   /* TODO: remove !important when this is modified in show.css */
 }
 .tagssh {
     width: inherit !important;      /* TODO: remove !important when this is modified in show.css */
