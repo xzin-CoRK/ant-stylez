@@ -1312,6 +1312,10 @@ table {
     border: none;
 }
 
+#discog_table {
+    border: 3px solid #313543;  /* TODO: choose appropriate colors for other 2 palettes */
+}
+
 tr.rowa,
 .rowa {
     background-color: #282c37;
@@ -3415,11 +3419,12 @@ img.banner {
         height: 100%;
     }
 
-#discog_table tr.torrent > td,
+#discog_table tr.torrent > td:first-child,
 #discog_table tr.colhead > td:nth-child(1) {
     display: flex;
-    width: inherit;
+    width: inherit !important;
 }
+
 .season,
 .showname {
     flex-shrink: 1;
