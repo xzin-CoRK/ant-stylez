@@ -3432,7 +3432,7 @@ img.banner {
     flex-basis: 70%;
 }
 .codecs {
-    margin: inherit;
+    margin: inherit !important;     /* TODO: remove !important when merging into show.css */
 }
 tr.torrent > td > div.tagssh:nth-child(1) > .codecs {
     margin-left: calc(30%);
