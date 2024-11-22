@@ -3292,10 +3292,10 @@ img.banner {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        white-space: pre-line;
+        white-space: pre-line !important;
     }
     .icons {
-        position: inherit;
+        position: inherit !important;
         display: flex;
         justify-content: end;
     }
@@ -3427,7 +3427,7 @@ img.banner {
     position: inherit;
 }
 .tagssh {
-    width: inherit;
+    width: inherit !important;      /* TODO: remove !important when this is modified in show.css */
     flex-grow: 1;
     flex-basis: 70%;
 }
