@@ -3417,20 +3417,18 @@ img.banner {
         align-items: center;
         box-sizing: border-box;
         height: 100%;
-}
-#discog_table tr {
-    border-top: 1px solid #282828;      /* TODO: pick appropriate color and add to other 2 palettes */
-    border-bottom: 1px solid #282828;   /* TODO: pick appropriate color and add to other 2 palettes */
-}
-#discog_table td {
-    border-top: none;
-    border-bottom: none;
-}
+    }
 
 #discog_table tr.torrent > td:first-child,
 #discog_table tr.colhead > td:nth-child(1) {
     display: flex;
     width: inherit !important;
+}
+
+#discog_table tr.torrent > td:nth-child(3),
+#discog_table tr.torrent > td:nth-child(4),
+#discog_table tr.torrent > td:nth-child(5){
+    text-align: center;
 }
 
 .season,
@@ -3487,6 +3485,9 @@ body {
     }
 #forums td.postbody {
     width: inherit; /* TODO: placeholder only; remove width: 800px from structure.css (line 664) */
+}
+#site_debug {
+    max-width: 1280px;
 }
 @media screen and (max-width: 920px) {
     #searchbars {
@@ -3760,4 +3761,18 @@ body {
     #follows div.showmaze {
         display: flex;
     }
+}
+
+
+/* STYLE changes */
+#user #userform > table {
+    border: 3px solid #313543;          /* TODO: pick appropriate color and add to other 2 palettes */
+}
+#discog_table tr {
+    border-top: 1px solid #282828;      /* TODO: pick appropriate color and add to other 2 palettes */
+    border-bottom: 1px solid #282828;   /* TODO: pick appropriate color and add to other 2 palettes */
+}
+#discog_table td {
+    border-top: none;
+    border-bottom: none;
 }
