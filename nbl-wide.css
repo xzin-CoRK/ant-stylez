@@ -375,10 +375,10 @@ nav#mainnav > ul {
     justify-content: space-evenly;
     align-items: stretch;
 }
-nav#mainnav > ul > li.dropdown-more {
+nav#mainnav > ul > li {
     position: relative;
 }
-nav#mainnav > ul > li.dropdown-more > ul {
+nav#mainnav > ul > li > ul {
     width: 100%;
 }
 
