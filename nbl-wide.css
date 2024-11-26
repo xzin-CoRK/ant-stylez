@@ -342,6 +342,8 @@ nav#mainnav ul ul {
     transition: opacity 200ms linear;
     z-index: 99999;
     width: 12.5%;
+    box-shadow: 5px 5px 12px 3px rgba(0,0,0,.45);
+    box-sizing: border-box;
 }
 
 nav#mainnav ul li:hover > ul {
@@ -3505,6 +3507,15 @@ body {
     }
 }
 
+/* slots */
+#bonus div.thin {
+    position: relative;        /* TODO: remove hardcoded width:604px from the div */
+}
+#bonus div.thin > div:nth-of-type(2) {
+    width: unset !important;
+}
+    
+
 
 /* Mobile-view -- put this all in structure.css */
 @media screen and (max-width: 510px) {
@@ -3670,6 +3681,9 @@ body {
     /* Requests */
     #requests div.thin input[type=text] {
         width: 100%;
+    }
+    #requests #request_table tr > td:nth-child(n+4) {
+        display: none;
     }
     
     
