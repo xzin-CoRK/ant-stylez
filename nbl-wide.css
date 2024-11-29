@@ -3222,8 +3222,9 @@ a.Snatched:hover {
     width: 100%;
 }
 .poster_box {
-    height: inherit;
+    height: inherit !important;     /* TODO: remove !important when putting this onto dev */
     border: none;
+
 }
 
 /* END SHOW.CSS CHANGES */
