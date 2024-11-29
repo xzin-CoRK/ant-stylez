@@ -3236,7 +3236,7 @@ a.Snatched:hover {
     width: 100%;
     height: auto;
     display: block;
-    
+    border-radius: 0px;
     max-width: inherit !important;      /* TODO: remove !important when putting this into place */
     max-height: inherit !important;     /* TODO: remove !important when putting this into place */
 }
