@@ -3276,7 +3276,7 @@ img.banner {
 
 #torrents .show_title_wrap > .side_bar {
     grid-column: 2 / span 1;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 4;
     margin: auto;
     width: 100%;
 }
