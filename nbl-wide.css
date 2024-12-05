@@ -3361,6 +3361,15 @@ img.banner {
         grid-column: 1 / span 5;
         width: 100vw;
     }
+    #torrents input {
+        max-width: 75vw;
+    }
+    /* Change width of seeding IP address (only visible to staff on seeding torrents page) */
+    /* Use has with + to ensure we only apply this as desired (and not on the main torrent search results page, for example) */
+    #torrents #torrent_table tr.torrent > td:nth-child(3):has(+ .nobr) {
+        grid-column: 1 / span 5;
+        width: 100vw;
+    }
     #torrents #torrent_table tr.torrent > td:nth-child(3) {
         display: grid;
         grid-template-columns: auto;
