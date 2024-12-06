@@ -3681,21 +3681,33 @@ body {
     }
 
     /* bbcode bars  */
-    table.bb_holder div.bb_buttons_left {
-        width: 100%;
+    table.bb_holder > tbody > tr:nth-child(1) > td > div.bb_buttons_left {
+        width: 95vw;
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         gap: 2px;
     }
+    table.bb_holder > tbody > tr:nth-child(2) > td > div.bb_buttons_left {
+        width: 95vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2px;
+    }
+    table.bb_holder > tbody > tr > td {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 5px;
+    }
     table.bb_holder div.bb_buttons_right {
         width: 100%;
     }
-    table.bb_holder > tbody {
-        display: grid;
-        grid-template-columns: auto;
+    table.bb_holder div.bb_buttons_left select {
+        width: 100%;
+        max-width: 100% !important;
     }
     table.bb_holder > tbody > tr {
-        display: contents;
+        display: grid;
+        grid-template-columns: auto;
     }
     table.bb_holder > tbody > tr > td.colhead:nth-child(2) {
         grid-row: 1;
@@ -3739,6 +3751,11 @@ body {
 
 
     /* Settings */
+    
+    /* Disable border on mobile*/
+    #user #userform > table {
+        border: none !important;
+    }
     #user #userform > table > tbody > tr {
         display: grid;
         grid-template-columns: 100px auto;
@@ -3784,18 +3801,26 @@ body {
     #user #userform table > tbody > tr:nth-child(52) > td:first-child,
     #user #userform table > tbody > tr:nth-child(55) > td:first-child {
         box-sizing: border-box;
-        width: 100vw;
+        grid-column: 1 / span 2;
     }
 
     #user textarea {
         max-width: inherit;
+    }
+    /* Put Stats, Requests Filled, Requests Voted sections into a single column to avoid being too wide */
+    #user #userform table > tbody > tr:nth-child(62) > td:last-child,
+    #user #userform table > tbody > tr:nth-child(64) > td:last-child,
+    #user #userform table > tbody > tr:nth-child(65) > td:last-child{
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 5px;
     }
 
 
     #user div.thin input[type=text],
     #user div.thin input[type=password],
     #user div.thin select {
-        width: 250px;
+        max-width: 60%;
     }
 
     /* Slots Page*/
