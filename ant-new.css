@@ -5,16 +5,15 @@
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans"), local("OpenSans"),
-    url(../fonts/OpenSans.ttf) format("truetype");
+  url(../fonts/OpenSans.ttf) format("truetype");
 }
-
 /* latin */
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   src: local("Open Sans Semibold"), local("OpenSans-Semibold"),
-    url(../fonts/OpenSans-Semibold.ttf) format("truetype");
+  url(../fonts/OpenSans-Semibold.ttf) format("truetype");
 }
 
 * {
@@ -36,19 +35,16 @@
   color: #ecebf3;
   font-size: 20px;
 }
-
 .cats_shortfilm:after {
   content: "Short";
   color: #ecebf3;
   font-size: 16px;
 }
-
 .cats_miniseries:after {
   content: "TV";
   color: #ecebf3;
   font-size: 20px;
 }
-
 .cats_other:after {
   content: "Other";
   color: #ecebf3;
@@ -136,11 +132,9 @@ h6 a {
   font-size: 12px;
   line-height: 1.6;
 }
-
 #userform #settings_sections h2 a {
   color: #f0f0f0;
 }
-
 #userform #settings_sections h2 a:hover {
   color: #71b0c3;
 }
@@ -148,19 +142,15 @@ h6 a {
 li {
   margin: 5px 15px;
 }
-
 .pad li:first-child {
   margin-top: 0;
 }
-
 .pad li:last-child {
   margin-bottom: 0;
 }
-
 .pad li {
   margin-right: 0;
 }
-
 .pad .nobullet li {
   margin-left: 0;
 }
@@ -204,15 +194,12 @@ input[type="submit"]:focus {
   font-family: "Open Sans", Helvetica, Arial, Tahoma, sans-serif;
   color: #cecece;
 }
-
 :-moz-placeholder {
   font-family: "Open Sans", Helvetica, Arial, Tahoma, sans-serif;
 }
-
 ::-moz-placeholder {
   font-family: "Open Sans", Helvetica, Arial, Tahoma, sans-serif;
 }
-
 :-ms-input-placeholder {
   font-family: "Open Sans", Helvetica, Arial, Tahoma, sans-serif;
 }
@@ -239,7 +226,7 @@ textarea {
   background-color: #373a42;
   border: 1px solid #5b5e64;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 span.size1 {
@@ -337,7 +324,6 @@ ul.thin li {
   overflow: hidden;
   background: rgba(35, 37, 42, 0.75);
 }
-
 #site_debug {
   max-width: 1280px;
   margin: auto;
@@ -399,23 +385,21 @@ p.min_padding {
 }
 
 /* Force old percentage-based layout for certain pages (user settings, store) */
-#store>#wrapper>#content>div.thin>div.sidebar {
+#store > #wrapper > #content > div.thin > div.sidebar {
   float: right;
   width: 28%;
   height: 100%;
 }
 
-#store>#wrapper>#content>div.thin>div.main_column {
+#store > #wrapper > #content > div.thin > div.main_column {
   width: 71%;
   float: left;
 }
-
-#userform>div.sidebar {
+#userform > div.sidebar {
   width: 240px;
   float: right;
 }
-
-#userform>div.main_column {
+#userform > div.main_column {
   width: calc(100% - 248px);
   float: left;
 }
@@ -429,7 +413,7 @@ p.min_padding {
   padding: 5px 10px 10px 10px;
 }
 
-.nav_dropdown>div {
+.nav_dropdown > div {
   position: absolute;
   width: 126.1px;
   text-align: center;
@@ -443,11 +427,11 @@ p.min_padding {
   width: 100%;
 }
 
-#menu>ul>.nav_dropdown:hover {
+#menu > ul > .nav_dropdown:hover {
   background-color: #61929f;
 }
 
-#menu>ul>.nav_dropdown>div>a:hover {
+#menu > ul > .nav_dropdown > div > a:hover {
   color: #e9e9e9;
 }
 
@@ -455,14 +439,14 @@ p.min_padding {
   max-width: 40px;
 }
 
-.nav_dropdown>div>a {
+.nav_dropdown > div > a {
   display: none;
   color: white;
   height: 50px;
   line-height: 50px;
 }
 
-#nav_links>#links_menu {
+#nav_links > #links_menu {
   margin-left: -86.1px;
 }
 
@@ -471,12 +455,12 @@ p.min_padding {
   color: #20bf55;
 }
 
-.nav_dropdown:hover>div>a {
+.nav_dropdown:hover > div > a {
   display: block;
 }
 
-#menu>ul>li>a:hover,
-.nav_dropdown:hover>div>a:hover {
+#menu > ul > li > a:hover,
+.nav_dropdown:hover > div > a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -489,7 +473,7 @@ p.min_padding {
   margin-right: 12px;
 }
 
-#userinfo>ul {
+#userinfo > ul {
   height: 17px;
 }
 
@@ -501,25 +485,25 @@ p.min_padding {
   padding: 2px;
 }
 
-#userinfo_major>li,
-#userinfo_stats>li,
+#userinfo_major > li,
+#userinfo_stats > li,
 .linkbox .brackets {
   margin-left: 8px;
 }
 
-#userinfo_minor>li,
-#userinfo_minor>li>span {
+#userinfo_minor > li,
+#userinfo_minor > li > span {
   float: right;
 }
 
-#userinfo_minor>li>ul {
+#userinfo_minor > li > ul {
   display: none;
   background: #23252a;
   padding: 6px 10px;
   margin-top: 26px;
 }
 
-#userinfo_minor>li>ul>li {
+#userinfo_minor > li > ul > li {
   display: block;
 }
 
@@ -549,11 +533,11 @@ p.min_padding {
   border-radius: 5px 5px 0 0;
 }
 
-#menu>ul {
+#menu > ul {
   display: flex;
 }
 
-#menu>ul>li {
+#menu > ul > li {
   position: relative;
   list-style: none;
   display: flex;
@@ -561,7 +545,7 @@ p.min_padding {
   margin: 0;
 }
 
-#menu>ul>li>a {
+#menu > ul > li > a {
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
@@ -576,57 +560,45 @@ p.min_padding {
   font-weight: bold;
 }
 
-#menu>ul>li:nth-of-type(1),
-#menu>ul>li:nth-of-type(1)>a {
+#menu > ul > li:nth-of-type(1),
+#menu > ul > li:nth-of-type(1) > a {
   border-radius: 5px 0 0 0;
 }
-
-#menu>ul>li:nth-of-type(11),
-#menu>ul>li:nth-of-type(11)>a {
+#menu > ul > li:nth-of-type(11),
+#menu > ul > li:nth-of-type(11) > a {
   border-radius: 0 5px 0 0;
 }
-
-#menu>ul>li:nth-of-type(1) {
+#menu > ul > li:nth-of-type(1) {
   background-color: #80a6af;
 }
-
-#menu>ul>li:nth-of-type(2) {
+#menu > ul > li:nth-of-type(2) {
   background-color: #78a1ab;
 }
-
-#menu>ul>li:nth-of-type(3) {
+#menu > ul > li:nth-of-type(3) {
   background-color: #6d9da9;
 }
-
-#menu>ul>li:nth-of-type(4) {
+#menu > ul > li:nth-of-type(4) {
   background-color: #6997a3;
 }
-
-#menu>ul>li:nth-of-type(5) {
+#menu > ul > li:nth-of-type(5) {
   background-color: #61929f;
 }
-
-#menu>ul>li:nth-of-type(6) {
+#menu > ul > li:nth-of-type(6) {
   background-color: #578b99;
 }
-
-#menu>ul>li:nth-of-type(7) {
+#menu > ul > li:nth-of-type(7) {
   background-color: #518391;
 }
-
-#menu>ul>li:nth-of-type(8) {
+#menu > ul > li:nth-of-type(8) {
   background-color: #4b7b89;
 }
-
-#menu>ul>li:nth-of-type(9) {
+#menu > ul > li:nth-of-type(9) {
   background-color: #427787;
 }
-
-#menu>ul>li:nth-of-type(10) {
+#menu > ul > li:nth-of-type(10) {
   background-color: #3b7283;
 }
-
-#menu>ul>li:nth-of-type(11) {
+#menu > ul > li:nth-of-type(11) {
   background-color: #366e7f;
 }
 
@@ -657,7 +629,7 @@ p.min_padding {
   text-decoration: underline;
 }
 
-.alertbar.modbar>a {
+.alertbar.modbar > a {
   margin: 0 5px;
 }
 
@@ -709,7 +681,7 @@ li.ui-state-hover {
   display: flex;
 }
 
-#searchbars>.search_form {
+#searchbars > .search_form {
   flex: 1 1 auto;
   text-align: center;
 }
@@ -761,7 +733,7 @@ div.linkbox {
   padding: 5px;
 }
 
-.linkbox>strong {
+.linkbox > strong {
   color: #95c2ce;
 }
 
@@ -914,7 +886,7 @@ input[value="Make Default"] {
   padding: 12px;
 }
 
-.pad+.pad {
+.pad + .pad {
   padding-top: 0;
 }
 
@@ -974,7 +946,6 @@ a.social {
   background-size: 16px;
   height: 16px;
 }
-
 a.social::after {
   /* pre-load the images */
   position: absolute;
@@ -984,7 +955,6 @@ a.social::after {
   z-index: -1;
   content: url(images/Social-Colored.png);
 }
-
 a.social:hover {
   background-image: url(images/Social-Colored.png) !important;
 }
@@ -992,27 +962,21 @@ a.social:hover {
 a.social.tmdb {
   background-position-y: 0px;
 }
-
 a.social.imdb {
   background-position-y: -16px;
 }
-
 a.social.twit {
   background-position-y: -32px;
 }
-
 a.social.face {
   background-position-y: -48px;
 }
-
 a.social.inst {
   background-position-y: -64px;
 }
-
 a.social.wiki {
   background-position-y: -80px;
 }
-
 a.social.href {
   background-position-y: -96px;
 }
@@ -1029,7 +993,6 @@ td {
 td:first-child {
   padding-left: 12px;
 }
-
 td:last-child {
   padding-right: 12px;
 }
@@ -1073,7 +1036,6 @@ tbody .colhead_dark {
 .scroll .panel tr {
   border: none;
 }
-
 .password_strength_bg {
   background-color: #2c2f36 !important;
   width: 289px !important;
@@ -1093,17 +1055,14 @@ td.label {
   text-align: right;
   width: 180px;
 }
-
 /* Tried applying this everywhere, but reportsv2 breaks (super-wide); possibly others */
 #upload td.label {
   max-width: 180px;
   min-width: 150px;
 }
-
 .filter_torrents td.label {
   width: 150px;
 }
-
 .user_search_form td.label {
   width: auto;
   min-width: auto;
@@ -1175,8 +1134,8 @@ span.center_poll {
   font-style: italic;
 }
 
-.torrent_table tbody .pad>td,
-.torrent_table tbody>.pad {
+.torrent_table tbody .pad > td,
+.torrent_table tbody > .pad {
   padding: 0;
 }
 
@@ -1283,11 +1242,11 @@ span.center_poll {
   width: 100%;
 }
 
-.filter_torrents>.box {
+.filter_torrents > .box {
   margin-top: 2px;
 }
 
-.filter_torrents>.box.pad.center {
+.filter_torrents > .box.pad.center {
   margin-top: -48px;
   margin-bottom: 10px;
 }
@@ -1350,7 +1309,6 @@ span.center_poll {
 .forum_post.forum_unread {
   border-top: 2px solid #c7fada;
 }
-
 .forum_post.staff_post.forum_unread {
   border-top: 2px solid #c7fada;
 }
@@ -1494,8 +1452,8 @@ pre {
   text-wrap: wrap;
 }
 
-#blog .thin>br,
-#news .thin>br {
+#blog .thin > br,
+#news .thin > br {
   display: none;
 }
 
@@ -1518,11 +1476,11 @@ pre {
   width: 900px;
 }
 
-#forums #content>br {
+#forums #content > br {
   display: none;
 }
 
-#forums #content .thin>p {
+#forums #content .thin > p {
   margin-top: -12px;
 }
 
@@ -1531,7 +1489,7 @@ pre {
   background-color: rgba(35, 37, 42, 0.6);
 }
 
-#forums #content .thin>table.forum_post {
+#forums #content .thin > table.forum_post {
   border-collapse: collapse !important;
 }
 
@@ -1562,8 +1520,7 @@ div.contenth #quickpost {
   border: 1px solid #5b5e64;
   border-bottom: none;
 }
-
-.bbcode_bar>li>a {
+.bbcode_bar > li > a {
   min-width: 15px;
 }
 
@@ -1718,7 +1675,7 @@ div#gift {
   margin-top: 2px;
 }
 
-#store #content>div {
+#store #content > div {
   position: initial !important;
 }
 
@@ -1776,11 +1733,9 @@ tr {
   background: rgba(44, 47, 54, 0.7);
   border-bottom: 2px solid #2c2f36;
 }
-
 tr.alt {
   background-color: rgba(39, 42, 47, 0.4);
 }
-
 .forum_post tr,
 .forum_index tr {
   border-bottom: none;
@@ -1795,12 +1750,10 @@ tr.alt {
 .torrent_table tr.group {
   background-color: rgba(62, 64, 70, 0.6);
 }
-
 .torrent_table tr.group_torrent,
 tr.torrent {
   background-color: rgba(35, 37, 42, 0.6);
 }
-
 tr.torrent:nth-of-type(even),
 tr.request:nth-of-type(even) {
   background-color: rgba(39, 42, 47, 0.6);
@@ -1822,11 +1775,9 @@ tr.request:nth-of-type(even) {
 .tl_seeding {
   color: #8de88d;
 }
-
 .tl_snatched {
   color: orange;
 }
-
 .tl_leeching {
   color: #ff3e3e;
 }
@@ -1835,22 +1786,19 @@ form tr {
   background-color: rgba(44, 47, 54, 0.7);
   border-bottom: none;
 }
-
 #mediadetails_tr div {
   display: inline-block;
   padding-right: 6px;
 }
-
 #mediadetails_tr span {
   display: inline-block;
   width: 6em;
 }
-
 #mediadetails_tr select {
   width: 9em;
 }
 
-a.last_read>svg {
+a.last_read > svg {
   fill: #909090;
   margin: 3px 6px;
 }
@@ -1859,7 +1807,6 @@ a.last_read>svg {
 .forum_list h3 {
   margin-top: 24px;
 }
-
 .forum_index h4,
 .forum_list h4 {
   font-size: 12px;
@@ -1868,11 +1815,9 @@ a.last_read>svg {
 .forum_index td {
   position: relative;
 }
-
 .forum_index .row:nth-child(odd) {
   background: rgba(51, 54, 61, 0.8);
 }
-
 .forum_index td.read:after,
 #forums td.unread:after {
   content: "";
@@ -1883,20 +1828,16 @@ a.last_read>svg {
   left: 7px;
   border-radius: 1px;
 }
-
 .forum_index td.read:after {
   background-color: #3a7686;
 }
-
 .forum_index td.unread:after {
   background-color: #95c2ce;
 }
-
 .forum_list .forum_index td.read:after,
 #forums .forum_list td.unread:after {
   top: 14px;
 }
-
 .forum_index td.read_sticky:after,
 #forums td.unread_sticky:after,
 .forum_index td.read_locked_sticky:after,
@@ -1910,17 +1851,14 @@ a.last_read>svg {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
 }
-
 .forum_index td.read_sticky:after,
 .forum_index td.read_locked_sticky:after {
   border-bottom: 10px solid #20717c;
 }
-
 .forum_index td.unread_sticky:after,
 .forum_index td.unread_locked_sticky:after {
   border-bottom: 10px solid #47b39a;
 }
-
 .forum_index td.read_locked:before,
 #forums td.unread_locked:before,
 .forum_index td.read_locked_sticky:before,
@@ -1933,12 +1871,10 @@ a.last_read>svg {
   left: 7px;
   border-radius: 1px;
 }
-
 .forum_index td.read_locked:before,
 .forum_index td.read_locked_sticky:before {
   background-color: #20717c;
 }
-
 .forum_index td.unread_locked:before,
 .forum_index td.unread_locked_sticky:before {
   background-color: #47b39a;
@@ -1949,9 +1885,8 @@ a.last_read>svg {
   position: relative;
   cursor: pointer;
 }
-
-.hide_torrents>.show_torrents_link:after,
-.show_torrents>.show_torrents_link:after {
+.hide_torrents > .show_torrents_link:after,
+.show_torrents > .show_torrents_link:after {
   content: "";
   position: absolute;
   width: 19px;
@@ -1961,8 +1896,7 @@ a.last_read>svg {
   border-radius: 2px;
   background-color: #ecebf3;
 }
-
-.show_torrents>.show_torrents_link:before {
+.show_torrents > .show_torrents_link:before {
   content: "";
   position: absolute;
   width: 3px;
@@ -2036,22 +1970,18 @@ body.style_bg_carbon {
   background-color: #53565c;
   background-image: url("images/carbon.jpg");
 }
-
 body.style_bg_constellation {
   background-color: #53565c;
   background-image: url("images/constellation.jpg");
 }
-
 body.style_bg_space {
   background-color: #53565c;
   background-image: url("images/space.jpg");
 }
-
 body.style_bg_haze {
   background-color: #53565c;
   background-image: url("images/haze.png");
 }
-
 body.style_bg_blue-space {
   background-color: #53565c;
   background-image: url("images/blue-space.jpg");
@@ -2063,20 +1993,17 @@ body input[type="button"],
 body input[type="submit"] {
   background-color: #578390;
 }
-
 body button:hover,
 body input[type="button"]:hover,
 body input[type="submit"]:hover {
   background-color: #80a6af;
 }
-
 body button:focus,
 body input[type="button"]:focus,
 body input[type="submit"]:focus {
   background-color: #80a6af;
 }
-
-div.linkbox>strong {
+div.linkbox > strong {
   color: #ecebf3;
 }
 
@@ -2090,11 +2017,9 @@ tr.colhead a {
 h2 a {
   color: #80a6af;
 }
-
 #collage_table tr.row:nth-of-type(2n) {
   background-color: rgba(39, 42, 47, 0.6);
 }
-
 #inbox table.message_table tr.row:nth-of-type(2n) {
   background-color: rgba(39, 42, 47, 0.6);
 }
@@ -2112,16 +2037,13 @@ a.show_torrents_link:hover:after {
 body.style_color_green a {
   color: #f0f0f0;
 }
-
 body.style_color_green body {
   color: #c6c9c9;
 }
-
 body.style_color_green a:hover,
 body.style_color_green.torrent_table .group a:hover {
   color: #92d4a0;
 }
-
 body.style_color_green h1 a,
 body.style_color_green h2 a,
 body.style_color_green h3 a,
@@ -2134,22 +2056,18 @@ body.style_color_green h6 a {
 body.style_color_green #userform #settings_sections h2 a:hover {
   color: #71b0c3;
 }
-
 /*find something green for mouse over.*/
-body.style_color_green .nav_dropdown>div {
+body.style_color_green .nav_dropdown > div {
   background: rgba(80, 149, 153, 0.8);
 }
-
-body.style_color_green #menu>ul>.nav_dropdown:hover {
+body.style_color_green #menu > ul > .nav_dropdown:hover {
   background-color: #509599;
 }
-
 body.style_color_green .fl_time,
 body.style_color_green.tl_free {
   color: #20bf55;
   /*find something green*/
 }
-
 body.style_color_green button,
 body.style_color_green input[type="button"],
 body.style_color_green input[type="submit"] {
@@ -2169,105 +2087,80 @@ body.style_color_green input[type="button"]:focus,
 body.style_color_green input[type="submit"]:focus {
   background-color: #2f707c;
 }
-
 body.style_color_green #userinfo_stats {
   color: #abd6ad;
 }
-
-body.style_color_green #menu>ul>li:nth-of-type(1) {
+body.style_color_green #menu > ul > li:nth-of-type(1) {
   background-color: #80af8a;
 }
-
-body.style_color_green #menu>ul>li:nth-of-type(2) {
+body.style_color_green #menu > ul > li:nth-of-type(2) {
   background-color: #78aa86;
 }
-
-body.style_color_green #menu>ul>li:nth-of-type(3) {
+body.style_color_green #menu > ul > li:nth-of-type(3) {
   background-color: #6fa585;
 }
-
-body.style_color_green #menu>ul>li:nth-of-type(4) {
+body.style_color_green #menu > ul > li:nth-of-type(4) {
   background-color: #659f82;
 }
-
-body.style_color_green #menu>ul>li:nth-of-type(5) {
+body.style_color_green #menu > ul > li:nth-of-type(5) {
   background-color: #58977f;
 }
-
-body.style_color_green #menu>ul>li:nth-of-type(6) {
+body.style_color_green #menu > ul > li:nth-of-type(6) {
   background-color: #4b907f;
 }
-
-body.style_color_green #menu>ul>li:nth-of-type(7) {
+body.style_color_green #menu > ul > li:nth-of-type(7) {
   background-color: #3d8a81;
 }
-
-body.style_color_green #menu>ul>li:nth-of-type(8) {
+body.style_color_green #menu > ul > li:nth-of-type(8) {
   background-color: #2e8180;
 }
-
-body.style_color_green #menu>ul>li:nth-of-type(9) {
+body.style_color_green #menu > ul > li:nth-of-type(9) {
   background-color: #247a80;
 }
-
-body.style_color_green #menu>ul>li:nth-of-type(10) {
+body.style_color_green #menu > ul > li:nth-of-type(10) {
   background-color: #1a707b;
 }
-
-body.style_color_green #menu>ul>li:nth-of-type(11) {
+body.style_color_green #menu > ul > li:nth-of-type(11) {
   background-color: #1e7682;
 }
-
 body.style_color_green .alertbar {
   background-color: rgba(75, 144, 127, 0.8);
 }
-
 body.style_color_green #settings_sections {
   background: #1a707b;
 }
-
 /*find something green*/
-body.style_color_green div.linkbox>a {
+body.style_color_green div.linkbox > a {
   color: #83e4a6;
 }
-
-body.style_color_green div.linkbox>strong {
+body.style_color_green div.linkbox > strong {
   color: #fff;
 }
-
 body.style_color_green .head {
   background: rgba(82, 85, 92, 0.75);
 }
-
 body.style_color_green .colhead {
   background: rgba(86, 89, 97, 0.75);
 }
-
 body.style_color_green .colhead_dark {
   background: rgba(82, 85, 92, 0.7);
   opacity: 0.7;
 }
-
 body.style_color_green tbody .colhead_dark {
   background: rgba(82, 85, 92, 0.7);
 }
-
 body.style_color_green .torrent_table .colhead_dark {
   background-color: rgba(85, 88, 95, 0.75);
 }
-
 body.style_color_green .forum_index td.read:after {
   background-color: #20717c;
 }
-
 body.style_color_green .forum_index td.unread:after {
   background-color: #47b39a;
 }
-
 body.style_color_green .staff_post .colhead_dark {
   background: rgba(56, 55, 56, 0.8);
 }
-
 body.style_color_green .noty_bar {
   border-left: #3eaca7 2px solid;
 }
@@ -2285,172 +2178,133 @@ body.style_color_green a.show_torrents_link:hover:after {
 body.style_color_dark a.social {
   background-image: url(images/Social-BW.png);
 }
-
 body.style_color_dark #searchbars {
   background-color: rgba(24, 32, 41, 0.25);
 }
-
 body.style_color_dark #searchbars input {
   background: rgba(24, 32, 41, 0.5);
   border: none;
 }
-
 body.style_color_dark #menu li:nth-child(1) {
   background: rgba(24, 32, 41, 0.7);
 }
-
 body.style_color_dark #menu li:nth-child(2) {
   background: rgba(24, 32, 41, 0.65);
 }
-
 body.style_color_dark #menu li:nth-child(3) {
   background: rgba(24, 32, 41, 0.6);
 }
-
 body.style_color_dark #menu li:nth-child(4) {
   background: rgba(24, 32, 41, 0.55);
 }
-
 body.style_color_dark #menu li:nth-child(5) {
   background: rgba(24, 32, 41, 0.5);
 }
-
 body.style_color_dark #menu li:nth-child(6) {
   background: rgba(24, 32, 41, 0.45);
 }
-
 body.style_color_dark #menu li:nth-child(7) {
   background: rgba(24, 32, 41, 0.4);
 }
-
 body.style_color_dark #menu li:nth-child(8) {
   background: rgba(24, 32, 41, 0.35);
 }
-
 body.style_color_dark #menu li:nth-child(9) {
   background: rgba(24, 32, 41, 0.3);
 }
-
 body.style_color_dark #menu li:nth-child(10) {
   background: rgba(24, 32, 41, 0.25);
 }
-
 body.style_color_dark #menu li:nth-child(11) {
   background: rgba(24, 32, 41, 0.2);
 }
-
 body.style_color_dark #menu li a:hover {
   background: white;
   color: black;
 }
-
-body.style_color_dark .nav_dropdown>div {
+body.style_color_dark .nav_dropdown > div {
   background: rgba(24, 32, 41, 0.5);
 }
-
-body.style_color_dark #userinfo_minor>li>ul {
+body.style_color_dark #userinfo_minor > li > ul {
   background: white;
   color: black;
 }
-
 body.style_color_dark #alerts .alertbar {
   background: rgba(24, 32, 41, 0.5);
 }
-
 body.style_color_dark .colhead,
 body.style_color_dark .head {
   background: rgba(24, 32, 41, 0.75);
 }
-
 body.style_color_dark .colhead_dark {
   background: rgba(24, 32, 41, 0.7);
 }
-
 body.style_color_dark tr {
   background: rgba(75, 75, 75, 0.7);
   border-bottom: none;
 }
-
 body.style_color_dark .box {
   background: rgba(75, 75, 75, 0.7) !important;
 }
-
 body.style_color_dark select,
 body.style_color_dark input,
 body.style_color_dark textarea {
   background: rgba(24, 32, 41, 0.5);
 }
-
 body.style_color_dark table tbody.style_color_dark a,
 body.style_color_dark .main_column a,
 body.style_color_dark .sidebar a,
 body.style_color_dark .box a {
   color: rgba(255, 255, 255, 0.8);
 }
-
 body.style_color_dark #userinfo_stats {
   color: rgba(255, 255, 255, 0.6);
 }
-
 body.style_color_dark #userinfo_stats a {
   color: rgba(255, 255, 255, 0.6);
 }
-
-body.style_color_dark #userinfo_stats .stat>span {
+body.style_color_dark #userinfo_stats .stat > span {
   color: white;
 }
-
-body.style_color_dark #userinfo_stats .stat>a {
+body.style_color_dark #userinfo_stats .stat > a {
   color: white;
 }
-
 body.style_color_dark .filter_torrents #ft_container tr {
   background: none;
 }
-
 body.style_color_dark tr.torrent,
 body.style_color_dark tr.request {
   background-color: rgba(24, 32, 41, 0.6) !important;
 }
-
 body.style_color_dark tr.torrent:nth-of-type(even),
 body.style_color_dark tr.request:nth-of-type(even) {
   background-color: rgba(24, 32, 41, 0.5) !important;
 }
-
 body.style_color_dark tr.group {
   background-color: rgba(24, 32, 41, 0.8);
 }
-
 body.style_color_dark tr.group_torrent {
   background-color: rgba(24, 32, 41, 0.85);
 }
-
 body.style_color_dark .body.style_color_dark {
   background: none;
 }
-
 body.style_color_dark blockquote {
   background-color: rgba(24, 32, 41, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.56);
 }
-
 body.style_color_dark h2 a {
   color: rgba(255, 255, 255, 0.7);
 }
-
 body.style_color_dark .linkbox a {
   color: rgba(255, 255, 255, 0.8);
 }
-
 body.style_color_dark .noty_bar {
   border-left: none;
 }
-
 body.style_color_dark #noty_bottomRight_layout_container li {
   background-color: rgba(82, 85, 92, 0.79);
 }
-
 body.style_color_dark .noty_buttons {
   background-color: rgba(44, 47, 54, 0.7);
 }
@@ -2459,7 +2313,6 @@ body.style_color_dark .noty_buttons {
 body.style_color_chocolat a.social {
   background-image: url(images/Social-Chocolat.png);
 }
-
 body.style_color_chocolat h1 a,
 body.style_color_chocolat h2 a,
 body.style_color_chocolat h3 a,
@@ -2468,96 +2321,75 @@ body.style_color_chocolat h5 a,
 body.style_color_chocolat h6 a {
   color: #c5b09b;
 }
-
 body.style_color_chocolat a:hover,
 body.style_color_chocolat .torrent_table .group a:hover {
   color: #eedfd1;
 }
-
 body.style_color_chocolat ::selection,
 body.style_color_chocolat ::-moz-selection {
   background: #785248;
 }
-
 body.style_color_chocolat button,
 body.style_color_chocolat input[type="button"],
 body.style_color_chocolat input[type="submit"] {
   background-color: #785248;
 }
-
 body.style_color_chocolat button:hover,
 body.style_color_chocolat input[type="button"]:hover,
 body.style_color_chocolat input[type="submit"]:hover {
   background-color: #845c4f;
 }
-
 body.style_color_chocolat button:focus,
 body.style_color_chocolat input[type="button"]:focus,
 body.style_color_chocolat input[type="submit"]:focus {
   background-color: #7f574c;
 }
-
 body.style_color_chocolat #userinfo_stats {
   color: #c2c2c2;
 }
-
-body.style_color_chocolat #menu>ul>li:nth-of-type(1) {
+body.style_color_chocolat #menu > ul > li:nth-of-type(1) {
   background-color: #8e6354;
 }
-
-body.style_color_chocolat #menu>ul>li:nth-of-type(2) {
+body.style_color_chocolat #menu > ul > li:nth-of-type(2) {
   background-color: #8a6152;
 }
-
-body.style_color_chocolat #menu>ul>li:nth-of-type(3) {
+body.style_color_chocolat #menu > ul > li:nth-of-type(3) {
   background-color: #845c4f;
 }
-
-body.style_color_chocolat #menu>ul>li:nth-of-type(4) {
+body.style_color_chocolat #menu > ul > li:nth-of-type(4) {
   background-color: #7f574c;
 }
-
-body.style_color_chocolat #menu>ul>li:nth-of-type(5) {
+body.style_color_chocolat #menu > ul > li:nth-of-type(5) {
   background-color: #785248;
 }
-
-body.style_color_chocolat #menu>ul>li:nth-of-type(6) {
+body.style_color_chocolat #menu > ul > li:nth-of-type(6) {
   background-color: #734d45;
 }
-
-body.style_color_chocolat #menu>ul>li:nth-of-type(7) {
+body.style_color_chocolat #menu > ul > li:nth-of-type(7) {
   background-color: #6d4942;
 }
-
-body.style_color_chocolat #menu>ul>li:nth-of-type(8) {
+body.style_color_chocolat #menu > ul > li:nth-of-type(8) {
   background-color: #6a4640;
 }
-
-body.style_color_chocolat #menu>ul>li:nth-of-type(9) {
+body.style_color_chocolat #menu > ul > li:nth-of-type(9) {
   background-color: #66433e;
 }
-
-body.style_color_chocolat #menu>ul>li:nth-of-type(10) {
+body.style_color_chocolat #menu > ul > li:nth-of-type(10) {
   background-color: #63403c;
 }
-
-body.style_color_chocolat #menu>ul>li:nth-of-type(11) {
+body.style_color_chocolat #menu > ul > li:nth-of-type(11) {
   background-color: #603d39;
 }
-
-body.style_color_chocolat #menu>ul>.nav_dropdown:hover,
-body.style_color_chocolat .nav_dropdown>div {
+body.style_color_chocolat #menu > ul > .nav_dropdown:hover,
+body.style_color_chocolat .nav_dropdown > div {
   background-color: #603d39;
 }
-
-body.style_color_chocolat .linkbox>strong {
+body.style_color_chocolat .linkbox > strong {
   color: #66433e;
 }
-
 body.style_color_chocolat .alertbar {
   background-color: rgba(138, 97, 82, 0.8);
 }
-
 body.style_color_chocolat div.show_torrents:hover:before,
 body.style_color_chocolat div.show_torrents:hover:after,
 body.style_color_chocolat div.hide_torrents:hover:before,
@@ -2570,50 +2402,40 @@ body.style_color_chocolat a.show_torrents_link:hover:after {
 body.style_color_chocolat .forum_index td.read:after {
   background-color: #845c4f;
 }
-
 body.style_color_chocolat .forum_index td.unread:after {
   background-color: #66433e;
 }
-
 body.style_color_chocolat .forum_index td.read_sticky:after,
 body.style_color_chocolat .forum_index td.read_locked_sticky:after {
   border-bottom: 10px solid #845c4f;
 }
-
 body.style_color_chocolat .forum_index td.read_locked:before,
 body.style_color_chocolat .forum_index td.read_locked_sticky:before {
   background-color: #845c4f;
 }
-
 body.style_color_chocolat .forum_index td.unread_sticky:after,
 body.style_color_chocolat .forum_index td.unread_locked_sticky:after {
   border-bottom: 10px solid #66433e;
 }
-
 body.style_color_chocolat .forum_index td.unread_locked:before,
 body.style_color_chocolat .forum_index td.unread_locked_sticky:before {
   background-color: #66433e;
 }
-
 body.style_color_chocolat .forum_post.forum_unread {
   border-top: 2px solid #eedfd1;
 }
-
 body.style_color_chocolat .noty_bar {
   border-left: #63403c 2px solid;
 }
-
 body.style_color_chocolat .collage_image:hover {
   box-shadow: 0px 0px 0px 3px #63403c;
 }
-
 body.style_color_chocolat .colhead td,
 body.style_color_chocolat .colhead_dark td,
 body.style_color_chocolat td.colhead,
 body.style_color_chocolat .head {
   background-color: rgba(56, 55, 56, 0.8);
 }
-
 body.style_color_chocolat #collages .sign,
 #torrents .sign {
   padding: 5px;
@@ -2626,22 +2448,18 @@ body.style_color_chocolat #collages .sign,
 body.style_color_pink a {
   color: #fff;
 }
-
 body.style_color_pink #nav_user a,
 body.style_color_pink #nav_links a {
   color: #fff;
 }
-
 body.style_color_pink .colhead,
 body.style_color_pink .colhead_dark,
 body.style_color_pink .head {
   background-color: #3b2655;
 }
-
 body.style_color_pink a.social {
   background-image: url(images/Social-Pink.png);
 }
-
 body.style_color_pink h1 a,
 body.style_color_pink h2 a,
 body.style_color_pink h3 a,
@@ -2665,126 +2483,98 @@ body.style_color_pink input[type="button"],
 body.style_color_pink input[type="submit"] {
   background-color: rgba(139, 81, 142, 0.8);
 }
-
 body.style_color_pink button:hover,
 body.style_color_pink input[type="button"]:hover,
 body.style_color_pink input[type="submit"]:hover {
   background-color: #643c72;
 }
-
 body.style_color_pink button:focus,
 body.style_color_pink input[type="button"]:focus,
 body.style_color_pink input[type="submit"]:focus {
   background-color: #78467f;
 }
-
 body.style_color_pink #userinfo_stats {
   color: #db7bc7;
 }
-
-body.style_color_pink #menu>ul>li:nth-of-type(1) {
+body.style_color_pink #menu > ul > li:nth-of-type(1) {
   background-color: #3b2655;
 }
-
-body.style_color_pink #menu>ul>li:nth-of-type(2) {
+body.style_color_pink #menu > ul > li:nth-of-type(2) {
   background-color: #4f3063;
 }
-
-body.style_color_pink #menu>ul>li:nth-of-type(3) {
+body.style_color_pink #menu > ul > li:nth-of-type(3) {
   background-color: #643c72;
 }
-
-body.style_color_pink #menu>ul>li:nth-of-type(4) {
+body.style_color_pink #menu > ul > li:nth-of-type(4) {
   background-color: #78467f;
 }
-
-body.style_color_pink #menu>ul>li:nth-of-type(5) {
+body.style_color_pink #menu > ul > li:nth-of-type(5) {
   background-color: #8b518e;
 }
-
-body.style_color_pink #menu>ul>li:nth-of-type(6) {
+body.style_color_pink #menu > ul > li:nth-of-type(6) {
   background-color: #9f5c9c;
 }
-
-body.style_color_pink #menu>ul>li:nth-of-type(7) {
+body.style_color_pink #menu > ul > li:nth-of-type(7) {
   background-color: #b367aa;
 }
-
-body.style_color_pink #menu>ul>li:nth-of-type(8) {
+body.style_color_pink #menu > ul > li:nth-of-type(8) {
   background-color: #c871b9;
 }
-
-body.style_color_pink #menu>ul>li:nth-of-type(9) {
+body.style_color_pink #menu > ul > li:nth-of-type(9) {
   background-color: #db7bc7;
 }
-
-body.style_color_pink #menu>ul>li:nth-of-type(10) {
+body.style_color_pink #menu > ul > li:nth-of-type(10) {
   background-color: #ef86d5;
 }
-
-body.style_color_pink #menu>ul>li:nth-of-type(11) {
+body.style_color_pink #menu > ul > li:nth-of-type(11) {
   background-color: #f48bda;
 }
-
-body.style_color_pink #menu>ul>.nav_dropdown:hover,
-body.style_color_pink .nav_dropdown>div {
+body.style_color_pink #menu > ul > .nav_dropdown:hover,
+body.style_color_pink .nav_dropdown > div {
   background-color: #e295d2;
 }
-
-body.style_color_pink div.linkbox>a {
+body.style_color_pink div.linkbox > a {
   color: #db7bc7;
 }
-
-body.style_color_pink div.linkbox>strong {
+body.style_color_pink div.linkbox > strong {
   color: #fff;
 }
-
 body.style_color_pink .alertbar {
   background-color: rgba(79, 48, 99, 0.8);
 }
-
-body.style_color_pink .hide_torrents>.show_torrents_link:after,
-body.style_color_pink .show_torrents>.show_torrents_link:after,
-body.style_color_pink .show_torrents>.show_torrents_link:before {
+body.style_color_pink .hide_torrents > .show_torrents_link:after,
+body.style_color_pink .show_torrents > .show_torrents_link:after,
+body.style_color_pink .show_torrents > .show_torrents_link:before {
   background-color: #fff;
 }
-
 body.style_color_pink .forum_index td.read:after {
   background-color: #643c72;
 }
-
 body.style_color_pink .forum_index td.unread:after {
   background-color: #db7bc7;
 }
-
 body.style_color_pink .forum_index td.read_sticky:after,
 body.style_color_pink .forum_index td.read_locked_sticky:after {
   border-bottom: 10px solid #643c72;
 }
-
 body.style_color_pink .forum_index td.read_locked:before,
 body.style_color_pink .forum_index td.read_locked_sticky:before {
   background-color: #643c72;
 }
-
 body.style_color_pink .forum_index td.unread_sticky:after,
 body.style_color_pink .forum_index td.unread_locked_sticky:after {
   border-bottom: 10px solid #db7bc7;
 }
-
 body.style_color_pink .forum_index td.unread_locked:before,
 body.style_color_pink .forum_index td.unread_locked_sticky:before {
   background-color: #db7bc7;
 }
-
 body.style_color_pink .forum_post.forum_unread {
   border-top: 2px solid #eedfd1;
 }
-
 body.style_color_pink .noty_bar {
   border-left: #ef86d5 2px solid;
 }
-
 body.style_color_pink .collage_image:hover {
   box-shadow: 0px 0px 0px 3px #ef86d5;
 }
@@ -2792,973 +2582,824 @@ body.style_color_pink .collage_image:hover {
 /* Responsive Changes */
 @media screen and (min-width: 913px) {
   #header {
-    width: 90%;
+      width: 90%;
   }
-
   #alerts {
-    width: 90%;
+      width: 90%;
   }
-
   #content {
-    width: 90%;
+      width: 90%;
   }
-
   #footer {
-    width: 90%;
+      width: 90%;
   }
-
   #wrapper,
   .thin {
-    width: 100%;
+      width: 100%;
   }
 }
 
 @media screen and (max-width: 912px) {
   #header {
-    width: 100%;
+      width: 100%;
   }
-
   #alerts {
-    width: 100%;
+      width: 100%;
   }
-
   #content {
-    width: 100%;
+      width: 100%;
   }
-
   #footer {
-    width: 100%;
+      width: 100%;
   }
 }
 
 @media screen and (max-width: 800px) {
   #header {
-    width: 100%;
+      width: 100%;
   }
-
   #content {
-    width: 100%;
+      width: 100%;
   }
-
   #wrapper,
   .thin {
-    width: 100%;
-    margin: 0 auto;
+      width: 100%;
+      margin: 0 auto;
   }
-
   #content,
   .sidebar {
-    overflow: hidden;
+      overflow: hidden;
   }
-
   #logo a::before {
-    font-size: 32px;
+      font-size: 32px;
   }
-
   #menu {
-    font-size: 10px;
+      font-size: 10px;
   }
-
-  #userinfo>ul {
-    height: 35px;
+  #userinfo > ul {
+      height: 35px;
   }
-
   #noty_bottomRight_layout_container {
-    right: 100px;
+      right: 100px;
   }
 }
 
 /* Non-mobile view */
 @media screen and (min-width: 576px) {
-
   /*
-    Use css grid to control layout of sidebar & main content for
-    homepage, torrent details page, wiki
-    */
-  #index>#wrapper>#content>div.thin,
-  #torrents>#wrapper>#content>div.torrents_details>div.thin,
-  #wiki>#wrapper>#content>div.thin {
-    display: grid;
-    grid-template-columns: 71% 28%;
-    grid-template-rows: auto auto auto;
-    gap: 8px;
+  Use css grid to control layout of sidebar & main content for
+  homepage, torrent details page, wiki
+  */
+  #index > #wrapper > #content > div.thin,
+  #torrents > #wrapper > #content > div.torrents_details > div.thin,
+  #wiki > #wrapper > #content > div.thin {
+      display: grid;
+      grid-template-columns: 71% 28%;
+      grid-template-rows: auto auto auto;
+      gap: 8px;
   }
-
-  #torrents>#wrapper>#content>div.torrents_details>div.thin>div.header,
-  #wiki>#wrapper>#content>div.thin>div.header {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  #torrents > #wrapper > #content > div.torrents_details > div.thin > div.header,
+  #wiki > #wrapper > #content > div.thin > div.header {
+      grid-column-start: 1;
+      grid-column-end: 3;
   }
-
-  #torrents>#wrapper>#content>div.torrents_details>div.thin>div.sidebar,
-  #index>#wrapper>#content>div.thin>div.sidebar,
-  #wiki>#wrapper>#content>div.thin>div.sidebar {
-    order: 2;
+  #torrents > #wrapper > #content > div.torrents_details > div.thin > div.sidebar,
+  #index > #wrapper > #content > div.thin > div.sidebar,
+  #wiki > #wrapper > #content > div.thin > div.sidebar {
+      order: 2;
   }
 
   /* Extra styling to get torrent details page to display properly when torrent list is display above the sidebar */
-  #torrents div.torrents_details>div.thin>div.header {
-    grid-row: 1/2;
+  #torrents div.torrents_details > div.thin > div.header {
+      grid-row: 1/2;
+  }
+  #torrents div.torrents_details > div.thin > div.box {
+      grid-row: 2/3;
+      grid-column: 2/3;
+  }
+  #torrents div.torrents_details > div.thin > div.sidebar {
+      grid-column: 2/3;
+  }
+  #torrents div.torrents_details > div.thin > div.main_column {
+      grid-row: 2/4;
+      grid-column: 1/2;
   }
 
-  #torrents div.torrents_details>div.thin>div.box {
-    grid-row: 2/3;
-    grid-column: 2/3;
+  #user > #wrapper > #content > div.thin > div.sidebar {
+      float: right;
+      width: 28%;
+      height: 100%;
   }
-
-  #torrents div.torrents_details>div.thin>div.sidebar {
-    grid-column: 2/3;
+  #user > #wrapper > #content > div.thin > div.main_column {
+      width: 71%;
+      float: left;
   }
-
-  #torrents div.torrents_details>div.thin>div.main_column {
-    grid-row: 2/4;
-    grid-column: 1/2;
-  }
-
-  #user>#wrapper>#content>div.thin>div.sidebar {
-    float: right;
-    width: 28%;
-    height: 100%;
-  }
-
-  #user>#wrapper>#content>div.thin>div.main_column {
-    width: 71%;
-    float: left;
-  }
-
   #settings_sections {
-    width: 240px;
+      width: 240px;
   }
-
   #settings_sections div.head {
-    padding: 6px 12px;
+      padding: 6px 12px;
   }
-
   /* Collage and requests need percentage-based view for desktop */
   #collage .sidebar,
   #requests .sidebar,
   #artist .sidebar {
-    width: 28%;
-    float: right;
+      width: 28%;
+      float: right;
   }
-
   #collage .main_column,
   #requests .main_column,
   #artist .main_column {
-    width: 71%;
+      width: 71%;
   }
 }
 
 /* Mobile layout */
 @media screen and (max-width: 575px) {
   * {
-    scroll-margin-top: 64px;
+      scroll-margin-top: 64px;
   }
 
   /* Prevent horizontal scrolling */
   html,
   body {
-    overflow-x: hidden;
-    width: 100vw;
+      overflow-x: hidden;
+      width: 100vw;
   }
 
   /* Header Stuff */
   #header {
-    display: flex;
-    flex-direction: column;
-    --row-height: 35px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    height: 0;
-    left: 0;
-    transform: translateY(0);
-    transition: 0.2s;
-    padding-bottom: 60px;
-    background-color: #578390;
-    overflow: hidden;
-    z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      --row-height: 35px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      height: 0;
+      left: 0;
+      transform: translateY(0);
+      transition: 0.2s;
+      padding-bottom: 60px;
+      background-color: #578390;
+      overflow: hidden;
+      z-index: 1000;
   }
 
   /* Show an expand icon on the menu bar */
   #header::after {
-    content: "▾";
-    display: block;
-    text-align: center;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 90%;
-    transform: translateY(-50%);
+      content: "▾";
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 90%;
+      transform: translateY(-50%);
   }
-
   #logo {
-    width: 64px;
-    height: 64px;
+      width: 64px;
+      height: 64px;
   }
-
   #header:hover {
-    max-height: initial;
-    height: clamp(200px, calc(var(--row-height) * 15), 100%);
-    transition: all 0.6s cubic-bezier(1, 0.01, 0.3, 1.31);
-    border-bottom: 1px groove #427787;
+      max-height: initial;
+      height: clamp(200px, calc(var(--row-height) * 15), 100%);
+      transition: all 0.6s cubic-bezier(1, 0.01, 0.3, 1.31);
+      border-bottom: 1px groove #427787;
   }
 
   /* Clear the menu bar expand icon when active */
   #header:hover::after {
-    content: "";
+      content: "";
   }
-
-  #wrapper>div:nth-of-type(2) {
-    /* For mods, the Alerts div is 2nd div in the layout.  For users, the content div is 2nd.
-    So we need to dynamically select the 2nd div, then push it down below the header. */
-    margin-top: 64px;
+  #wrapper > div:nth-of-type(2) {
+      /* For mods, the Alerts div is 2nd div in the layout.  For users, the content div is 2nd.
+  So we need to dynamically select the 2nd div, then push it down below the header. */
+      margin-top: 64px;
   }
-
   #content {
-    width: 100%;
+      width: 100%;
   }
 
   #wrapper,
   .thin {
-    width: 100%;
-    margin: 0 auto;
+      width: 100%;
+      margin: 0 auto;
   }
-
   #content,
   .sidebar {
-    overflow: hidden;
+      overflow: hidden;
   }
-
   #logo a {
-    background-image: url(../public/images/logo.png);
-    background-repeat: no-repeat;
-    background-position: center;
+      background-image: url(../public/images/logo.png);
+      background-repeat: no-repeat;
+      background-position: center;
   }
-
   #logo a::before {
-    font-size: 32px;
+      font-size: 32px;
   }
-
   #menu {
-    font-size: 12px;
+      font-size: 12px;
   }
-
   #userinfo {
-    position: initial;
-    text-align: center;
-    margin: 4px;
+      position: initial;
+      text-align: center;
+      margin: 4px;
   }
-
-  #userinfo_major>li>a {
-    font-weight: bold;
+  #userinfo_major > li > a {
+      font-weight: bold;
   }
-
-  #userinfo>ul {
-    height: 35px;
-    display: flex;
-    align-items: center;
+  #userinfo > ul {
+      height: 35px;
+      display: flex;
+      align-items: center;
   }
-
-  #userinfo>ul>li {
-    flex-grow: 1;
+  #userinfo > ul > li {
+      flex-grow: 1;
   }
-
   #stats_required {
-    display: none !important;
+      display: none !important;
   }
-
   span.stat.tooltip {
-    font-weight: bold;
-    color: #1d818e;
+      font-weight: bold;
+      color: #1d818e;
   }
-
   #noty_bottomRight_layout_container {
-    right: 100px;
+      right: 100px;
   }
-
   .autocomplete_suggestions {
-    width: 50%;
+      width: 50%;
   }
-
-  #menu>ul {
-    flex-direction: row;
-    flex-wrap: wrap;
+  #menu > ul {
+      flex-direction: row;
+      flex-wrap: wrap;
   }
-
-  #menu>ul>li {
-    flex-basis: 50%;
+  #menu > ul > li {
+      flex-basis: 50%;
   }
-
-  #menu>ul>li>a {
-    height: 40px;
-    line-height: 40px;
+  #menu > ul > li > a {
+      height: 40px;
+      line-height: 40px;
   }
-
-  #menu>ul>li:nth-of-type(1) {
-    border-radius: inherit;
+  #menu > ul > li:nth-of-type(1) {
+      border-radius: inherit;
   }
-
-  #menu>ul>li:nth-of-type(11) {
-    border-radius: inherit;
+  #menu > ul > li:nth-of-type(11) {
+      border-radius: inherit;
   }
-
-  #nav_links>#links_menu {
-    margin-left: 0px;
+  #nav_links > #links_menu {
+      margin-left: 0px;
   }
-
-  .nav_dropdown>div {
-    margin-top: 35px;
+  .nav_dropdown > div {
+      margin-top: 35px;
   }
-
   #searchbars {
-    margin-top: 200px;
-    display: inline-grid;
-    grid-template-columns: auto auto;
-    grid-row-gap: 12px;
-    height: initial;
-    justify-items: stretch;
-    align-items: center;
+      margin-top: 200px;
+      display: inline-grid;
+      grid-template-columns: auto auto;
+      grid-row-gap: 12px;
+      height: initial;
+      justify-items: stretch;
+      align-items: center;
   }
-
-  #searchbars>.searchform {
-    margin: 0;
-    text-align: initial;
-    background: rgba(59, 63, 71, 0.9);
-    padding: 8px;
+  #searchbars > .searchform {
+      margin: 0;
+      text-align: initial;
+      background: rgba(59, 63, 71, 0.9);
+      padding: 8px;
   }
-
   #links_menu {
-    display: grid;
-    grid-template-columns: 100px 100px;
-    width: 200px;
+      display: grid;
+      grid-template-columns: 100px 100px;
+      width: 200px;
   }
 
   /* shared settings */
   .sidebar {
-    width: inherit;
-    height: inherit;
+      width: inherit;
+      height: inherit;
   }
-
   .main_column {
-    width: inherit;
+      width: inherit;
   }
-
   /* Limit input sizes so they don't go offscreen */
   .inputtext {
-    max-width: 60vw;
+      max-width: 60vw;
   }
 
   /* Homepage */
-
   /* Show main content (newsposts) above sidebar content */
   #index #wrapper #content div.thin {
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
   }
-
   #index #wrapper #content div.thin div.sidebar {
-    order: 2;
+      order: 2;
   }
-
   #index #wrapper #content div.thin div.main_column {
-    order: 1;
+      order: 1;
   }
 
   /* Forums */
-  #forums #content .thin>table.forum_post>tbody>tr.colhead_dark>td {
-    padding: 6px 10px;
+  #forums #content .thin > table.forum_post > tbody > tr.colhead_dark > td {
+      padding: 6px 10px;
   }
-
-  #forums #content .thin>table.forum_post>tbody>tr.colhead_dark>td>div {
-    display: flex;
-    flex-wrap: wrap;
+  #forums #content .thin > table.forum_post > tbody > tr.colhead_dark > td > div {
+      display: flex;
+      flex-wrap: wrap;
   }
 
   /* User Settings */
   /* Show the settings sidebar on top, rather than to the side.  Settings will scroll under it. */
   #userform {
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
   }
-
   #userform div.settings_sidebar {
-    width: 100%;
+      width: 100%;
   }
-
   .settings_sidebar {
-    width: 100%;
-    min-height: 250px;
+      width: 100%;
+      min-height: 250px;
   }
-
   #settings_sections {
-    width: 100%;
-    z-index: 999;
+      width: 100%;
+      z-index: 999;
   }
-
-  #settings_sections>ul {
-    display: grid;
-    width: 100%;
-    background-color: rgb(44, 47, 54) !important;
+  #settings_sections > ul {
+      display: grid;
+      width: 100%;
+      background-color: rgb(44, 47, 54) !important;
   }
-
   /* Make the Access Settings full width so that the search bar and submit button are grouped together */
-  #settings_sections>ul>li:nth-of-type(9) {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  #settings_sections > ul > li:nth-of-type(9) {
+      grid-column-start: 1;
+      grid-column-end: 3;
   }
-
-  #settings_sections>ul>li>h2 {
-    margin: 0;
+  #settings_sections > ul > li > h2 {
+      margin: 0;
   }
-
   #settings_search {
-    flex-grow: 1;
+      flex-grow: 1;
   }
-
   #timezone {
-    width: 60vw;
+      width: 60vw;
+  }
+  #userform > div.main_column {
+      width: 100%;
   }
 
-  #userform>div.main_column {
-    width: 100%;
-  }
-
-  #userform>div.main_column>table>tbody>tr>td:nth-of-type(2) {
-    display: inline-block;
-    max-width: 60vw;
+  #userform > div.main_column > table > tbody > tr > td:nth-of-type(2) {
+      display: inline-block;
+      max-width: 60vw;
   }
 
   /* Upload Page */
   /* More compact labels */
   #upload td.label {
-    min-width: inherit;
+      min-width: inherit;
   }
-
   /* More compact BBCode buttons */
-  #release_desc_tr>td>input {
-    max-width: 75px;
-    text-wrap: wrap;
+  #release_desc_tr > td > input {
+      max-width: 75px;
+      text-wrap: wrap;
   }
-
-  form.create_form>table.layout>tbody>tr>td>input {
-    max-width: 60vw;
+  form.create_form > table.layout > tbody > tr > td > input {
+      max-width: 60vw;
   }
 
   /* Torrent Search */
   input.inputtext.fti_basic {
-    max-width: 60vw;
+      max-width: 60vw;
   }
-
-  #tagfilter>td.ft_taglist {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 4px;
-    max-width: 60vw;
+  #tagfilter > td.ft_taglist {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 4px;
+      max-width: 60vw;
   }
-
-  #tagfilter>td.ft_taglist>a {
-    margin-top: initial;
+  #tagfilter > td.ft_taglist > a {
+      margin-top: initial;
   }
-
   #tags {
-    max-width: 60vw;
+      max-width: 60vw;
   }
-
-  #keywordlist>td:last-of-type>div {
-    column-count: 2 !important;
-    max-width: 60vw;
+  #keywordlist > td:last-of-type > div {
+      column-count: 2 !important;
+      max-width: 60vw;
   }
-
-  #taglist>td:last-of-type>div {
-    column-count: 2 !important;
-    max-width: 60vw;
+  #taglist > td:last-of-type > div {
+      column-count: 2 !important;
+      max-width: 60vw;
   }
-
-  #order>.ft_order {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+  #order > .ft_order {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
   }
-
-  .ft_order>.ft_order_by {
-    max-width: 60vw;
+  .ft_order > .ft_order_by {
+      max-width: 60vw;
   }
-
-  .ft_order>.ft_order_way {
-    max-width: 60vw;
+  .ft_order > .ft_order_way {
+      max-width: 60vw;
   }
-
-  #ft_container>table>tbody>tr:last-of-type>td:last-of-type {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+  #ft_container > table > tbody > tr:last-of-type > td:last-of-type {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
   }
-
   .ft_groupname {
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
   }
-
   input.fti_advanced {
-    max-width: 30%;
+      max-width: 30%;
   }
-
-  #rip_specifics>td.ft_ripspecifics {
-    display: grid;
-    grid-template-columns: 125px 125px;
-    grid-gap: 4px;
+  #rip_specifics > td.ft_ripspecifics {
+      display: grid;
+      grid-template-columns: 125px 125px;
+      grid-gap: 4px;
   }
-
-  .ftr_advanced:not(#album_torrent_name,
-    #artist_name,
-    #file_list,
-    #torrent_description)>td:last-of-type {
-    display: grid;
-    grid-template-columns: 125px 125px;
-    grid-gap: 4px;
+  .ftr_advanced:not( #album_torrent_name,
+  #artist_name,
+  #file_list,
+  #torrent_description) > td:last-of-type {
+      display: grid;
+      grid-template-columns: 125px 125px;
+      grid-gap: 4px;
   }
-
-  #misc>td:last-of-type>span:last-of-type {
-    margin-left: initial;
+  #misc > td:last-of-type > span:last-of-type {
+      margin-left: initial;
   }
-
-  #misc>td.ft_misc>span>select[name="agerating"],
-  #misc>td.ft_misc>span>select[name="adoptable"],
-  #misc>td.ft_misc>span>select[name="seen"] {
-    width: 100%;
+  #misc > td.ft_misc > span > select[name="agerating"],
+  #misc > td.ft_misc > span > select[name="adoptable"],
+  #misc > td.ft_misc > span > select[name="seen"] {
+      width: 100%;
   }
 
   /* Requests Page */
-  #requests>#wrapper>#content>div.thin>div.sidebar>div.box_artists>ul,
-  #requests>#wrapper>#content>div.thin>div.sidebar>div.box_tags>ul {
-    display: grid;
-    grid-template-columns: auto auto;
+  #requests > #wrapper > #content > div.thin > div.sidebar > div.box_artists > ul,
+  #requests > #wrapper > #content > div.thin > div.sidebar > div.box_tags > ul {
+      display: grid;
+      grid-template-columns: auto auto;
   }
-
-  #requests>#wrapper>#content>div.thin>div.main_column>div.box>div.pad>table>tbody>tr>td:nth-of-type(2) {
-    display: inline-block;
-    max-width: 60vw;
+  #requests > #wrapper > #content > div.thin > div.main_column > div.box > div.pad > table > tbody > tr > td:nth-of-type(2) {
+      display: inline-block;
+      max-width: 60vw;
   }
 
   /* Top 10 Page */
-  table.top10table>tbody {
-    display: grid;
-    grid-template-columns: 50vw 50vw;
-    grid-template-rows: 400px;
+  table.top10table > tbody {
+      display: grid;
+      grid-template-columns: 50vw 50vw;
+      grid-template-rows: 400px;
   }
-
-  table.top10table>tbody>tr {
-    display: contents;
+  table.top10table > tbody > tr {
+      display: contents;
   }
-
-  table.top10table>tbody>tr.colhead {
-    display: none;
+  table.top10table > tbody > tr.colhead {
+      display: none;
   }
-
   div.top10titlewrapper {
-    height: initial !important;
+      height: initial !important;
   }
 
-  #top10 table:not(table.top10table) tr {
-    display: grid;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
-    row-gap: 5px;
+  #top10 table.border:not(table.top10table) tr {
+      display: grid;
+      grid-template-columns: 25vw 25vw 25vw 25vw;
+      row-gap: 5px;
   }
-
-  #top10 table:not(table.top10table) tr>td {
-    text-align: center;
+  #top10 table.border:not(table.top10table) tr > td {
+      text-align: center;
   }
-
-  #top10 table:not(table.top10table) tr>td:first-child,
-  #top10 table:not(table.top10table) tr>th:first-child {
-    grid-column: 1 / span 4;
-    font-weight: bold;
+  #top10 table.border:not(table.top10table) tr > td:first-child,
+  #top10 table.border:not(table.top10table) tr > th:first-child {
+      grid-column: 1 / span 4;
+      font-weight: bold;
   }
 
   /* Torrent page */
-  #torrents>#wrapper>#content>div.torrents_details>div.thin>div.main_column {
-    width: 100% !important;
+  #torrents > #wrapper > #content > div.torrents_details > div.thin > div.main_column {
+      width: 100% !important;
   }
-
-  #torrents>#wrapper>#content>div.torrents_details>div.thin>div.sidebar>div.box_tags>ul {
-    display: grid;
-    grid-template-columns: auto auto;
+  #torrents > #wrapper > #content > div.torrents_details > div.thin > div.sidebar > div.box_tags > ul {
+      display: grid;
+      grid-template-columns: auto auto;
   }
-
-  div.torrent_ratings>table>tbody>tr {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
+  div.torrent_ratings > table > tbody > tr {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: center;
   }
-
-  div.torrent_ratings>table>tbody>tr>td {
-    margin: auto;
+  div.torrent_ratings > table > tbody > tr > td {
+      margin: auto;
   }
 
   .providers .links {
-    position: inherit;
+      position: inherit;
   }
-
   #torrents #poll_sidebar {
-    margin-top: initial !important;
+      margin-top: initial !important;
   }
-
   /* Get the mediainfo to display a little better on mobile screens */
-  table.mediainfo>tbody>tr {
-    display: flex;
-    flex-direction: column;
-    max-width: 100vw;
+  table.mediainfo > tbody > tr {
+      display: flex;
+      flex-direction: column;
+      max-width: 100vw;
   }
-
   blockquote.mediainfoRaw {
-    max-width: 100vw;
-    white-space: pre-line;
+      max-width: 100vw;
+      white-space: pre-line;
   }
-
   /* Torrent Details table when Grouping is enabled */
   #torrents #torrent_table tr.group {
-    display: grid;
-    grid-template-columns: 100px calc((100vw - 100px) / 2) calc((100vw - 100px) / 2);
+      display: grid;
+      grid-template-columns: 100px calc((100vw - 100px) / 2) calc( (100vw - 100px) / 2);
   }
-
-  #torrents #torrent_table tr.group>td:nth-of-type(2) {
-    grid-column-start: 2;
-    grid-column-end: 4;
+  #torrents #torrent_table tr.group > td:nth-of-type(2) {
+      grid-column-start: 2;
+      grid-column-end: 4;
   }
-
-  #torrents #torrent_table tr.group>td:nth-of-type(5) {
-    grid-column-start: 1;
+  #torrents #torrent_table tr.group > td:nth-of-type(5) {
+      grid-column-start: 1;
   }
-
-  #torrents #torrent_table tr.group>td:nth-of-type(5):after {
-    content: " snatches";
-    text-align: center;
+  #torrents #torrent_table tr.group > td:nth-of-type(5):after {
+      content: " snatches";
+      text-align: center;
   }
-
-  #torrents #torrent_table tr.group>td:nth-of-type(5):after {
-    content: " snatches";
-    text-align: center;
+  #torrents #torrent_table tr.group > td:nth-of-type(5):after {
+      content: " snatches";
+      text-align: center;
   }
-
-  #torrents #torrent_table tr.group>td:nth-of-type(6):after {
-    content: " seeders";
-    text-align: center;
+  #torrents #torrent_table tr.group > td:nth-of-type(6):after {
+      content: " seeders";
+      text-align: center;
   }
-
-  #torrents #torrent_table tr.group>td:nth-of-type(7):after {
-    content: " leechers";
-    text-align: center;
+  #torrents #torrent_table tr.group > td:nth-of-type(7):after {
+      content: " leechers";
+      text-align: center;
   }
-
   #torrents #torrent_table tr.group_torrent {
-    display: grid;
-    grid-template-columns: 33.3vw 33.3vw 33.3vw;
-    grid-template-rows: 45px 20px 20px;
+      display: grid;
+      grid-template-columns: 33.3vw 33.3vw 33.3vw;
+      grid-template-rows: 45px 20px 20px;
   }
-
-  #torrents #torrent_table tr.group_torrent>td {
-    text-align: center;
-    padding: 0px;
+  #torrents #torrent_table tr.group_torrent > td {
+      text-align: center;
+      padding: 0px;
   }
-
-  #torrents #torrent_table tr.group_torrent>td:nth-of-type(1) {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    text-align: left;
-    padding: 4px;
+  #torrents #torrent_table tr.group_torrent > td:nth-of-type(1) {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      text-align: left;
+      padding: 4px;
   }
-
-  #torrents #torrent_table tr.group_torrent>td:nth-of-type(2) {
-    display: none;
+  #torrents #torrent_table tr.group_torrent > td:nth-of-type(2) {
+      display: none;
   }
-
   /* Hide number of files column */
-  #torrents #torrent_table tr.group_torrent>td:nth-of-type(3) {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  #torrents #torrent_table tr.group_torrent > td:nth-of-type(3) {
+      grid-column-start: 1;
+      grid-column-end: 3;
   }
 
-  #torrents #torrent_table tr.group_torrent>td:nth-of-type(2):before {
-    content: "Files: ";
+  #torrents #torrent_table tr.group_torrent > td:nth-of-type(2):before {
+      content: "Files: ";
   }
-
-  #torrents #torrent_table tr.group_torrent>td:nth-of-type(3):before {
-    content: "Uploaded: ";
+  #torrents #torrent_table tr.group_torrent > td:nth-of-type(3):before {
+      content: "Uploaded: ";
   }
-
-  #torrents #torrent_table tr.group_torrent>td:nth-of-type(3)>span {
-    float: initial;
+  #torrents #torrent_table tr.group_torrent > td:nth-of-type(3) > span {
+      float: initial;
   }
-
-  #torrents #torrent_table tr.group_torrent>td:nth-of-type(4):before {
-    content: "Size: ";
+  #torrents #torrent_table tr.group_torrent > td:nth-of-type(4):before {
+      content: "Size: ";
   }
-
-  #torrents #torrent_table tr.group_torrent>td:nth-of-type(5):before {
-    content: "Snatches: ";
+  #torrents #torrent_table tr.group_torrent > td:nth-of-type(5):before {
+      content: "Snatches: ";
   }
-
-  #torrents #torrent_table tr.group_torrent>td:nth-of-type(6):before {
-    content: "Seeders: ";
+  #torrents #torrent_table tr.group_torrent > td:nth-of-type(6):before {
+      content: "Seeders: ";
   }
-
-  #torrents #torrent_table tr.group_torrent>td:nth-of-type(7):before {
-    content: "Leechers: ";
+  #torrents #torrent_table tr.group_torrent > td:nth-of-type(7):before {
+      content: "Leechers: ";
   }
 
   /* Torrents in non-grouped mode */
   #torrents table.torrent_table tr.colhead {
-    display: grid;
-    grid-template-columns: 25vw 50vw;
+      display: grid;
+      grid-template-columns: 25vw 50vw;
   }
-
-  #torrents table.torrent_table tr.colhead>td:nth-of-type(n + 3) {
-    display: none;
+  #torrents table.torrent_table tr.colhead > td:nth-of-type(n + 3) {
+      display: none;
   }
-
   #torrents table.torrent_table tr.torrent {
-    display: grid;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
+      display: grid;
+      grid-template-columns: 25vw 25vw 25vw 25vw;
   }
-
-  #torrents table.torrent_table tr.torrent>td:nth-of-type(1) {
-    grid-row-start: 1;
-    grid-row-end: 4;
-    margin: auto;
+  #torrents table.torrent_table tr.torrent > td:nth-of-type(1) {
+      grid-row-start: 1;
+      grid-row-end: 4;
+      margin: auto;
   }
-
-  #torrents table.torrent_table tr.torrent>td:nth-of-type(2) {
-    grid-column-start: 2;
-    grid-column-end: 5;
+  #torrents table.torrent_table tr.torrent > td:nth-of-type(2) {
+      grid-column-start: 2;
+      grid-column-end: 5;
   }
-
-  #torrents table.torrent_table tr.torrent>td:nth-of-type(4) {
-    text-align: center;
+  #torrents table.torrent_table tr.torrent > td:nth-of-type(4) {
+      text-align: center;
   }
-
-  #torrents table.torrent_table tr.torrent>td:nth-of-type(3):before {
-    content: "Files: ";
+  #torrents table.torrent_table tr.torrent > td:nth-of-type(3):before {
+      content: "Files: ";
   }
-
-  #torrents table.torrent_table tr.torrent>td:nth-of-type(4):before {
-    content: "Time: ";
+  #torrents table.torrent_table tr.torrent > td:nth-of-type(4):before {
+      content: "Time: ";
   }
-
-  #torrents table.torrent_table tr.torrent>td:nth-of-type(5):before {
-    content: "Size: ";
+  #torrents table.torrent_table tr.torrent > td:nth-of-type(5):before {
+      content: "Size: ";
   }
-
-  #torrents table.torrent_table tr.torrent>td:nth-of-type(6):before {
-    content: "Snatches: ";
+  #torrents table.torrent_table tr.torrent > td:nth-of-type(6):before {
+      content: "Snatches: ";
   }
-
-  #torrents table.torrent_table tr.torrent>td:nth-of-type(7):before {
-    content: "Seeders: ";
+  #torrents table.torrent_table tr.torrent > td:nth-of-type(7):before {
+      content: "Seeders: ";
   }
-
-  #torrents table.torrent_table tr.torrent>td:nth-of-type(8):before {
-    content: "Leechers: ";
+  #torrents table.torrent_table tr.torrent > td:nth-of-type(8):before {
+      content: "Leechers: ";
   }
 
   /* Uploaded page */
-  form.search_form[name="torrents"]>table>tbody>tr>td>input {
-    max-width: 60vw;
+  form.search_form[name="torrents"] > table > tbody > tr > td > input {
+      max-width: 60vw;
   }
-
-  form.search_form[name="torrents"]>table>tbody>tr>td:nth-of-type(2) {
-    max-width: 60vw;
-    display: inline-block;
+  form.search_form[name="torrents"] > table > tbody > tr > td:nth-of-type(2) {
+      max-width: 60vw;
+      display: inline-block;
   }
-
   /* arrange release specifics selects as a grid */
-  form.search_form[name="torrents"]>table>tbody>tr:nth-of-type(2)>td:nth-of-type(2) {
-    display: grid;
-    grid-template-columns: 120px 120px;
-    grid-gap: 4px;
+  form.search_form[name="torrents"] > table > tbody > tr:nth-of-type(2) > td:nth-of-type(2) {
+      display: grid;
+      grid-template-columns: 120px 120px;
+      grid-gap: 4px;
   }
-
   /* make labels narrower */
-  form.search_form[name="torrents"]>table>tbody>tr>td:nth-of-type(1) {
-    width: 75px;
+  form.search_form[name="torrents"] > table > tbody > tr > td:nth-of-type(1) {
+      width: 75px;
   }
 
   /* Collections page */
-  #search_terms>td>input {
-    max-width: 60vw;
+  #search_terms > td > input {
+      max-width: 60vw;
   }
-
-  #collage #collage_table tr>td:nth-of-type(6) {
-    display: none;
+  #collage #collage_table tr > td:nth-of-type(6) {
+      display: none;
   }
-
   #collage_table tr.colhead {
-    display: grid;
-    grid-template-columns: 25vw 50vw 25vw;
-    justify-items: center;
-    align-items: center;
+      display: grid;
+      grid-template-columns: 25vw 50vw 25vw;
+      justify-items: center;
+      align-items: center;
   }
-
-  #collage_table tr.colhead>td:nth-of-type(4),
-  #collage_table tr.colhead>td:nth-of-type(5),
-  #collage_table tr.colhead>td:nth-of-type(7) {
-    display: none;
+  #collage_table tr.colhead > td:nth-of-type(4),
+  #collage_table tr.colhead > td:nth-of-type(5),
+  #collage_table tr.colhead > td:nth-of-type(7) {
+      display: none;
   }
-
   #collage_table tr.row {
-    display: grid;
-    grid-template-columns: 25vw 50vw 25vw;
-    grid-template-rows: 50px 50px;
-    justify-items: center;
-    align-items: center;
+      display: grid;
+      grid-template-columns: 25vw 50vw 25vw;
+      grid-template-rows: 50px 50px;
+      justify-items: center;
+      align-items: center;
   }
-
   #collage_table tr.row td {
-    text-align: center;
+      text-align: center;
   }
-
-  #collage #collage_table tr.row>td:nth-of-type(2) {
-    max-height: 50px;
-    overflow: hidden;
+  #collage #collage_table tr.row > td:nth-of-type(2) {
+      max-height: 50px;
+      overflow: hidden;
   }
-
   #collage_table td {
-    padding: 4px;
+      padding: 4px;
   }
-
-  #collage #collage_table tr.row>td:nth-of-type(4):before {
-    content: "subs: ";
-    font-style: italic;
+  #collage #collage_table tr.row > td:nth-of-type(4):before {
+      content: "subs: ";
+      font-style: italic;
   }
-
-  #collage #collage_table tr.row>td:nth-of-type(5):before {
-    content: "updated: ";
-    font-style: italic;
+  #collage #collage_table tr.row > td:nth-of-type(5):before {
+      content: "updated: ";
+      font-style: italic;
   }
-
-  #collage #collage_table tr.row>td:nth-of-type(7):before {
-    content: "author: ";
-    font-style: italic;
+  #collage #collage_table tr.row > td:nth-of-type(7):before {
+      content: "author: ";
+      font-style: italic;
   }
 
   /* Wiki */
-
   /* Change order to show 1: header, 2: body, 3: related */
   #wiki div.thin {
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
   }
-
   #wiki div.header {
-    order: 1;
+      order: 1;
   }
-
   #wiki div.main_column {
-    order: 2;
+      order: 2;
   }
-
   #wiki div.sidebar {
-    order: 3;
+      order: 3;
   }
 
   /* Artists page */
   #artist ul.stats.nobullet {
-    display: grid;
-    grid-template-columns: auto auto;
+      display: grid;
+      grid-template-columns: auto auto;
   }
 
   /* Store page */
   #store table.store_table tr.row {
-    display: grid;
-    grid-template-columns: 50vw 50vw;
+      display: grid;
+      grid-template-columns: 50vw 50vw;
   }
-
-  #store table.store_table tr.row>td:nth-of-type(3) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    text-wrap: wrap;
+  #store table.store_table tr.row > td:nth-of-type(3) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      text-wrap: wrap;
   }
 
   /* Slots page */
-  #store>#wrapper>#content>div.thin {
-    display: flex;
-    flex-direction: column;
+  #store > #wrapper > #content > div.thin {
+      display: flex;
+      flex-direction: column;
   }
   #store .sidebar {
-    width: 85vw !important;
-    order: 3;
+      width: 85vw !important;
+      order: 3;
   }
   #store h3 {
-    order: 1;
+      order: 1;
   }
   #store div.main_column {
-    width: 85vw !important;
-    order: 2;
+      width: 85vw !important;
+      order: 2;
   }
   #reelsa,
   #reelsb,
   #reelsc {
-    height: 65px;
-    display: grid;
-    grid-template-columns: 50px 50px 50px 50px 50px;
-    place-items: center;
-    gap: 8px;
+      height: 65px;
+      display: grid;
+      grid-template-columns: 50px 50px 50px 50px 50px;
+      place-items: center;
+      gap: 8px;
   }
-
-  #reelsa>img,
-  #reelsb>img,
-  #reelsc>img {
-    width: 50px;
+  #reelsa > img,
+  #reelsb > img,
+  #reelsc > img {
+      width: 50px;
   }
   .chip {
-    height: 65px;
+      height: 65px;
   }
-
-  #store>#wrapper>#content>div.thin>div.main_column>div:nth-of-type(2)>table>tbody>tr {
-    display: grid !important;
-    grid-template-columns: auto auto;
+  #store > #wrapper > #content > div.thin > div.main_column > div:nth-of-type(2) > table > tbody > tr {
+      display: grid !important;
+      grid-template-columns: auto auto;
   }
-
-  #store>#wrapper>#content>div.thin>div.main_column>div:nth-of-type(2)>table>tbody>tr>td:last-of-type {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  #store > #wrapper > #content > div.thin > div.main_column > div:nth-of-type(2) > table > tbody > tr > td:last-of-type {
+      grid-column-start: 1;
+      grid-column-end: 3;
   }
-
   #store #content {
-    margin-top: 64px;
+      margin-top: 64px;
   }
 }
 
 /* Responsive redesign changes */
-
 /* Alternating row color for userhistory table */
 #userhistory table tr.row:nth-of-type(2n) {
   background: rgba(39, 42, 47, 0.6);
 }
-
 /* Alternating row color for invites table */
 #user table.invite_table tr.row:nth-of-type(2n) {
   background: rgba(39, 42, 47, 0.6);
 }
 
 /* Slots page */
-
 /* Slightly wider bet amount input */
-#store>#wrapper>#content>div.thin>div.main_column>div:nth-of-type(2)>table>tbody>tr {
+#store > #wrapper > #content > div.thin > div.main_column > div:nth-of-type(2) > table > tbody > tr {
   display: flex;
   gap: 24px;
 }
 
-#store>#wrapper>#content>div.thin>div.main_column>div:nth-of-type(2)>table>tbody>tr>td:nth-of-type(1)>input,
-#store>#wrapper>#content>div.thin>div.main_column>div:nth-of-type(2)>table>tbody>tr>td:nth-of-type(2)>input {
+#store > #wrapper > #content > div.thin > div.main_column > div:nth-of-type(2) > table > tbody > tr > td:nth-of-type(1) > input,
+#store > #wrapper > #content > div.thin > div.main_column > div:nth-of-type(2) > table > tbody > tr > td:nth-of-type(2) > input {
   text-align: center;
   width: 55px;
   box-sizing: border-box;
 }
 
 /* Center the quote above the slot machine */
-#store>#wrapper>#content>div.thin>h3 {
+#store > #wrapper > #content > div.thin > h3 {
   width: calc(71% - 40px);
 }
 
@@ -3766,7 +3407,6 @@ body.style_color_pink .collage_image:hover {
 tr.notify_shout {
   background-color: #292c31;
 }
-
 div.top10title {
   overflow: hidden;
 }
@@ -3775,12 +3415,10 @@ div.top10title {
 #forums #quickpost {
   width: 100%;
 }
-
-#quickreplytext>div {
+#quickreplytext > div {
   padding: 8px 25px;
 }
-
-#newthreadtext>tbody>tr>td>#barX {
+#newthreadtext > tbody > tr > td > #barX {
   width: 98% !important;
 }
 
@@ -3803,7 +3441,6 @@ code {
 .slick-dots li button:before {
   color: white !important;
 }
-
 .similar-body {
   padding-bottom: 1px;
 }
@@ -3813,7 +3450,6 @@ code {
   position: relative;
   overflow: hidden;
 }
-
 #wrapper::before {
   content: '';
   position: absolute;
@@ -3829,33 +3465,29 @@ code {
 
 @keyframes animatedBackground {
   0% {
-    background-position: 0 0;
+      background-position: 0 0;
   }
-
   100% {
-    background-position: 0px 100vh;
+      background-position: 0px 100vh;
   }
 }
 
 @keyframes sway {
-
   0%,
   100% {
-    transform: translateX(0);
+      transform: translateX(0);
   }
-
   50% {
-    transform: translateX(20px);
+      transform: translateX(20px);
   }
 }
 
 #logo a {
   background-image: url("../public/images/ant-christmas-logo.png");
 }
-
 @media screen and (max-width: 575px) {
   #logo a {
-    background-image: url(../public/images/ant-christmas-logo.png);
+      background-image: url(../public/images/ant-christmas-logo.png);
   }
 }
 
