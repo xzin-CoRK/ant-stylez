@@ -2033,6 +2033,9 @@ a.show_torrents_link:hover:after {
   background-color: #71b3c3;
 }
 
+.secondary_class { color: #3b7283;}
+
+
 /* Green Additions (original Ambiance)*/
 body.style_color_green a {
   color: #f0f0f0;
@@ -2146,7 +2149,7 @@ body.style_color_green .colhead_dark {
   background: rgba(82, 85, 92, 0.7);
   opacity: 0.7;
 }
-body.style_color_green .roleHeader { color: rgba(82, 85, 92, 0.7);}
+body.style_color_green .secondary_class { color: #1a707b;}
 body.style_color_green tbody .colhead_dark {
   background: rgba(82, 85, 92, 0.7);
 }
@@ -2201,7 +2204,7 @@ body.style_color_dark #menu li:nth-child(4) {
 body.style_color_dark #menu li:nth-child(5) {
   background: rgba(24, 32, 41, 0.5);
 }
-body.style_color_dark .roleHeader { color: #3e3f40;}
+body.style_color_dark .secondary_class { color: #3e3f40;}
 body.style_color_dark #menu li:nth-child(6) {
   background: rgba(24, 32, 41, 0.45);
 }
@@ -2432,7 +2435,7 @@ body.style_color_chocolat .noty_bar {
 body.style_color_chocolat .collage_image:hover {
   box-shadow: 0px 0px 0px 3px #63403c;
 }
-body.style_color_chocolat .roleHeader { color: rgba(56, 55, 56, 0.8);}
+body.style_color_chocolat .secondary_class { color: #63403c;}
 body.style_color_chocolat .colhead td,
 body.style_color_chocolat .colhead_dark td,
 body.style_color_chocolat td.colhead,
@@ -2460,7 +2463,7 @@ body.style_color_pink .colhead_dark,
 body.style_color_pink .head {
   background-color: #3b2655;
 }
-body.style_color_pink .roleHeader { color: #3b2655;}
+body.style_color_pink .secondary_class { color: #8b518e;}
 body.style_color_pink a.social {
   background-image: url(images/Social-Pink.png);
 }
