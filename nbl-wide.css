@@ -3495,11 +3495,6 @@ tr.torrent > td > div.tagssh:nth-child(1) > .codecs {
     /* TODO: remove !important when merging into show.css */
 }
 
-.icons {
-    background-color: #191b22;
-    /* TODO: Change this in the other 2 theme stylesheets as needed */
-}
-
 @media screen and (min-width: 515px) {
     .showname {
         margin-left: 0px !important;
@@ -3820,7 +3815,7 @@ body {
     #user div.thin input[type=text],
     #user div.thin input[type=password],
     #user div.thin select {
-        max-width: 60%;
+        max-width: 250px;
     }
 
     /* Slots Page*/
