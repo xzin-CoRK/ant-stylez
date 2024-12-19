@@ -3897,18 +3897,48 @@ body {
 
 
 /* PUT IN follows.css */
-@media screen and (max-width: 510px) {
+#follows table.main > tbody {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#follows table.main > tbody > tr {
+    display: contents;
+}
+#follows div.showmaze {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.title {
+    position: inherit;
+    left: inherit;
+}
+.heart {
+    right: -5px !important;     /* replace existing rule in follows.css (line 41) */
+    top: 50% !important;        /* replace existing rule in follows.css (line 41) */
+}
+@media screen and (max-width: 600px) {
     #follows table.main > tbody {
         display: grid;
         grid-template-columns: 1fr;
     }
-    #follows table.main > tbody > tr {
-        display: contents;
-    }
-    #follows div.showmaze {
-        display: flex;
+}
+@media screen and (min-width: 601px) and (max-width: 860px) {
+    #follows table.main > tbody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
+@media screen and (min-width: 861px) and (max-width: 1120px) {
+    #follows table.main > tbody {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+
+
+
 
 
 /* STYLE changes */
