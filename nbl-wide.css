@@ -3909,8 +3909,8 @@ body {
     grid-template-columns: 1fr;
 }
 .title {
-    position: inherit;
-    left: inherit;
+    position: inherit !important;    /* delete existing position: rule in follows.css (line 41) */
+    left: inherit !important;        /* delete existing left: rule in follows.css (line 41) */
 }
 .heart {
     right: -5px !important;     /* replace existing rule in follows.css (line 41) */
