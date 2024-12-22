@@ -3229,6 +3229,8 @@ a.Snatched:hover {
 }
 
 /* END SHOW.CSS CHANGES */
+
+
 /* details.css changes */
 .poster {
     aspect-ratio: 1 / 1.4;
@@ -3245,6 +3247,8 @@ a.Snatched:hover {
 
 
 /* end details.css changes */
+
+
 /* SHOW.CSS ADDITIONS -- add the following to show.css */
 #torrents .show_title_wrap {
     display: grid;
@@ -3936,9 +3940,69 @@ body {
 }
 
 
+/* PERSON.CSS */
+#torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div {
+    display: grid;
+    grid-template-columns: auto 218px;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+#torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div > div.sidebar.side_bar {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    margin: inherit;
+    width: 218px;
+}
+#torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div > div.pad_person {
+    margin: inherit;
+}
 
+@media screen and (max-width: 510px) {
+    #torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+    }
+    #torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div > div.sidebar.side_bar {
+        width: 100vw;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+    
+    #torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div > div.pad_person:nth-of-type(2) {
+        width: 100vw;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+    
+    #torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div > div.pad_person:nth-of-type(3) {
+        width: 100vw;
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+    #torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div > div.sidebar.side_bar > div.main_pad > div.box {
+        box-sizing: border-box;
+        margin: auto !important;
+        border-top: 0px;
+    }
+}
 
+.shows_table {
+    width: 100% !important; /* TODO: update value in person.css (ln 37) instead of copying over this rule*/
+}
 
+.shows_table tbody {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+}
+
+.shows_table tr {
+    display: contents;
+}
+.shows_table td {
+    margin: auto;
+}
 
 
 /* STYLE changes */
