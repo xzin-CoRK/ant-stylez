@@ -3213,6 +3213,18 @@ a.Snatched:hover {
 }
 
 /* Grenik - End date picker dropdown formating */
+
+
+/* Adjust spacing of bookmarks page cover art */
+#bookmarks ul.collage_images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+#bookmarks ul.collage_images > li {
+    margin: auto;
+}
+
+
 /* CHANGES NEEDED IN SHOW.CSS */
 .main_table {
     /* TODO: value just providing an override; Remove 97% width instead */
