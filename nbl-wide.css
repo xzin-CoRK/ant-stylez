@@ -283,7 +283,8 @@ ul.thin li {
 
 #logo {
     width: 100%;
-    background: url(https://nebulance.io/static/styles/themes/calm/images/logo.svg) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/logo.svg) no-repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/logo.svg) no-repeat center center;
     background-size: 485px;
     height: 107px;
     position: relative;
@@ -602,7 +603,8 @@ table.userinfo_stats td {
 #nav_tools {
     padding-right: 8px !important;
     margin: 0 7px !important;
-    background-image: url(https://nebulance.io/static/styles/themes/calm/images/dropdown_arrow.png);
+    background-image: url(https://nebulance.io/static/styles/themes/calm/images/dropdown_arrow.png),
+    url(https://nebulance.dev/static/styles/themes/calm/images/dropdown_arrow.png);
     background-repeat: no-repeat;
     background-position: right center;
 }
@@ -1121,56 +1123,69 @@ table.boxstat td:first-child {
 }
 
 .icon_warning {
-    background: url('https://nebulance.io/static/styles/themes/calm/images/warn.svg') no-repeat center bottom;
+    background: url('https://nebulance.io/static/styles/themes/calm/images/warn.svg') no-repeat center bottom,
+    url('https://nebulance.dev/static/styles/themes/calm/images/warn.svg') no-repeat center bottom;
 }
 
 .icon_okay {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/okay.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/okay.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/okay.svg) no-repeat center bottom;
 }
 
 .icon_disk_none {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/disk.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/disk.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/disk.svg) no-repeat center bottom;
 }
 
 .icon_disk_leech {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/diskdown.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/diskdown.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/diskdown.svg) no-repeat center bottom;
 }
 
 .icon_disk_seed {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/diskup.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/diskup.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/diskup.svg) no-repeat center bottom;
 }
 
 .icon_disk_grabbed {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/diskgrabbed.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/diskgrabbed.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/diskgrabbed.svg) no-repeat center bottom;
 }
 
 .icon_search {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/search.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/search.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/search.svg) no-repeat center bottom;
 }
 
 .icon_doubleseed {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/doubleseed.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/doubleseed.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/doubleseed.svg) no-repeat center bottom;
 }
 
 .icon_disk_snatched {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/disksnatched.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/disksnatched.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/disksnatched.svg) no-repeat center bottom;
 }
 
 .icon_bookmark {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/bookmark.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/bookmark.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/bookmark.svg) no-repeat center bottom;
     cursor: pointer;
 }
 
 .icon_bookmark.bookmarked {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/bookmarked.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/bookmarked.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/bookmarked.svg) no-repeat center bottom;
 }
 
 .icon_watched {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/watched.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/watched.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/watched.svg) no-repeat center bottom;
 }
 
 #top_info .icon_warning {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/warn.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/warn.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/warn.svg) no-repeat center bottom;
 }
 
 #staff_tools .icon,
@@ -1519,13 +1534,15 @@ ul.poll li.graph {
 .show_torrents {
     width: 28px;
     height: 28px;
-    background: url(https://nebulance.io/static/styles/themes/calm/images/show.png) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/show.png) no-repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/show.png) no-repeat center center;
 }
 
 .hide_torrents {
     width: 28px;
     height: 28px;
-    background: url(https://nebulance.io/static/styles/themes/calm/images/hide.png) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/hide.png) no-repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/hide.png) no-repeat center center;
 }
 
 .show_torrents_link {
@@ -1777,14 +1794,16 @@ div.tagtable {
 .last_post {
     width: 15px;
     height: 15px;
-    background: url(https://nebulance.io/static/styles/themes/calm/images/go_last_read.svg) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/go_last_read.svg) no-repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/go_last_read.svg) no-repeat center center;
     margin-left: 5px;
 }
 
 .last_read {
     width: 15px;
     height: 15px;
-    background: url(https://nebulance.io/static/styles/themes/calm/images/go_last_read.svg) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/go_last_read.svg) no-repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/go_last_read.svg) no-repeat center center;
     margin-left: 5px;
 }
 
@@ -1802,39 +1821,48 @@ div.tagtable {
 }
 
 .colhead_dark .last_read {
-    background-image: url(https://nebulance.io/static/styles/themes/calm/images/go_last_read.svg);
+    background-image: url(https://nebulance.io/static/styles/themes/calm/images/go_last_read.svg),
+    url(https://nebulance.dev/static/styles/themes/calm/images/go_last_read.svg);
 }
 
 .unread_locked_sticky {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/locked_sticky_unread.svg) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/locked_sticky_unread.svg) no-repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/locked_sticky_unread.svg) no-repeat center center;
 }
 
 .read_locked_sticky {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/locked_sticky_read.svg) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/locked_sticky_read.svg) no-repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/locked_sticky_read.svg) no-repeat center center;
 }
 
 .read_sticky {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/sticky_read.svg) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/sticky_read.svg) no-repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/sticky_read.svg) no-repeat center center;
 }
 
 .unread_sticky {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/sticky_unread.svg) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/sticky_unread.svg) no-repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/sticky_unread.svg) no-repeat center center;
 }
 
 .unread_locked {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/locked_unread.svg) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/locked_unread.svg) no-repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/locked_unread.svg) no-repeat center center;
 }
 
 .read_locked {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/locked_read.svg) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/locked_read.svg) no-repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/locked_read.svg) no-repeat center center;
 }
 
 .unread {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/unread.svg) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/unread.svg) no-repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/unread.svg) no-repeat center center;
 }
 
 .read {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/read.svg) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/read.svg) no-repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/read.svg) no-repeat center center;
 }
 
 table.forum_index {
@@ -1949,7 +1977,8 @@ td.badgesrow,
 }
 
 tr.unreadpm {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/content.png) repeat;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/content.png) repeat,
+    url(https://nebulance.dev/static/styles/themes/calm/images/content.png) repeat;
 }
 
 .permission_head {
@@ -2107,7 +2136,8 @@ span.postlink {
     display: block;
     width: 10px;
     height: 10px;
-    background: url(https://nebulance.io/static/styles/themes/calm/images/viewpost.svg) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/viewpost.svg) no-repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/viewpost.svg) no-repeat center center;
 }
 
 a.postlink {
@@ -2434,7 +2464,8 @@ img.win.flash {
     width: 60px;
     height: 150px;
     position: absolute;
-    background: url(https://nebulance.io/static/styles/themes/calm/images/betchip.png) no-repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/betchip.png) no-repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/betchip.png) no-repeat center center;
 }
 
 .chip span {
@@ -2602,7 +2633,8 @@ img.win.flash {
 #donorbargreen {
     display: inline-block;
     height: 15px;
-    background: url(https://nebulance.io/static/styles/themes/calm/images/green.png) repeat center center;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/green.png) repeat center center,
+    url(https://nebulance.dev/static/styles/themes/calm/images/green.png) repeat center center;
     color: #fff;
     font-weight: 400;
     text-align: right;
@@ -2926,7 +2958,8 @@ blockquote.bbcode.error code.error {
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
     border: 1px solid #666;
-    background: #888 url(https://nebulance.io/static/styles/themes/calm/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+    background: #888 url(https://nebulance.io/static/styles/themes/calm/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x,
+    url(https://nebulance.dev/static/styles/themes/calm/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
     font-weight: 400;
     color: #333;
 }
@@ -2966,7 +2999,8 @@ blockquote.bbcode.error code.error {
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
     border: 1px solid #aaa;
-    background: #fff url(https://nebulance.io/static/styles/themes/calm/images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+    background: #fff url(https://nebulance.io/static/styles/themes/calm/images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x,
+    url(https://nebulance.dev/static/styles/themes/calm/images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
     font-weight: 400;
     color: #212121;
 }
@@ -3013,21 +3047,25 @@ a.Snatched:hover {
 }
 
 .icon_follow {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/follow.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/follow.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/follow.svg) no-repeat center bottom;
     cursor: pointer;
 }
 
 .icon_follow.followed {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/followed.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/followed.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/followed.svg) no-repeat center bottom;
 }
 
 .icon_notify {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/notify.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/notify.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/notify.svg) no-repeat center bottom;
     cursor: pointer;
 }
 
 .icon_notify.notified {
-    background: url(https://nebulance.io/static/styles/themes/calm/images/notified.svg) no-repeat center bottom;
+    background: url(https://nebulance.io/static/styles/themes/calm/images/notified.svg) no-repeat center bottom,
+    url(https://nebulance.dev/static/styles/themes/calm/images/notified.svg) no-repeat center bottom;
 }
 
 /* Grenik - Added below for dropdown list in user.php for 2FA Country Change */
