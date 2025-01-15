@@ -4,7 +4,8 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url(../fonts/OpenSans.ttf) format('truetype');
+    src: local('Open Sans'), local('OpenSans'),
+        url('../fonts/OpenSans.ttf') format('truetype');
 }
 
 /* latin */
@@ -12,7 +13,8 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../fonts/OpenSans-Semibold.ttf) format('truetype');
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), 
+        url('../fonts/OpenSans-Semibold.ttf') format('truetype');
 }
 
 .cats_col {
@@ -2416,7 +2418,8 @@ img.win.flash {
 }
 
 .donate_details {
-    background-color: #525252;
+    margin-bottom: 10px;
+    background-color: #0c090a;
     padding: 5px 20px;
     border: 2px solid;
     border-color: #000;
