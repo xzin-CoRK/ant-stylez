@@ -1,4 +1,4 @@
-/* Calm Stylesheet */
+/* Light Stylesheet */
 /* latin-ext */
 @font-face {
     font-family: 'Open Sans';
@@ -215,12 +215,10 @@ ul.thin li {
     padding: 0;
     height: 104px;
     position: relative;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
 }
 
 #candyfloss {
     height: 70px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
 }
 
 #content {
@@ -229,7 +227,6 @@ ul.thin li {
 }
 
 #content:before {
-    box-shadow: -10px 0 10px -10px rgba(0, 0, 0, 1) inset;
     content: "";
     height: 100%;
     left: -10px;
@@ -239,7 +236,6 @@ ul.thin li {
 }
 
 #content:after {
-    box-shadow: 10px 0 10px -10px rgba(0, 0, 0, 1) inset;
     content: "";
     height: 100%;
     right: -10px;
@@ -251,7 +247,10 @@ ul.thin li {
 #wrapper {
     width: 90%;
     margin: 0 auto;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
+    background: rgba(224, 224, 224, 0.75);
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: rgba(0, 0, 0, 0.15);
 }
 
 #wrapper,
@@ -3204,8 +3203,8 @@ a.Snatched:hover {
 }
 
 .pika-button:hover {
-    color: #2b2b2b !important;
-    background-color: #fff !important;
+    background-color: #bbb;
+    color: rgba(55, 58, 66, 1);
 }
 
 /* Ensure no padding or margins on the entire datepicker popup */
@@ -3220,7 +3219,7 @@ a.Snatched:hover {
 .pika-prev,
 .pika-next {
     cursor: pointer;
-    background-color: #fff !important;
+    background-color: #bbb !important;
     /* Arrow color */
     color: rgba(55, 58, 66, 1);
     /* Background color for arrows */
@@ -3231,7 +3230,7 @@ a.Snatched:hover {
 
 .pika-prev:hover,
 .pika-next:hover {
-    color: #fff;
+    color: #bbb;
     background-color: #282828;
     /* Darker background on hover */
 }
@@ -4134,17 +4133,14 @@ body {
 
 /* STYLE changes */
 #user #userform > table {
-    border: 3px solid #313543;
+    border: 3px solid #989898;
 }
 #discog_table {
-    border: 3px solid #313543;
-    /* TODO: choose appropriate colors for other 2 palettes */
+    border: 3px solid #989898;
 }
 #discog_table tr {
     border-top: 1px solid #282828;
-    /* TODO: pick appropriate color and add to other 2 palettes */
     border-bottom: 1px solid #282828;
-    /* TODO: pick appropriate color and add to other 2 palettes */
 }
 #discog_table td {
     border-top: none;
@@ -4152,25 +4148,22 @@ body {
 }
 #discog_table tr.colhead {
     border: none;
-    background-color: #282c37;
+    background-color: #e8e8e8;
 }
 #discog_table tr.colhead td {
     background-color: inherit;
 }
 #user #userform > table > tbody > tr.colhead > td {
-    background-color: #272b37 !important;
-    /* TODO: pick appropriate color and add to other 2 palettes */
+    background-color: #d2d2d2 !important;
 }
 #torrents div.thin #search_box > .box,
 #torrents div.thin > form:nth-of-type(1),
 #requests div.thin .box,
 #tvschedule .box {
-    border: 3px solid #313543;
-    /* TODO: pick appropriate color and add to other 2 palettes */
+    border: 3px solid #989898;
 }
 #follows div.thin .box {
-    border: 6px solid #313543;
-    /* TODO: pick appropriate color and add to other 2 palettes */
+    border: 6px solid #989898;
 }
 
 #follows .box .linkbox {
