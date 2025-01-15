@@ -1265,7 +1265,7 @@ table.boxstat td:first-child {
 .head {
     height: inherit;
     border: none;
-    background-color: #bbb;
+    background-color: #989898;
     padding: 3px 10px !important;
     margin: 0 !important;
     line-height: 30px;
@@ -1437,7 +1437,7 @@ td.colhead,
 .colhead td,
 .colhead_dark {
     border: 0;
-    background-color: #bbb;
+    background-color: #989898;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -3024,7 +3024,7 @@ blockquote.bbcode.error code.error {
 }
 
 .season_head {
-    margin: 1px;
+    margin: 0px;
     font-weight: 600;
 }
 
@@ -4139,16 +4139,17 @@ body {
     border: 3px solid #989898;
 }
 #discog_table tr {
-    border-top: 1px solid #282828;
-    border-bottom: 1px solid #282828;
+    border-top: 1px solid #989898;
+    border-bottom: 1px solid #989898;
 }
 #discog_table td {
     border-top: none;
     border-bottom: none;
 }
-#discog_table tr.colhead {
+#discog_table tr.colhead,
+#torrents table#cat_list tr {
     border: none;
-    background-color: #e8e8e8;
+    background-color: #bbb;
 }
 #discog_table tr.colhead td {
     background-color: inherit;
