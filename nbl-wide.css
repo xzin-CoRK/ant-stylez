@@ -13,7 +13,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), 
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'),
         url('../fonts/OpenSans-Semibold.ttf') format('truetype');
 }
 
@@ -348,7 +348,7 @@ nav#mainnav ul ul {
     box-sizing: border-box;
 }
 
-nav#mainnav ul li:hover > ul {
+nav#mainnav ul li:hover>ul {
     visibility: visible;
     opacity: 1;
 }
@@ -374,19 +374,21 @@ nav#mainnav ul li {
     margin: 0;
 }
 
-nav#mainnav > ul {
+nav#mainnav>ul {
     display: flex;
     justify-content: space-evenly;
     align-items: stretch;
 }
-nav#mainnav > ul > li {
+
+nav#mainnav>ul>li {
     position: relative;
 }
-nav#mainnav > ul > li > ul {
+
+nav#mainnav>ul>li>ul {
     width: 100%;
 }
 
-nav#mainnav > ul > li {
+nav#mainnav>ul>li {
     flex: 1 1 12.5%;
     text-align: center;
 }
@@ -424,7 +426,7 @@ nav#mainnav ul ul li {
     position: relative;
 }
 
-nav#mainnav > ul > li > ul > li {
+nav#mainnav>ul>li>ul>li {
     width: 100%;
 }
 
@@ -735,7 +737,7 @@ span.stat {
     font-weight: 600;
     color: red;
     position: relative;
-    transform: translateY( 55px);
+    transform: translateY(55px);
 }
 
 .blend {
@@ -866,32 +868,33 @@ echo '<table style="width: 90%; border:0; margin-left: auto; margin-right: auto;
 }
 */
 
-#index div.thin > div.box > table > tbody {
+#index div.thin>div.box>table>tbody {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
     column-gap: 2px;
 }
 
-#index div.thin > div.box > table > tbody > tr {
+#index div.thin>div.box>table>tbody>tr {
     display: contents;
 }
 
 @media screen and (max-width: 550px) {
-    #index div.thin > div.box > table > tbody {
+    #index div.thin>div.box>table>tbody {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (min-width: 700px) {
-    #index div.thin > div.box > table > tbody {
+    #index div.thin>div.box>table>tbody {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (min-width: 1080px) {
-    #index div.thin > div.box > table > tbody {
+    #index div.thin>div.box>table>tbody {
         grid-template-columns: repeat(4, 1fr);
     }
+
     #index .banner_col {
         height: 50px;
     }
@@ -900,9 +903,10 @@ echo '<table style="width: 90%; border:0; margin-left: auto; margin-right: auto;
 
 /* Show 5 columns above 1440px width */
 @media screen and (min-width: 1280px) {
-    #index div.thin > div.box > table > tbody {
+    #index div.thin>div.box>table>tbody {
         grid-template-columns: repeat(5, 1fr);
     }
+
     #index .banner_col {
         height: 58px;
     }
@@ -914,6 +918,7 @@ echo '<table style="width: 90%; border:0; margin-left: auto; margin-right: auto;
     height: 100%;
     object-fit: cover;
 }
+
 /* end front page responsive poster display */
 h2 a {
     color: #2b90d9;
@@ -1500,19 +1505,19 @@ ul.poll li.graph {
     padding-left: 20px;
 }
 
-.featured > tbody > tr:first-child td:before {
+.featured>tbody>tr:first-child td:before {
     border-top: #282c37 25px solid;
 }
 
-.featured > tbody > tr:first-child td:after {
+.featured>tbody>tr:first-child td:after {
     border-top: #282c37 25px solid;
 }
 
-.featured > tbody > tr:first-child td > .featured-bevels:before {
+.featured>tbody>tr:first-child td>.featured-bevels:before {
     border-left: #282c37 25px solid;
 }
 
-.featured > tbody > tr:first-child td > .featured-bevels:after {
+.featured>tbody>tr:first-child td>.featured-bevels:after {
     border-right: #282c37 25px solid;
 }
 
@@ -3220,7 +3225,8 @@ a.Snatched:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-#bookmarks ul.collage_images > li {
+
+#bookmarks ul.collage_images>li {
     margin: auto;
 }
 
@@ -3384,7 +3390,7 @@ img.banner {
         max-width: 75vw;
     }
     /* Change width of seeding IP address (only visible to staff on seeding torrents page) */
-    /* Use has with + to ensure we only apply this as desired (and not on the main torrent search results page, for example)
+/* Use has with + to ensure we only apply this as desired (and not on the main torrent search results page, for example)
     #torrents #torrent_table tr.torrent > td:nth-child(3):has(+ .nobr) {
         grid-column: 1 / span 5;
         width: 100vw;
@@ -3554,13 +3560,16 @@ body {
     max-width: 1280px;
     margin: auto;
 }
+
 @media screen and (max-width: 920px) {
     #searchbars {
         top: 150px;
     }
+
     #candyfloss {
         height: 84px;
     }
+
     #logo {
         background-size: calc(70vw);
     }
@@ -3570,81 +3579,98 @@ body {
 #bonus div.thin {
     position: relative;
 }
+
 #bonus div.thin.special-slots h2 {
     width: 70%;
 }
-#bonus div.thin > div:nth-of-type(2) {
+
+#bonus div.thin>div:nth-of-type(2) {
     width: unset !important;
 }
 
 /* Mobile-view */
 @media screen and (max-width: 510px) {
-    /* Browse page */ 
+
+    /* Browse page */
     #torrents #torrent_table tr.torrent td:nth-child(2) {
         text-align: center;
     }
-    #torrents #torrent_table tr.torrent td:nth-child(2) > div {
+
+    #torrents #torrent_table tr.torrent td:nth-child(2)>div {
         position: inherit !important;
         text-align: center;
     }
-    #torrents #torrent_table tr.torrent div.tags > div {
+
+    #torrents #torrent_table tr.torrent div.tags>div {
         max-width: 100% !important;
     }
+
     #torrents #torrent_table tr.torrent a.tooltipstered {
         font-weight: bold;
     }
+
     #torrents #torrent_table tr.torrent {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
     }
-    #torrents #torrent_table tr.torrent > td:nth-child(1),
-    #torrents #torrent_table tr.torrent > td:nth-child(2) {
+
+    #torrents #torrent_table tr.torrent>td:nth-child(1),
+    #torrents #torrent_table tr.torrent>td:nth-child(2) {
         grid-column: 1 / span 5;
         width: 100vw;
     }
+
     #torrents input {
         max-width: 75vw;
     }
+
     /* Change width of seeding IP address (only visible to staff on seeding torrents page) */
     /* Use has with + to ensure we only apply this as desired (and not on the main torrent search results page, for example) */
-    #torrents #torrent_table tr.torrent > td:nth-child(3):has(+ .nobr) {
+    #torrents #torrent_table tr.torrent>td:nth-child(3):has(+ .nobr) {
         grid-column: 1 / span 5;
         width: 100vw;
     }
-    #torrents #torrent_table tr.torrent > td:nth-child(3) {
+
+    #torrents #torrent_table tr.torrent>td:nth-child(3) {
         display: grid;
         grid-template-columns: auto auto auto;
     }
-    #torrents #torrent_table tr.torrent > td:nth-child(3) > div {
+
+    #torrents #torrent_table tr.torrent>td:nth-child(3)>div {
         position: inherit !important;
         top: inherit !important;
         bottom: inherit !important;
         font-size: inherit !important;
     }
+
     #torrents #search_box tr {
         display: flex;
         flex-wrap: wrap;
     }
+
     .filter_torrents .inputtext {
         width: 100%;
     }
 
     /* Gallery & People */
-    #shows #form1 div.box > table > tbody,
-    #people div.box > table > tbody {
+    #shows #form1 div.box>table>tbody,
+    #people div.box>table>tbody {
         display: grid;
         grid-template-columns: 49% 49%;
         grid-template-rows: 1fr auto;
         gap: 10px;
     }
-    #shows #form1 div.box > table > tbody > tr,
-    #people div.box > table > tbody > tr {
+
+    #shows #form1 div.box>table>tbody>tr,
+    #people div.box>table>tbody>tr {
         display: contents;
     }
-    #shows #form1 div.box > table > tbody > tr > td,
-    #people div.box > table > tbody > tr > td {
+
+    #shows #form1 div.box>table>tbody>tr>td,
+    #people div.box>table>tbody>tr>td {
         padding: inherit;
     }
+
     /*
     .showmaze {
         width: 100% !important;
@@ -3663,12 +3689,14 @@ body {
         width: 100%;
         height: 100%;
     }
+
     div.showswrapper img.showmaze {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    .showsfoot > span {
+
+    .showsfoot>span {
         vertical-align: middle;
     }
 
@@ -3676,43 +3704,53 @@ body {
     .hovertouch {
         pointer-events: none;
     }
+
     #wrapper {
         width: 100vw;
     }
+
     #stats_block {
         top: 5px;
         right: 65vw;
     }
+
     #logo a {
         width: inherit;
         left: 0;
     }
 
     /* Header/navigation menu */
-    nav#mainnav > ul {
+    nav#mainnav>ul {
         flex-wrap: wrap;
         max-width: 100vw;
     }
-    nav#mainnav > ul > li {
+
+    nav#mainnav>ul>li {
         flex: 1 1 25%;
         position: relative;
     }
+
     nav#mainnav ul li a {
         padding: 7px;
     }
-    nav#mainnav > ul > li > ul {
+
+    nav#mainnav>ul>li>ul {
         width: 100%;
     }
-    nav#mainnav > ul > li:nth-of-type(2) > ul,
-    nav#mainnav > ul > li:nth-of-type(3) > ul {
+
+    nav#mainnav>ul>li:nth-of-type(2)>ul,
+    nav#mainnav>ul>li:nth-of-type(3)>ul {
         top: calc(100%);
     }
+
     #searchbars {
         top: 170px;
     }
+
     #candyfloss {
         height: 130px;
     }
+
     #searchbars ul {
         width: 95%;
         flex-wrap: wrap;
@@ -3720,10 +3758,12 @@ body {
         align-items: stretch;
         gap: 4px;
     }
+
     #searchbars ul li {
         margin: 0px;
         flex: 1 1 21%;
     }
+
     #userinfo_major {
         display: none;
     }
@@ -3732,42 +3772,52 @@ body {
     .main_column {
         width: 100% !important;
     }
+
     .sidebar {
         width: 100%;
     }
+
     .thin {
         padding: 0px;
     }
 
     /* Torrent page */
-    #torrents #details_top > .sidebar {
+    #torrents #details_top>.sidebar {
         width: 100vw;
     }
-    #torrents #details_top > .middle_column {
+
+    #torrents #details_top>.middle_column {
         width: 100vw;
     }
-    #torrents table.mediainfo > tbody > tr {
+
+    #torrents table.mediainfo>tbody>tr {
         display: grid;
         grid-template-columns: 1fr;
     }
-    #torrents #mediainfobox div.showinfobox > div > a {
+
+    #torrents #mediainfobox div.showinfobox>div>a {
         line-break: anywhere;
     }
+
     #torrents #tag_container #torrent_tags ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
     #torrents #content table.showinfo {
         margin: inherit;
     }
-    #torrents #content table.showinfo > tbody > tr {
+
+    #torrents #content table.showinfo>tbody>tr {
         display: grid;
         grid-template-columns: auto 1fr;
     }
-    #torrents #content table.showinfo > tbody > tr > td:first-child {
+
+    #torrents #content table.showinfo>tbody>tr>td:first-child {
         width: 100% !important;
     }
-    #torrents #content table.showinfo > tbody > tr > td:first-child > img {
+
+    #torrents #content table.showinfo>tbody>tr>td:first-child>img {
         width: 100%;
     }
 
@@ -3783,60 +3833,71 @@ body {
     }
 
     /* bbcode bars */
-    table.bb_holder > tbody > tr:nth-child(1) > td > div.bb_buttons_left {
+    table.bb_holder>tbody>tr:nth-child(1)>td>div.bb_buttons_left {
         width: 95vw;
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         gap: 2px;
     }
-    table.bb_holder > tbody > tr:nth-child(2) > td > div.bb_buttons_left {
+
+    table.bb_holder>tbody>tr:nth-child(2)>td>div.bb_buttons_left {
         width: 95vw;
         display: grid;
         grid-template-columns: 50% 50%;
         gap: 2px;
     }
-    table.bb_holder > tbody > tr > td {
+
+    table.bb_holder>tbody>tr>td {
         display: grid;
         grid-template-columns: auto;
         gap: 5px;
     }
+
     table.bb_holder div.bb_buttons_right {
         width: 100%;
     }
+
     table.bb_holder div.bb_buttons_left select {
         width: 100%;
         max-width: 100% !important;
     }
-    table.bb_holder > tbody > tr {
+
+    table.bb_holder>tbody>tr {
         display: grid;
         grid-template-columns: auto;
     }
-    table.bb_holder > tbody > tr > td.colhead:nth-child(2) {
+
+    table.bb_holder>tbody>tr>td.colhead:nth-child(2) {
         grid-row: 1;
     }
 
     /* Forums */
-    #forums div.thin > div.head {
+    #forums div.thin>div.head {
         height: inherit;
     }
+
     #forums .forum_post,
     #userhistory .forum_post {
         width: 100vw;
         max-width: 100vw;
     }
+
     #forums td.avatar,
     #userhistory td.avatar {
         width: 25%;
     }
+
     #forums td.postbody,
     #userhistory td.postbody {
         width: 75%;
         word-wrap: anywhere;
     }
+
     #forums div.post_container,
     #userhistory div.post_container {
         width: 100%;
     }
+
     #forums img.avatar,
     #userhistory img.avatar {
         width: 100%;
@@ -3847,61 +3908,70 @@ body {
     #requests div.thin input[type=text] {
         width: 100%;
     }
-    #requests #request_table tr > td:nth-child(n + 4) {
+
+    #requests #request_table tr>td:nth-child(n + 4) {
         display: none;
     }
 
 
     /* Settings */
-    
+
     /* Disable border on mobile */
-    #user #userform > table {
+    #user #userform>table {
         border: none !important;
     }
-    #user #userform > table > tbody > tr {
+
+    #user #userform>table>tbody>tr {
         display: grid;
         grid-template-columns: 100px auto;
         column-gap: 10px;
     }
-    #user tr.colhead > td[colspan="2"] {
+
+    #user tr.colhead>td[colspan="2"] {
         grid-column: 1 / span 2;
     }
 
     /* API Keys section */
-    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr {
+    #user #userform table>tbody>tr:nth-child(46)>td:last-child>table>tbody>tr {
         display: grid;
         grid-template-columns: auto auto auto auto;
     }
+
     /* Hide the header rows */
-    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr:nth-child(1),
-    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr:nth-child(2) {
+    #user #userform table>tbody>tr:nth-child(46)>td:last-child>table>tbody>tr:nth-child(1),
+    #user #userform table>tbody>tr:nth-child(46)>td:last-child>table>tbody>tr:nth-child(2) {
         display: none;
     }
-    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr > td:first-child {
+
+    #user #userform table>tbody>tr:nth-child(46)>td:last-child>table>tbody>tr>td:first-child {
         grid-column: 1 / span 4;
     }
+
     /* Display checkbox labels inline */
-    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr > td:nth-child(2)::after {
+    #user #userform table>tbody>tr:nth-child(46)>td:last-child>table>tbody>tr>td:nth-child(2)::after {
         padding-left: 4px;
         content: "List"
     }
-    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr > td:nth-child(3)::after {
+
+    #user #userform table>tbody>tr:nth-child(46)>td:last-child>table>tbody>tr>td:nth-child(3)::after {
         padding-left: 4px;
         content: "Download"
     }
-    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr > td:nth-child(4)::after {
+
+    #user #userform table>tbody>tr:nth-child(46)>td:last-child>table>tbody>tr>td:nth-child(4)::after {
         padding-left: 4px;
         content: "Upload"
     }
-    #user #userform table > tbody > tr:nth-child(46) > td:last-child > table > tbody > tr > td:nth-child(5)::after {
+
+    #user #userform table>tbody>tr:nth-child(46)>td:last-child>table>tbody>tr>td:nth-child(5)::after {
         padding-left: 4px;
         content: "Delete"
     }
 
     /* User Profile / Signature / Torrent Footer bbcode areas */
-    #user #userform table > tbody > tr:nth-child(49) > td:first-child,
-    #user #userform table > tbody > tr:nth-child(52) > td:first-child,
-    #user #userform table > tbody > tr:nth-child(55) > td:first-child {
+    #user #userform table>tbody>tr:nth-child(49)>td:first-child,
+    #user #userform table>tbody>tr:nth-child(52)>td:first-child,
+    #user #userform table>tbody>tr:nth-child(55)>td:first-child {
         box-sizing: border-box;
         grid-column: 1 / span 2;
     }
@@ -3909,10 +3979,11 @@ body {
     #user textarea {
         max-width: inherit;
     }
+
     /* Put Stats, Requests Filled, Requests Voted sections into a single column to avoid being too wide */
-    #user #userform table > tbody > tr:nth-child(62) > td:last-child,
-    #user #userform table > tbody > tr:nth-child(64) > td:last-child,
-    #user #userform table > tbody > tr:nth-child(65) > td:last-child{
+    #user #userform table>tbody>tr:nth-child(62)>td:last-child,
+    #user #userform table>tbody>tr:nth-child(64)>td:last-child,
+    #user #userform table>tbody>tr:nth-child(65)>td:last-child {
         display: grid;
         grid-template-columns: auto auto;
         row-gap: 5px;
@@ -3930,6 +4001,7 @@ body {
         display: flex;
         flex-direction: column;
     }
+
     #reelsa,
     #reelsb,
     #reelsc {
@@ -3939,43 +4011,53 @@ body {
         place-items: center;
         gap: 8px;
     }
-    #reelsa > img,
-    #reelsb > img,
-    #reelsc > img {
+
+    #reelsa>img,
+    #reelsb>img,
+    #reelsc>img {
         width: 50px;
     }
-    #bonus > #wrapper > #content > div.special-slots > h2 {
+
+    #bonus>#wrapper>#content>div.special-slots>h2 {
         order: 1;
         width: 100vw;
     }
-    #bonus > #wrapper > #content > div.special-slots > div:nth-of-type(1) {
+
+    #bonus>#wrapper>#content>div.special-slots>div:nth-of-type(1) {
         float: none !important;
         width: 85vw !important;
         order: 3;
         margin: 0px !important;
     }
-    #bonus > #wrapper > #content > div.special-slots > div:nth-of-type(2) {
+
+    #bonus>#wrapper>#content>div.special-slots>div:nth-of-type(2) {
         width: 85vw !important;
         order: 2;
     }
+
     #bonus .special-slots .chip {
         height: 65px;
         left: 250px !important;
     }
+
     #bonus .special-slots #beta.chip {
         top: 175px !important;
     }
+
     #bonus .special-slots #betb.chip {
         top: 240px !important;
     }
+
     #bonus .special-slots #fmtop tbody {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     #bonus .special-slots #fmtop tr {
         display: contents;
     }
-    #bonus .special-slots .fmresults tr > td:nth-child(5) {
+
+    #bonus .special-slots .fmresults tr>td:nth-child(5) {
         display: none;
     }
 }
@@ -4105,43 +4187,58 @@ body {
 */
 
 /* STYLE changes */
-#user #userform > table {
+#user #userform>table {
     border: 3px solid #313543;
 }
+
 #discog_table {
     border: 3px solid #313543;
+    /* TODO: choose appropriate colors for other 2 palettes */
 }
+
 #discog_table tr {
     border-top: 1px solid #282828;
+    /* TODO: pick appropriate color and add to other 2 palettes */
     border-bottom: 1px solid #282828;
+    /* TODO: pick appropriate color and add to other 2 palettes */
 }
+
 #discog_table td {
     border-top: none;
     border-bottom: none;
 }
+
 #discog_table tr.colhead {
     border: none;
     background-color: #282c37;
 }
+
 #discog_table tr.colhead td {
     background-color: inherit;
 }
-#user #userform > table > tbody > tr.colhead > td {
+
+#user #userform>table>tbody>tr.colhead>td {
     background-color: #272b37 !important;
+    /* TODO: pick appropriate color and add to other 2 palettes */
 }
-#torrents div.thin #search_box > .box,
-#torrents div.thin > form:nth-of-type(1),
+
+#torrents div.thin #search_box>.box,
+#torrents div.thin>form:nth-of-type(1),
 #requests div.thin .box,
 #tvschedule .box {
     border: 3px solid #313543;
+    /* TODO: pick appropriate color and add to other 2 palettes */
 }
+
 #follows div.thin .box {
     border: 6px solid #313543;
+    /* TODO: pick appropriate color and add to other 2 palettes */
 }
 
 #follows .box .linkbox {
     display: none;
 }
+
 #follows td {
     border-top: none;
     border-bottom: none;
