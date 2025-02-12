@@ -3758,8 +3758,8 @@ body {
         display: contents;
     }
     .showmaze {
-        width: inherit;
-        height: inherit;
+        width: inherit !important;
+        height: inherit !important;
     }
     div.showswrapper img.showmaze {
         aspect-ratio: 2.1 / 2.95;
@@ -3785,8 +3785,8 @@ body {
         display: contents;
     }
     .showmaze {
-        width: inherit;
-        height: inherit;
+        width: inherit !important;
+        height: inherit !important;
     }
     .showsfoot {
         min-height: 36px;
@@ -3799,7 +3799,6 @@ body {
     }
 }
 
-/* Show Info Fix */
 @media screen and (max-width: 510px) {
     #torrents #content table.showinfo {
         width: 100%;
