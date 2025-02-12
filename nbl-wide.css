@@ -3763,8 +3763,8 @@ body {
     }
     div.showswrapper img.showmaze {
         aspect-ratio: 2.1 / 2.95;
-        width: 100%;
-        height: inherit;
+        width: 100% !important;
+        height: inherit !important;
         object-fit: cover;
     }
     .showsfoot {
@@ -3793,8 +3793,8 @@ body {
     }
     div.showswrapper img.showmaze {
         aspect-ratio: 2.1 / 2.95;
-        width: 100%;
-        height: inherit;
+        width: 100% !important;
+        height: inherit !important;
         object-fit: cover;
     }
 }
