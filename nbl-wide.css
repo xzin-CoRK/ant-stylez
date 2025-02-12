@@ -3230,324 +3230,6 @@ a.Snatched:hover {
     margin: auto;
 }
 
-/* CHANGES NEEDED IN SHOW.CSS
-.main_table {
-    /* TODO: value just providing an override; Remove 97% width instead
-    width: 100% !important;
-}
-.synopsis {
-    /* TODO: value just providing an override; Remove 77% width instead
-    width: 100%;
-}
-.poster_box {
-    height: inherit !important;
-    /* TODO: remove !important when putting this onto dev
-    border: none;
-}
-
-/* END SHOW.CSS CHANGES */
-
-
-/* details.css changes
-.poster {
-    aspect-ratio: 1 / 1.4;
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 0px !important;
-    /* TODO: remove !important when putting this into place
-    max-width: inherit !important;
-    /* TODO: remove !important when putting this into place
-    max-height: inherit !important;
-    /* TODO: remove !important when putting this into place
-}
-
-
-/* end details.css changes */
-
-
-/* SHOW.CSS ADDITIONS -- add the following to show.css
-#torrents .show_title_wrap {
-    display: grid;
-    grid-template-columns: 1fr 280px;
-    overflow: hidden;
-    column-gap: 18px;
-    width: 100%;
-    /* TODO: override; remove width: 95% from show.css (line 162)
-}
-
-img.banner {
-    max-width: 100%;
-}
-
-#torrents .show_title_wrap > .head {
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
-}
-
-#torrents .show_title_wrap > .main_pad {
-    grid-row: 2 / span 1;
-    grid-column: 1 / span 1;
-}
-
-#torrents .show_title_wrap > .synopsis {
-    grid-column: 1 / span 1;
-    grid-row: 3 / span 1;
-    max-width: calc(90vw - 340px);
-    width: 100%;
-}
-
-#torrents .show_title_wrap > .side_bar {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 4;
-    margin: auto;
-    width: 100%;
-}
-
-/* Show the cast list as 2 columns
-#torrents #castbox tbody {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-#torrents #castbox tr {
-    display: contents;
-}
-
-@media screen and (max-width: 510px) {
-    /* Show Page mobile layout
-    .image_wrap > .box {
-        height: inherit !important;
-    }
-    img.banner {
-        max-width: calc(100vw)
-    }
-    #torrents .show_title_wrap {
-        grid-template-columns: 1fr;
-    }
-    #torrents .show_title_wrap > .synopsis {
-        width: 100vw;
-        max-width: 100vw;
-    }
-    #torrents .show_title_wrap > .side_bar {
-        grid-column: 1 / span 1;
-        grid-row: 4 / span 1;
-    }
-    .image_wrap {
-        text-align: inherit;
-    }
-    #castbox > table > tbody {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    #discog_table tr.colhead td {
-        display: flex;
-        align-items: center;
-        box-sizing: border-box;
-        height: 100%;
-    }
-    #castbox > table > tbody > tr {
-        margin: auto;
-    }
-    .tagssh {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        white-space: pre-line !important;
-    }
-    .icons {
-        position: inherit !important;
-        display: flex;
-        justify-content: end;
-    }
-    tr.torrent > td > div.tagssh:nth-child(1) {
-        margin-left: 0px !important;
-    }
-
-    /* Browse page
-    #torrents #torrent_table tr.torrent td:nth-child(2) {
-        text-align: center;
-    }
-    #torrents #torrent_table tr.torrent td:nth-child(2) > div {
-        position: inherit !important;
-        text-align: center;
-    }
-    #torrents #torrent_table tr.torrent div.tags > div {
-        max-width: 100% !important;
-    }
-    #torrents #torrent_table tr.torrent a.tooltipstered {
-        font-weight: bold;
-    }
-    #torrents #torrent_table tr.torrent {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-    }
-    #torrents #torrent_table tr.torrent > td:nth-child(1),
-    #torrents #torrent_table tr.torrent > td:nth-child(2) {
-        grid-column: 1 / span 5;
-        width: 100vw;
-    }
-    #torrents input {
-        max-width: 75vw;
-    }
-    /* Change width of seeding IP address (only visible to staff on seeding torrents page) */
-/* Use has with + to ensure we only apply this as desired (and not on the main torrent search results page, for example)
-    #torrents #torrent_table tr.torrent > td:nth-child(3):has(+ .nobr) {
-        grid-column: 1 / span 5;
-        width: 100vw;
-    }
-    #torrents #torrent_table tr.torrent > td:nth-child(3) {
-        display: grid;
-        grid-template-columns: auto;
-    }
-    #torrents #torrent_table tr.torrent > td:nth-child(3) > div {
-        position: inherit !important;
-    }
-    #torrents #search_box tr {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .filter_torrents .inputtext {
-        width: 100%;
-    }
-
-    /* Gallery & People
-    #shows #form1 div.box > table > tbody,
-    #people div.box > table > tbody {
-        display: grid;
-        grid-template-columns: 49% 49%;
-        grid-template-rows: 1fr auto;
-        gap: 10px;
-    }
-    #shows #form1 div.box > table > tbody > tr,
-    #people div.box > table > tbody > tr {
-        display: contents;
-    }
-    #shows #form1 div.box > table > tbody > tr > td,
-    #people div.box > table > tbody > tr > td {
-        padding: inherit;
-    }
-    .showmaze {
-        width: 100% !important;
-        /* TODO: remove !important when putting into show.css
-        height: 100% !important;
-        /* TODO: remove !important when putting into show.css
-        margin: inherit !important;
-        /* TODO: remove !important when putting into show.css
-    }
-    #shows div.showswrapper,
-    #people div.showswrapper {
-        display: grid;
-        grid-template-columns: auto;
-        row-gap: 2px;
-        width: 100%;
-        height: 100%;
-    }
-    div.showswrapper img.showmaze {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .showsfoot > span {
-        vertical-align: middle;
-    }
-}
-
-/* Break the show page into 1 column at a wider breakpoint than other pages to account for the width of torrent table
-@media screen and (min-width: 510px) and (max-width: 975px) {
-    #torrents .show_title_wrap {
-        grid-template-columns: 1fr;
-    }
-    #torrents .show_title_wrap > .synopsis {
-        max-width: 100vw;
-    }
-    #torrents .show_title_wrap > .sidebar {
-        grid-column: 1 / span 1;
-        grid-row: 4 / span 1;
-        width: 100%;
-    }
-    #castbox > table > tbody {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    #castbox > table > tbody > tr {
-        margin: auto;
-    }
-}
-
-/* Responsive torrent table
-#discog_table > tbody > tr {
-    display: grid;
-    grid-template-columns: 1fr 54px 32px 32px 32px;
-}
-#discog_table tr.colhead td {
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    height: 100%;
-}
-
-#discog_table tr.torrent > td:first-child,
-#discog_table tr.colhead > td:nth-child(1) {
-    display: flex;
-    width: inherit !important;
-}
-
-#discog_table tr.torrent > td:nth-child(3),
-#discog_table tr.torrent > td:nth-child(4),
-#discog_table tr.torrent > td:nth-child(5) {
-    text-align: center;
-}
-
-.season,
-.showname {
-    flex-shrink: 1;
-    flex-basis: 30%;
-    position: inherit !important;
-    /* TODO: remove !important when this is modified in show.css
-}
-.tagssh {
-    width: inherit !important;
-    /* TODO: remove !important when this is modified in show.css
-    flex-grow: 1;
-    flex-basis: 70%;
-}
-.codecs {
-    margin: inherit !important;
-    /* TODO: remove !important when merging into show.css
-}
-tr.torrent > td > div.tagssh:nth-child(1) > .codecs {
-    margin-left: calc(30%) !important;
-    /* TODO: remove !important when merging into show.css
-}
-
-@media screen and (min-width: 515px) {
-    .showname {
-        margin-left: 0px !important;
-    }
-}
-
-@media screen and (min-width: 975px) and (max-width: 1040px) {
-    .season,
-    .showname {
-        flex-shrink: 1;
-        flex-basis: 20%;
-        position: inherit;
-    }
-    .tagssh {
-        width: inherit;
-        flex-grow: 1;
-        flex-basis: 80%;
-    }
-    .codecs {
-        margin: inherit;
-    }
-    tr.torrent > td > div.tagssh:nth-child(1) > .codecs {
-        margin-left: calc(20%);
-    }
-}
-
-/* END SHOW.CSS ADDITIONS */
-
 /* Responsive layout */
 html,
 body {
@@ -4062,129 +3744,81 @@ body {
     }
 }
 
-/* PUT IN tvschedule.css
+/* Responsive Layout for TV Info > Galley & TV Info > People */
+@media screen and (max-width: 800px) {
+    #shows #form1 div.box > table > tbody,
+    #people div.box > table > tbody {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr auto;
+    }
+    #shows #form1 div.box > table > tbody > tr,
+    #people div.box > table > tbody > tr {
+        /* Display contents to ignore empty first row */
+        display: contents;
+    }
+    .showmaze {
+        width: inherit;
+        height: inherit;
+    }
+    div.showswrapper img.showmaze {
+        aspect-ratio: 2.1 / 2.95;
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+    }
+    .showsfoot {
+        min-height: 36px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1040px) {
+    #shows #form1 div.box > table > tbody,
+    #people div.box > table > tbody {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr auto;
+    }
+    #shows #form1 div.box > table > tbody > tr,
+    #people div.box > table > tbody > tr {
+        /* Display contents to ignore empty first row */
+        display: contents;
+    }
+    .showmaze {
+        width: inherit;
+        height: inherit;
+    }
+    .showsfoot {
+        min-height: 36px;
+    }
+    div.showswrapper img.showmaze {
+        aspect-ratio: 2.1 / 2.95;
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+    }
+}
+
+/* Show Info Fix */
 @media screen and (max-width: 510px) {
-    #tvschedule div.thin table.nobr tr {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        align-items: center;
-        justify-items: center;
+    #torrents #content table.showinfo {
+        width: 100%;
     }
-    #tvschedule div.thin table.nobr tr td:nth-child(3) {
-        grid-column: 1 / span 2;
+    #torrents #content table.showinfo > tbody > tr > td {
+        border: none;
     }
-    #tvschedule table.tvschedule tr:not(.head) {
-        display: flex;
-        flex-wrap: wrap;
+    #torrents #content table.showinfo > tbody > tr > td:first-child {
+        width: inherit !important;
+        float: left;
+        padding-right: 15px;
     }
-}
-*/
-
-/*
-/* PUT IN follows.css
-#follows table.main > tbody {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-#follows table.main > tbody > tr {
-    display: contents;
-}
-#follows div.showmaze {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-.title {
-    position: inherit !important;    /* delete existing position: rule in follows.css (line 41)
-    left: inherit !important;        /* delete existing left: rule in follows.css (line 41)
-}
-.heart {
-    right: -5px !important;     /* replace existing rule in follows.css (line 41)
-    top: 50% !important;        /* replace existing rule in follows.css (line 41)
-}
-@media screen and (max-width: 600px) {
-    #follows table.main > tbody {
-        display: grid;
-        grid-template-columns: 1fr;
+    #torrents #content table.showinfo > tbody > tr > td:last-child {
+        display: contents;
+    }
+    #torrents #content table.showinfo > tbody > tr {
+        display: contents;
     }
 }
-@media screen and (min-width: 601px) and (max-width: 860px) {
-    #follows table.main > tbody {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media screen and (min-width: 861px) and (max-width: 1120px) {
-    #follows table.main > tbody {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-*/
-
-/* PERSON.CSS 
-#torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div {
-    display: grid;
-    grid-template-columns: auto 218px;
-    grid-template-rows: auto auto;
-    gap: 10px;
-}
-#torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div > div.sidebar.side_bar {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 2;
-    margin: inherit;
-    width: 218px;
-}
-#torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div > div.pad_person {
-    margin: inherit;
-}
-
-@media screen and (max-width: 510px) {
-    #torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        gap: 10px;
-    }
-    #torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div > div.sidebar.side_bar {
-        width: 100vw;
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 1;
-    }
-    
-    #torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div > div.pad_person:nth-of-type(2) {
-        width: 100vw;
-        grid-column: 1 / span 1;
-        grid-row: 2 / span 1;
-    }
-    
-    #torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div > div.pad_person:nth-of-type(3) {
-        width: 100vw;
-        grid-column: 1 / span 1;
-        grid-row: 3 / span 1;
-    }
-    #torrents #content > div.main_column.main_table > div.thin:not(.show_title_wrap) > div > div.sidebar.side_bar > div.main_pad > div.box {
-        box-sizing: border-box;
-        margin: auto !important;
-        border-top: 0px;
-    }
-}
-
-.shows_table {
-    width: 100% !important; /* TODO: update value in person.css (ln 37) instead of copying over this rule
-}
-
-.shows_table tbody {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-}
-
-.shows_table tr {
-    display: contents;
-}
-.shows_table td {
-    margin: auto;
-}
-*/
 
 /* STYLE changes */
 #user #userform>table {
