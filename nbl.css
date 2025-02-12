@@ -3698,6 +3698,81 @@ body {
     }
 }
 
+/* Responsive Layout for TV Info > Galley & TV Info > People */
+@media screen and (max-width: 800px) {
+    #shows #form1 div.box > table > tbody,
+    #people div.box > table > tbody {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr auto;
+    }
+    #shows #form1 div.box > table > tbody > tr,
+    #people div.box > table > tbody > tr {
+        /* Display contents to ignore empty first row */
+        display: contents;
+    }
+    .showmaze {
+        width: inherit !important;
+        height: inherit !important;
+    }
+    div.showswrapper img.showmaze {
+        aspect-ratio: 2.1 / 2.95;
+        width: 100% !important;
+        height: inherit !important;
+        object-fit: cover;
+    }
+    .showsfoot {
+        min-height: 36px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1040px) {
+    #shows #form1 div.box > table > tbody,
+    #people div.box > table > tbody {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr auto;
+    }
+    #shows #form1 div.box > table > tbody > tr,
+    #people div.box > table > tbody > tr {
+        /* Display contents to ignore empty first row */
+        display: contents;
+    }
+    .showmaze {
+        width: inherit !important;
+        height: inherit !important;
+    }
+    .showsfoot {
+        min-height: 36px;
+    }
+    div.showswrapper img.showmaze {
+        aspect-ratio: 2.1 / 2.95;
+        width: 100% !important;
+        height: inherit !important;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    #torrents #content table.showinfo {
+        width: 100%;
+    }
+    #torrents #content table.showinfo > tbody > tr > td {
+        border: none;
+    }
+    #torrents #content table.showinfo > tbody > tr > td:first-child {
+        width: inherit !important;
+        float: left;
+        padding-right: 15px;
+    }
+    #torrents #content table.showinfo > tbody > tr > td:last-child {
+        display: contents;
+    }
+    #torrents #content table.showinfo > tbody > tr {
+        display: contents;
+    }
+}
+
 /* STYLE changes */
 #user #userform > table {
     border: 3px solid #313543;
