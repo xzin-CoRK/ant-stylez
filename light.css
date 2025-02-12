@@ -3325,26 +3325,6 @@ body {
     }
 }
 
-@media screen and (max-width: 510px) {
-    #torrents #content table.showinfo {
-        width: 100%;
-    }
-    #torrents #content table.showinfo > tbody > tr > td {
-        border: none;
-    }
-    #torrents #content table.showinfo > tbody > tr > td:first-child {
-        width: inherit !important;
-        float: left;
-        padding-right: 15px;
-    }
-    #torrents #content table.showinfo > tbody > tr > td:last-child {
-        display: contents;
-    }
-    #torrents #content table.showinfo > tbody > tr {
-        display: contents;
-    }
-}
-
 /* slots */
 #bonus div.thin {
     position: relative;
@@ -3529,16 +3509,25 @@ body {
     }
     #torrents #content table.showinfo {
         margin: inherit;
-    }
-    #torrents #content table.showinfo > tbody > tr {
-        display: grid;
-        grid-template-columns: auto 1fr;
-    }
-    #torrents #content table.showinfo > tbody > tr > td:first-child {
-        width: 100% !important;
+        width: 100%;
     }
     #torrents #content table.showinfo > tbody > tr > td:first-child > img {
         width: 100%;
+    }
+    
+    #torrents #content table.showinfo > tbody > tr > td {
+        border: none;
+    }
+    #torrents #content table.showinfo > tbody > tr > td:first-child {
+        width: inherit !important;
+        float: left;
+        padding-right: 15px;
+    }
+    #torrents #content table.showinfo > tbody > tr > td:last-child {
+        display: contents;
+    }
+    #torrents #content table.showinfo > tbody > tr {
+        display: contents;
     }
 
     /* Top 10 Page */
