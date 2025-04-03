@@ -2719,6 +2719,19 @@ body.style_color_pink .collage_image:hover {
   #artist .main_column {
       width: 71%;
   }
+    
+    /* Prevent torrent advanced search tags list from overflowing */
+    #torrents tr#keywordlist td:nth-of-type(2) {
+        max-width: 100%;
+        width: 100%;
+    }
+    #torrents tr#keywordlist td:nth-of-type(2) div {
+        width: 100%;
+        max-width: 100%;
+        column-gap: 5px;
+        column-width: calc(min(90vw, 1280px) / 7);
+        word-wrap: break-word;
+    }
 }
 
 /* Mobile layout */
@@ -3453,6 +3466,7 @@ code {
 }
 
 /* Christmas Themeing */
+/* To enable cut/paste this line ABOVE the "Christmas Themeing closing" line.
 #wrapper {
   position: relative;
   overflow: hidden;
@@ -3498,5 +3512,4 @@ code {
   }
 }
 
-/* To Disable cut/paste this line ABOVE the "Christmas Themeing" line.
 Christmas Theming closing line, do not delete, and add any changes below. */
