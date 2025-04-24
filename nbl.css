@@ -1920,8 +1920,17 @@ td.sig {
     vertical-align: top;
 }
 
-table .scale_image {
-    max-width: 750px;
+/* Don't let images exceed 100% container width on mobile devices */
+@media screen and (max-width:750px) {
+    table .scale_image {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width:750px) {
+    table .scale_image {
+        max-width: 750px;
+    }
 }
 
 #collage table .scale_image {
