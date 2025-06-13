@@ -113,6 +113,9 @@ h2 {
 #torrents .header h2 {
   text-align: center;
 }
+#torrents .torrent_extrainfo {
+    float: inherit;
+}
 
 h3,
 h4 {
@@ -3184,7 +3187,7 @@ body.style_color_pink .collage_image:hover {
   }
 
   #torrents #torrent_table tr.group_torrent > td:nth-of-type(2):before {
-      content: "Files: ";
+      content: "Started: ";
   }
   #torrents #torrent_table tr.group_torrent > td:nth-of-type(3):before {
       content: "Uploaded: ";
@@ -3219,7 +3222,7 @@ body.style_color_pink .collage_image:hover {
   }
   #torrents table.torrent_table tr.torrent > td:nth-of-type(1) {
       grid-row-start: 1;
-      grid-row-end: 4;
+      grid-row-end: 5;
       margin: auto;
   }
   #torrents table.torrent_table tr.torrent > td:nth-of-type(2) {
@@ -3230,21 +3233,27 @@ body.style_color_pink .collage_image:hover {
       text-align: center;
   }
   #torrents table.torrent_table tr.torrent > td:nth-of-type(3):before {
-      content: "Files: ";
+      content: "Started: ";
   }
   #torrents table.torrent_table tr.torrent > td:nth-of-type(4):before {
-      content: "Time: ";
+      content: "Seed Time: ";
   }
   #torrents table.torrent_table tr.torrent > td:nth-of-type(5):before {
-      content: "Size: ";
+      content: "Uploaded: ";
   }
   #torrents table.torrent_table tr.torrent > td:nth-of-type(6):before {
-      content: "Snatches: ";
+      content: "Downloaded: ";
   }
   #torrents table.torrent_table tr.torrent > td:nth-of-type(7):before {
-      content: "Seeders: ";
+      content: "Size: ";
   }
   #torrents table.torrent_table tr.torrent > td:nth-of-type(8):before {
+      content: "Snatches: ";
+  }
+  #torrents table.torrent_table tr.torrent > td:nth-of-type(9):before {
+      content: "Seeders: ";
+  }
+  #torrents table.torrent_table tr.torrent > td:nth-of-type(10):before {
       content: "Leechers: ";
   }
 
