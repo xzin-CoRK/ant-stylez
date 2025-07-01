@@ -91,7 +91,6 @@ html [type="button"],
 
 a,
 .linkbox a,
-.permission_container a,
 .forum_index a,
 .forum_list a,
 #search_button,
@@ -104,7 +103,8 @@ a,
     text-decoration: none;
 }
 
-.box a {
+.box a,
+.permission_container a {
     color: #2c539e;
     text-decoration: none;
 }
@@ -1009,7 +1009,8 @@ p.min_padding {
     margin-bottom: 10px;
 }
 
-.box {
+.box,
+.permission_container {
     border: 1px solid #1e1e1e;
     background-color: #1e1e1e;
 }
@@ -2008,16 +2009,33 @@ tr.unreadpm {
     width: 130px;
 }
 
-.permissions {
-    width: 930px;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 550px) {
+    .permissions {
+        width: 100%;
+        margin: auto;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .permission_container {
+        margin: auto;
+        width: 90%;
+        box-sizing: border-box;
+    }
 }
-
-.permission_container {
-    float: left;
-    width: 300px;
-    padding: 5px;
+@media screen and (min-width: 550px) {
+    .permissions {
+        width: 950px;
+        margin: auto;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .permission_container {
+        float: left;
+        width: 300px;
+        padding: 5px;
+    }
 }
 
 .permission_container input {
