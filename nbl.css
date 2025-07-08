@@ -2016,6 +2016,7 @@ tr.unreadpm {
         padding: 5px;
         display: grid;
         grid-template-columns: auto;
+        gap: 10px;
     }
     .permission_container {
         margin: auto;
@@ -2030,9 +2031,13 @@ tr.unreadpm {
         padding: 5px;
         display: grid;
         grid-template-columns: auto auto auto;
+        gap: 10px;
+        align-items: start;
     }
+    
     .permission_container {
         float: left;
+        align-self: start;
         width: 300px;
         padding: 5px;
     }
