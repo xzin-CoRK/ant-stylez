@@ -3493,6 +3493,17 @@ code {
 .similar-body {
   padding-bottom: 1px;
 }
+.slick-slide
+{
+    width: 45px !important;
+    padding: 10px;
+    
+}
+.logo.slick-slide img:first-child
+{
+    width: 25px;
+    margin: auto;
+}
 
 /* Christmas Themeing */
 /* To enable cut/paste this line ABOVE the "Christmas Themeing closing" line.
