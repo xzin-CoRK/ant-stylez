@@ -3421,6 +3421,27 @@ body.style_color_pink .collage_image:hover {
   #store #content {
       margin-top: 64px;
   }
+
+  /* Reportv2 mobile styling */
+  #reports_unauto table tr,
+  #reports_staff table tr {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+  #reports_unauto table td,
+  #reports_staff table td {
+      width: 90vw;
+      max-width: 90vw;
+      text-align: center;
+  }
+  #reports_unauto table tr:not(:last-of-type) > td:first-of-type {
+      text-decoration: underline;
+  }
+
+  #reports_resolved table tr:not(:last-of-type) > td:first-of-type {
+      width: 30vw;
+  }
 }
 
 /* Responsive redesign changes */
@@ -3499,10 +3520,14 @@ code {
     padding: 10px;
     
 }
-.logo.slick-slide img:first-child
-{
-    width: 25px;
+div.logo.slick-slide img:first-child:not(.details-seen-wrapper) {
+    width: 33px;
     margin: auto;
+}
+@media screen and (max-width: 550px) {
+    div.logo.slick-slide img:nth-of-type(2):not(.details-seen-wrapper) {
+        width: 100%;
+    }
 }
 
 /* Christmas Themeing */
